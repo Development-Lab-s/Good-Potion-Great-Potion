@@ -5,6 +5,7 @@ public abstract class Herb : MonoBehaviour, Interactable
 {
     private Camera cam;
     protected bool _isSet = false;
+    public bool _isHerb = false;
 
     protected virtual void Awake()
     {
@@ -24,6 +25,7 @@ public abstract class Herb : MonoBehaviour, Interactable
 
     public virtual void OnClickInteractable()   
     {   
+        _isHerb = false;
         _isSet = true;    
     }
 }

@@ -9,7 +9,11 @@ public class HerbButton : MonoBehaviour
     {
         if(GameManager.Instance.moneyCount != 0)
         {
+            if(herb._isHerb == false)
+            {
             Herb MedicinalHerb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
+            }
         }
+        herb._isHerb = true;
     }
 }
