@@ -3,23 +3,14 @@ using UnityEngine;
 public class RealHerb : Herb
 {
 
-    protected override void Awake()
-    {
-        base.Awake();
-    }
     protected override void Update()
     {
+        _isSet = false;
         base.Update();
     }
 
-    private void FixedUpdate()
-    {   
-        if(_isSet == false)
-            return;
-    }
-    public override void OnAttack()
+    public override void OnClickInteractable()
     {
-        if(_isSet == false)
-        base.OnAttack();
+        base.OnClickInteractable();
     }
 }
