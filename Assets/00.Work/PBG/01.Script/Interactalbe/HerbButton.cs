@@ -7,7 +7,6 @@ public class HerbButton : MonoBehaviour
 
     public void SetHerb()
     {    
-        Debug.Log(1);
         Herb Herb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
     }
 }

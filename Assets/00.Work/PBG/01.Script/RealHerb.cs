@@ -11,18 +11,12 @@ public class RealHerb : Herb
         }
     }
 
-    public override void OnAttack()
-    {
-        if(_isSet == false)
-        base.OnAttack();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Pot"))
         {
-            if(!_isPot)
             _isPot = true;
+            Debug.Log(_isPot);
         }
     }
 
@@ -30,8 +24,13 @@ public class RealHerb : Herb
     {
         if(collision.gameObject.CompareTag("Pot"))
         {
-            if(_isPot)
             _isPot = false;
         }
     }
+
+    public override void OnClickInteractable()
+    {   
+        Debug.Log("프리팹 클릭");
+        base.OnClickInteractable();
+    } 
 }
