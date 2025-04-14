@@ -23,7 +23,7 @@ public abstract class Herb : MonoBehaviour, Interactable
         }
     }
 
-    public virtual void OnClickInteractable()   
+    public virtual void OnAttack()   
     {   
         _isHerb = false;
         _isSet = true;    

@@ -17,9 +17,9 @@ public class RealHerb : Herb
         if(_isSet == false)
             return;
     }
-    public override void OnClickInteractable()
+    public override void OnAttack()
     {
         if(_isSet == false)
-        base.OnClickInteractable();
+        base.OnAttack();
     }
 }
