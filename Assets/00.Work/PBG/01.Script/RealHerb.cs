@@ -30,7 +30,6 @@ public class RealHerb : Herb
 
     public override void OnClickInteractable()
     {   
-        Debug.Log("프리팹 클릭");
         base.OnClickInteractable();
     } 
 }

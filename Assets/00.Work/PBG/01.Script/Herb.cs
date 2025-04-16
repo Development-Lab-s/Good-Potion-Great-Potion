@@ -24,12 +24,7 @@ public abstract class Herb : MonoBehaviour, Interactable
 
     public virtual void OnClickInteractable()
     {   
-        Debug.Log(_isPot);
-
-        if(_isPot)
-        {
-            _isSet = true;
-            Debug.Log(_isSet);
-        }
+        _isSet = true;
+        Debug.Log(_isSet);
     } 
 }
