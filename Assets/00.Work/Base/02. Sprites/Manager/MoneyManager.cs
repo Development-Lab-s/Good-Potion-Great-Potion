@@ -9,6 +9,7 @@ namespace _00.Work.Base._02._Sprites.Manager
         public static MoneyManager Instance { get; private set; }
 
         [SerializeField] private int money;
+        //다른 곳에서 돈 변수를 써야할 때 MoneyManager.money 사용 가능(얘 int형임))
         public int Money => money;
     
         //Money가 바뀌었을 때 모든 구독자들에게 방송하는 시스템

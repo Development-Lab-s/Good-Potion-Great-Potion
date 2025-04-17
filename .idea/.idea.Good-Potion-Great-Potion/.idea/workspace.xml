@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc9143fe-cd13-4f96-8247-3f249dc388d0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/Base/05. SO/MoneySO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/Base/05. SO/MoneySO.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/02. Sprites/NpcInOut.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/02. Sprites/NpcInOut.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/Base/02. Sprites/Manager/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/Base/02. Sprites/Manager/MoneyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/NpcInOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/NpcInOut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/ButtonScripts/TestButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -94,6 +96,7 @@
       <updated>1744798859824</updated>
       <workItem from="1744798860944" duration="9000" />
       <workItem from="1744798879411" duration="1103000" />
+      <workItem from="1744877673969" duration="2480000" />
     </task>
     <servers />
   </component>
