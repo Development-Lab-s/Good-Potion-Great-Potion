@@ -1,16 +1,16 @@
+using _00.Work.Base._02._Sprites.Manager;
 using UnityEngine;
 
-public class NpcInOut : MonoBehaviour
+namespace _00.Work.CheolYee._03._Scripts
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class NpcInOut : MonoBehaviour
     {
-        
-    }
+        int a = MoneyManager.Instance.Money;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Start()
+        {
+            Debug.Log(a);
+            MoneyManager.Instance.AddMoney(100);
+        }
     }
 }
