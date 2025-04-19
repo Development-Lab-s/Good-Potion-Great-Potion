@@ -7,6 +7,8 @@ public class ChangeImageUi : MonoBehaviour
     [SerializeField] private Image resultImage2;
     [SerializeField] private Image resultImage3;
 
+    [SerializeField] private Image servePotion;
+
     [SerializeField] private Sprite herb1;
     [SerializeField] private Sprite herb2;
     [SerializeField] private Sprite herb3;
@@ -29,7 +31,7 @@ public class ChangeImageUi : MonoBehaviour
         }
     }
 
-    public void ShowResult(string state)
+    public void ShowResult(string state) //허브 배치치
     {
         switch (state)
         {
