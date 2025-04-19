@@ -3,6 +3,7 @@ using UnityEngine;
 public class RealHerb : Herb
 {
 
+    public string herbID; // 예: "A", "B", "C"
     protected override void Update()
     {
         if(_isSet == false)
@@ -28,8 +29,14 @@ public class RealHerb : Herb
         }
     }
 
-    public override void OnClickInteractable()
-    {   
-        base.OnClickInteractable();
-    } 
+
+    public void OnSelect()
+    {
+        GameManager.Instance.AddHerb(herbID);
+    }
+
+     private void OnMouseDown()
+    {
+        OnSelect(); // 클릭 시 선택 처리
+    }
 }
