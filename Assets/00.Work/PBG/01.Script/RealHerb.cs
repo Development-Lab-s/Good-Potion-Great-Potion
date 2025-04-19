@@ -3,7 +3,7 @@ using UnityEngine;
 public class RealHerb : Herb
 {
 
-    public string herbID; // 예: "A", "B", "C"
+    [SerializeField] private string herbID; // 예: "A", "B", "C"
     protected override void Update()
     {
         if(_isSet == false)

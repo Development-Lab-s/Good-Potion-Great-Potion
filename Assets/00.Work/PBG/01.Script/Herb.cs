@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public abstract class Herb : MonoBehaviour, Interactable
+public abstract class Herb : MonoBehaviour
 {
 
     protected bool _isPot = false;
@@ -21,10 +21,4 @@ public abstract class Herb : MonoBehaviour, Interactable
             transform.position = (Vector2)cam.ScreenToWorldPoint(mousePosition);
         }
     }
-
-    public virtual void OnClickInteractable()
-    {   
-        _isSet = true;
-        Debug.Log(_isSet);
-    } 
 }

@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
 
+    [SerializeField] private ChangeImageUi changeImageUi;
+
     private List<string> selectedHerbs = new List<string>();
 
     void Awake()
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
         if (selectedHerbs.Count >= 3) return;
 
         selectedHerbs.Add(herbID);
+        changeImageUi.ShowResult(herbID);
         Debug.Log("선택된 허브: " + herbID);
 
         if (selectedHerbs.Count == 3)
