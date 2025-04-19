@@ -17,7 +17,6 @@ public class RealHerb : Herb
         if(collision.gameObject.CompareTag("Pot"))
         {
             _isPot = true;
-            Debug.Log(_isPot);
         }
     }
 
@@ -35,8 +34,9 @@ public class RealHerb : Herb
         GameManager.Instance.AddHerb(herbID);
     }
 
-     private void OnMouseDown()
+    private void OnMouseDown()
     {
+        if(_isPot)
         OnSelect(); // 클릭 시 선택 처리
     }
 }

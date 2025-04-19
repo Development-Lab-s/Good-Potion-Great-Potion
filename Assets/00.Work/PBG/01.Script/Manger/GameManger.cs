@@ -43,4 +43,6 @@ public class GameManager : MonoBehaviour
 
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
     }
+
+    
 }
