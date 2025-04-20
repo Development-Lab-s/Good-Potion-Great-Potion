@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public abstract class Herb : MonoBehaviour, Interactable
 {
+
+    protected bool _isPot = false;
     private Camera cam;
     protected bool _isSet = false;
 
@@ -21,7 +23,8 @@ public abstract class Herb : MonoBehaviour, Interactable
     }
 
     public virtual void OnClickInteractable()
-    {
-        
-    }
+    {   
+        _isSet = true;
+        Debug.Log(_isSet);
+    } 
 }
