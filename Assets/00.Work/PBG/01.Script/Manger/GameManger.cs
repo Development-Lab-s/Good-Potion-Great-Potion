@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ChangeImageUi changeImageUi;
     
 
-    private List<string> selectedHerbs = new List<string>();
+    private List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
 
     void Awake()
     {
@@ -21,8 +21,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void AddHerb(string herbID)
+    public void AddHerb(HerbDataSO herbID)
     {
+        Debug.Log(selectedHerbs.Count);
         if (selectedHerbs.Count >= 3) return;  //넣은 허브 갯수가 3이상이면 반환하고 3이라면 레시피 식별 후 다음으로 넘어감
 
         selectedHerbs.Add(herbID);
@@ -37,14 +38,14 @@ public class GameManager : MonoBehaviour
 
     void CheckCombination()
     {
-        if (selectedHerbs[0] == "A" && selectedHerbs[1] == "B" && selectedHerbs[2] == "C")
-        {
-            Debug.Log("성공");
-        }
-        else
-        {
-            Debug.Log("실패");
-        }
+    //     if (selectedHerbs[0] == "A" && selectedHerbs[1] == "B" && selectedHerbs[2] == "C")
+    //     {
+    //         Debug.Log("성공");
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("실패");
+    //     }
 
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
     }

@@ -1,9 +1,8 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RealHerb : Herb
 {
-
-    [SerializeField] private string herbID; // 예: "A", "B", "C"
     protected override void Update()
     {
         if(_isSet == false)
@@ -17,6 +16,7 @@ public class RealHerb : Herb
         if(collision.gameObject.CompareTag("Pot"))
         {
             _isPot = true;
+            Debug.Log(_isPot);
         }
     }
 
@@ -31,7 +31,7 @@ public class RealHerb : Herb
 
     public void OnSelect()
     {
-        GameManager.Instance.AddHerb(herbID);
+        GameManager.Instance.AddHerb(data);
     }
 
     private void OnMouseDown()
