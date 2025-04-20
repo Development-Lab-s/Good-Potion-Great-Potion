@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc9143fe-cd13-4f96-8247-3f249dc388d0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/Base/02. Sprites/Manager/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/Base/02. Sprites/Manager/MoneyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/NpcInOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/NpcInOut.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
