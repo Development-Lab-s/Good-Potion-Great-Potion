@@ -1,16 +1,24 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-public abstract class Herb : MonoBehaviour, Interactable
+public abstract class Herb : MonoBehaviour
 {
+
+    protected HerbDataSO data;
+    [SerializeField] private SpriteRenderer imageCompo; 
+
 
     protected bool _isPot = false;
     private Camera cam;
     protected bool _isSet = false;
 
-    protected virtual void Awake()
+    
+    public void Initialized(HerbDataSO data)
     {
         cam = Camera.main;
+        this.data = data;
+        imageCompo.color = data.herbIcon;
     }
 
     protected virtual void Update()
@@ -18,13 +26,7 @@ public abstract class Herb : MonoBehaviour, Interactable
         if(_isSet == false)
         {
             Vector2 mousePosition = Mouse.current.position.value;
-            transform.position = (Vector2)cam.ScreenToWorldPoint(mousePosition);
+            transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
         }
     }
-
-    public virtual void OnClickInteractable()
-    {   
-        _isSet = true;
-        Debug.Log(_isSet);
-    } 
 }

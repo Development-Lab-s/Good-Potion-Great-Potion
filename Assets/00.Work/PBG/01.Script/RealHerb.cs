@@ -1,8 +1,8 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RealHerb : Herb
 {
-
     protected override void Update()
     {
         if(_isSet == false)
@@ -28,8 +28,15 @@ public class RealHerb : Herb
         }
     }
 
-    public override void OnClickInteractable()
-    {   
-        base.OnClickInteractable();
-    } 
+
+    public void OnSelect()
+    {
+        GameManager.Instance.AddHerb(data);
+    }
+
+    private void OnMouseDown()
+    {
+        if(_isPot)
+        OnSelect(); // 클릭 시 선택 처리
+    }
 }

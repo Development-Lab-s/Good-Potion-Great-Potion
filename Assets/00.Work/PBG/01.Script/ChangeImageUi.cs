@@ -1,0 +1,31 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ChangeImageUi : MonoBehaviour
+{
+    [SerializeField] private Image servePotion;
+    [SerializeField] private Image[] resultImages;
+
+    public int _isHerb = 0;
+
+    void FixedUpdate()
+    {
+        if(_isHerb == 4)
+        {
+            _isHerb = 0;
+           foreach(var image in resultImages){
+            image.color = Color.white;
+           }
+        }
+    }
+
+/// <summary>
+/// 허브 배치 하는거
+/// </summary>
+/// <param name="dataSO"></param>
+    public void ShowResult(HerbDataSO dataSO) 
+    {
+        resultImages[_isHerb].color = dataSO.herbIcon;
+        _isHerb++;
+    }
+}
