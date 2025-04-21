@@ -26,7 +26,7 @@ public abstract class Herb : MonoBehaviour
         if(_isSet == false)
         {
             Vector2 mousePosition = Mouse.current.position.value;
-            transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
+            transform.position = (Vector2)Camera.main.ScreenToWorldPoint(mousePosition);
         }
     }
 }
