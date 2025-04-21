@@ -2,25 +2,28 @@ using _00.Work.Base._02._Sprites.Manager;
 using TMPro;
 using UnityEngine;
 
-public class GoldUI : MonoBehaviour
+namespace _00.Work.CheolYee._03._Scripts
 {
-    [SerializeField] private TextMeshProUGUI moneyText;
-
-    private void Start()
+    public class GoldUI : MonoBehaviour
     {
-        moneyText.text = ($"{MoneyManager.Instance.Money}G");
+        [SerializeField] private TextMeshProUGUI moneyText;
 
-        MoneyManager.Instance.OnMoneyChanged += UpdateUI;
-    }
+        private void Start()
+        {
+            moneyText.text = ($"{MoneyManager.Instance.Money}G");
 
-    private void UpdateUI(int money)
-    {
-        moneyText.text = ($"{money}G");
-    }
+            MoneyManager.Instance.OnMoneyChanged += UpdateUI;
+        }
+
+        private void UpdateUI(int money)
+        {
+            moneyText.text = ($"{money}G");
+        }
     
-    private void OnDestroy()
-    {
-        if (MoneyManager.Instance != null)
-            MoneyManager.Instance.OnMoneyChanged -= UpdateUI;
+        private void OnDestroy()
+        {
+            if (MoneyManager.Instance != null)
+                MoneyManager.Instance.OnMoneyChanged -= UpdateUI;
+        }
     }
 }
