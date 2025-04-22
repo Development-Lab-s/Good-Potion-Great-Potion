@@ -1,31 +1,32 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-public abstract class Herb : MonoBehaviour, Interactable
+public abstract class Herb : MonoBehaviour
 {
+
+    protected HerbDataSO data;
+    [SerializeField] private SpriteRenderer imageCompo; 
+
+
+    protected bool _isPot = false;
     private Camera cam;
     protected bool _isSet = false;
-    public bool _isHerb = false;
 
-    protected virtual void Awake()
+    
+    public void Initialized(HerbDataSO data)
     {
         cam = Camera.main;
+        this.data = data;
+        imageCompo.color = data.herbIcon;
     }
-
 
     protected virtual void Update()
     {
-        // 건물이 아직 활성화 되지 않았다면 마우스를 따라다니게 만들어봐
         if(_isSet == false)
         {
             Vector2 mousePosition = Mouse.current.position.value;
-            transform.position = (Vector2)cam.ScreenToWorldPoint(mousePosition);
+            transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
         }
-    }
-
-    public virtual void OnClickInteractable()   
-    {   
-        _isHerb = false;
-        _isSet = true;    
     }
 }
