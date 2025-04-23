@@ -30,14 +30,9 @@ public class RealHerb : Herb
     }
 
 
-    public void OnSelect()
-    {
-        GameManager.Instance.AddHerb(data);
-    }
-
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if(_isPot)
-        OnSelect(); // 클릭 시 선택 처리
+        GameManager.Instance.AddHerb(data);
     }
 }
