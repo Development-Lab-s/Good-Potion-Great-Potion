@@ -33,7 +33,7 @@ public class ClockHand : MonoBehaviour
     }
     private void Update()
     {
-        if (_finishCheck == true)
+        if (_finishCheck)
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
@@ -44,7 +44,7 @@ public class ClockHand : MonoBehaviour
                 _finishRotation.FinishRotaton(true);
             }
         }
-        if (_finishCheck == false)
+        else
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
@@ -56,7 +56,6 @@ public class ClockHand : MonoBehaviour
             Time.timeScale = 0;
         }
     }
-    //박민성 멍청이
     private void SquareScale()
     {
         transform.localScale -= new Vector3(0.09f,0f,0f);
