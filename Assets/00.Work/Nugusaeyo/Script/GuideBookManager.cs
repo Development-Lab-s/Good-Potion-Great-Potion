@@ -12,7 +12,8 @@ public class GuideBookManager : MonoBehaviour
 
     private void Start()
     {
-        Close();
+        _GuideUI.DOFade(0, 0);
+        _GuideUI.blocksRaycasts = true;
     }
     public void Open()
     {
