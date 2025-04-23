@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ChangeImageUi : MonoBehaviour
 {
-    [SerializeField] private Image servePotion;
     [SerializeField] private Image[] resultImages;
 
     public int _isHerb = 0;
@@ -13,8 +12,9 @@ public class ChangeImageUi : MonoBehaviour
         if(_isHerb == 4)
         {
             _isHerb = 0;
-           foreach(var image in resultImages){
-            image.color = Color.white;
+           foreach(var image in resultImages)
+           {
+                image.color = Color.white;
            }
         }
     }
