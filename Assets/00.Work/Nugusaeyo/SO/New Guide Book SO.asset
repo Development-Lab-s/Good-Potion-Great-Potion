@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: New Guide Book SO
   m_EditorClassIdentifier: 
-  potionImage: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  potionImage: {fileID: 0}
   potionName: 
   slotImage1: {fileID: 0}
   slotName1: 
