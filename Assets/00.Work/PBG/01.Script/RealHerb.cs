@@ -17,7 +17,6 @@ public class RealHerb : Herb
         if(collision.gameObject.CompareTag("Pot"))
         {
             _isPot = true;
-            Debug.Log(_isPot);
         }
     }
 

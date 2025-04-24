@@ -9,7 +9,7 @@ public class ChangeImageUi : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(_isHerb == 4)
+        if(_isHerb >= 3)
         {
             _isHerb = 0;
            foreach(var image in resultImages)
