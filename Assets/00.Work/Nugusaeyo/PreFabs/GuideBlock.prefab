@@ -232,11 +232,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe191f329f1ead844bf5e951b034e8ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _guideSO: {fileID: 11400000, guid: 0f7bf8ca054d71249bc74f112c563ae0, type: 2}
+  _guideSO: {fileID: 11400000, guid: 83d28447661bee44b90a395746b51b4b, type: 2}
+  unlockWeek: 0
+  day: 0
   potionImg: {fileID: 7842867268917836481}
   slotImg1: {fileID: 3738242288710464223}
   slotImg2: {fileID: 6732526881992477279}
   slotImg3: {fileID: 9068744493870957140}
+  potionName: {fileID: 6445441464556065940}
+  slotName1: {fileID: 8155555742593942911}
+  slotName2: {fileID: 1414702149856210684}
+  slotName3: {fileID: 5313632589438111180}
 --- !u!1 &853732132764263390
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

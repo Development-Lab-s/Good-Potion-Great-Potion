@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 
@@ -126,12 +126,12 @@ namespace TMPro.Examples
 
             while (current_Count > 0)
             {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                current_Count -= (UnityEngine.Time.deltaTime / CountDuration) * starting_Count;
 
                 if (current_Count <= 3)
                 {
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
-                    alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
+                    alpha = Mathf.Clamp(alpha - (UnityEngine.Time.deltaTime / fadeDuration) * 255, 0, 255);
                 }
 
                 int_counter = (int)current_Count;
@@ -141,7 +141,7 @@ namespace TMPro.Examples
                 m_textMeshPro.color = new Color32(start_color.r, start_color.g, start_color.b, (byte)alpha);
 
                 // Move the floating text upward each update
-                m_floatingText_Transform.position += new Vector3(0, starting_Count * Time.deltaTime, 0);
+                m_floatingText_Transform.position += new Vector3(0, starting_Count * UnityEngine.Time.deltaTime, 0);
 
                 // Align floating text perpendicular to Camera.
                 if (!lastPOS.Compare(m_cameraTransform.position, 1000) || !lastRotation.Compare(m_cameraTransform.rotation, 1000))
@@ -181,12 +181,12 @@ namespace TMPro.Examples
 
             while (current_Count > 0)
             {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                current_Count -= (UnityEngine.Time.deltaTime / CountDuration) * starting_Count;
 
                 if (current_Count <= 3)
                 {
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
-                    alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
+                    alpha = Mathf.Clamp(alpha - (UnityEngine.Time.deltaTime / fadeDuration) * 255, 0, 255);
                 }
 
                 int_counter = (int)current_Count;
@@ -196,7 +196,7 @@ namespace TMPro.Examples
                 m_textMesh.color = new Color32(start_color.r, start_color.g, start_color.b, (byte)alpha);
 
                 // Move the floating text upward each update
-                m_floatingText_Transform.position += new Vector3(0, starting_Count * Time.deltaTime, 0);
+                m_floatingText_Transform.position += new Vector3(0, starting_Count * UnityEngine.Time.deltaTime, 0);
 
                 // Align floating text perpendicular to Camera.
                 if (!lastPOS.Compare(m_cameraTransform.position, 1000) || !lastRotation.Compare(m_cameraTransform.rotation, 1000))
