@@ -1,15 +1,15 @@
+using System.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ChangeImageUi : MonoBehaviour
 {
     [SerializeField] private Image[] resultImages;
-
     public int _isHerb = 0;
 
     void FixedUpdate()
     {
-        if(_isHerb >= 3)
+        if(_isHerb == 4)
         {
             _isHerb = 0;
            foreach(var image in resultImages)
@@ -18,6 +18,8 @@ public class ChangeImageUi : MonoBehaviour
            }
         }
     }
+
+
 
 /// <summary>
 /// 허브 배치 하는거

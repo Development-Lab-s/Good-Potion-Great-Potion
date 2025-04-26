@@ -32,6 +32,8 @@ public class RealHerb : Herb
     public void OnMouseDown()
     {
         if(_isPot)
-        GameManager.Instance.AddHerb(data);
+        {
+            GameManager.Instance.AddHerb(data);
+        }
     }
 }

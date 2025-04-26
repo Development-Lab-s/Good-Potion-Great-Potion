@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.015723169, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -387,7 +387,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Accapt
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -796,7 +798,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -126, y: -25}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 170, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385326394
 MonoBehaviour:
@@ -956,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6855345, g: 0.32983255, b: 0.32983255, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1194,6 +1196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HerbButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4194963172905068573, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
+      propertyPath: m_text
+      value: B
+      objectReference: {fileID: 0}
     - target: {fileID: 7803528318405792291, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
       propertyPath: data
       value: 
@@ -1294,6 +1300,12 @@ PrefabInstance:
     - target: {fileID: 1686229915641848942, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
       propertyPath: m_Name
       value: HerbButton (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194963172905068573, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
+      propertyPath: m_text
+      value: 'C
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7803528318405792291, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
       propertyPath: data
@@ -1889,12 +1901,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1271344230}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChangeImageUi, Assembly-CSharp
         m_MethodName: 
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: HerbDataSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1950,6 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89c868735c9466408569bb2797159df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeImageUi: {fileID: 1287314373}
   deleteButton: {fileID: 1271344232}
 --- !u!1 &1287314372
 GameObject:
@@ -2029,7 +2042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5246401181ef3834aa4e238b5fd5f8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeImageUi: {fileID: 1287314373}
   _canProduce: 0
 --- !u!4 &1554763135
 Transform:
@@ -2346,6 +2358,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: HerbButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4194963172905068573, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
+      propertyPath: m_text
+      value: 'D
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 7803528318405792291, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
       propertyPath: data
       value: 
@@ -2504,7 +2522,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -129, y: 53}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 170, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969250993
 MonoBehaviour:
@@ -2705,6 +2723,12 @@ PrefabInstance:
     - target: {fileID: 1686229915641848942, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
       propertyPath: m_Name
       value: HerbButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194963172905068573, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
+      propertyPath: m_text
+      value: 'A
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2913,7 +2937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.98742133, g: 0.98742133, b: 0.98742133, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

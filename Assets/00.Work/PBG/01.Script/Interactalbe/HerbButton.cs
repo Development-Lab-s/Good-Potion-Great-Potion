@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class HerbButton : MonoBehaviour
 {
     [SerializeField] private Herb herb;
-
     [SerializeField] private HerbDataSO data;
     public void SetHerb()
     {    

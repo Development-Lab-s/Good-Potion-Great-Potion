@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public abstract class Herb : MonoBehaviour
 {
 
-    protected HerbDataSO data;
+    public HerbDataSO data;
     [SerializeField] private SpriteRenderer imageCompo; 
-
 
     protected bool _isPot = false;
     private Camera cam;
     protected bool _isSet = false;
+
 
     
     public void Initialized(HerbDataSO data)
