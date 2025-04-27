@@ -27,7 +27,10 @@ public class ChangeImageUi : MonoBehaviour
 /// <param name="dataSO"></param>
     public void ShowResult(HerbDataSO dataSO) 
     {
-        resultImages[_isHerb].color = dataSO.herbIcon;
-        _isHerb++;
+        if(_isHerb < 3)
+        {
+            resultImages[_isHerb].color = dataSO.herbIcon;
+            _isHerb++;
+        }
     }
 }

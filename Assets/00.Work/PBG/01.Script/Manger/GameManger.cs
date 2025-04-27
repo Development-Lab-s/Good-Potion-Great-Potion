@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("초과");
                 return;  //넣은 허브 갯수가 3이상이면 반환하고 3이라면 레시피 식별 후 다음으로 넘어감
             }
-        if (selectedHerbs.Count >= 1)
+        else if (selectedHerbs.Count >= 1)
         {
             _canProduce = true; // 제작 버튼을 누를 수 있는 조건
         }

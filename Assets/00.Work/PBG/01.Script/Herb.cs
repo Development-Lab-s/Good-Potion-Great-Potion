@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public abstract class Herb : MonoBehaviour
 {
 
-    public HerbDataSO data;
+    public HerbDataSO data {get; set;}
     [SerializeField] private SpriteRenderer imageCompo; 
 
     protected bool _isPot = false;
