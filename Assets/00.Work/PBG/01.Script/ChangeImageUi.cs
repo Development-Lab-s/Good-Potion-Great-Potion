@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ChangeImageUi : MonoBehaviour
 {
     [SerializeField] private Image[] resultImages;
+    [SerializeField] private Sprite sprite;
     public int _isHerb = 0;
 
     void FixedUpdate()
@@ -14,7 +15,7 @@ public class ChangeImageUi : MonoBehaviour
             _isHerb = 0;
            foreach(var image in resultImages)
            {
-                image.color = Color.white;
+                image.sprite = sprite;
            }
         }
     }
@@ -29,7 +30,7 @@ public class ChangeImageUi : MonoBehaviour
     {
         if(_isHerb < 3)
         {
-            resultImages[_isHerb].color = dataSO.herbIcon;
+            resultImages[_isHerb].sprite = dataSO.herbIcon;
             _isHerb++;
         }
     }

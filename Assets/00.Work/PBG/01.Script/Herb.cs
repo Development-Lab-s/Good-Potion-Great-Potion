@@ -18,7 +18,7 @@ public abstract class Herb : MonoBehaviour
     {
         cam = Camera.main;
         this.data = data;
-        imageCompo.color = data.herbIcon;
+        imageCompo.sprite = data.herbIcon;
     }
 
     protected virtual void Update()

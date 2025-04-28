@@ -5,5 +5,5 @@ using UnityEngine;
 public class HerbDataSO : ScriptableObject
 {
     public string herbName;
-    public Color herbIcon;
+    public Sprite herbIcon;
 }

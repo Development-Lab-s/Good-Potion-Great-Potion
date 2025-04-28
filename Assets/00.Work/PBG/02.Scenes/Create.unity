@@ -1997,6 +1997,7 @@ MonoBehaviour:
   - {fileID: 2084344420}
   - {fileID: 393550217}
   - {fileID: 73494395}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   _isHerb: 0
 --- !u!4 &1287314374
 Transform:
