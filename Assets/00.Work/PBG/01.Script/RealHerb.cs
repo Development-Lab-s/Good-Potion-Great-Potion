@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,7 +17,6 @@ public class RealHerb : Herb
         if(collision.gameObject.CompareTag("Pot"))
         {
             _isPot = true;
-            Debug.Log(_isPot);
         }
     }
 
@@ -29,14 +29,11 @@ public class RealHerb : Herb
     }
 
 
-    public void OnSelect()
-    {
-        GameManager.Instance.AddHerb(data);
-    }
-
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if(_isPot)
-        OnSelect(); // 클릭 시 선택 처리
+        {
+            GameManager.Instance.AddHerb(data);
+        }
     }
 }
