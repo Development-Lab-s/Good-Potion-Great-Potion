@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using static StickDrag;
 
 public class UISystemManager : MonoBehaviour
 {
     [SerializeField] private GameObject LeftUI, RightUI;
+
+    public RotationDirection currentDirection;
     private void Start()
     {
         if (Random.Range(0, 2) == 0)
@@ -16,14 +19,18 @@ public class UISystemManager : MonoBehaviour
         
     }
 
-    private void OnLeftUI()
+    private void OnLeftUI() //반시계방향
     {
-        LeftUI.SetActive(true);
+        currentDirection = RotationDirection.CounterClockwise;
+        Debug.Log(currentDirection);
+        RightUI.SetActive(true);
     }
 
-    private void OnRightUI()
+    private void OnRightUI() //시계방향
     {
-        RightUI.SetActive(true);
+        currentDirection = RotationDirection.Clockwise;
+        Debug.Log(currentDirection);
+        LeftUI.SetActive(true);
     }
     
 
