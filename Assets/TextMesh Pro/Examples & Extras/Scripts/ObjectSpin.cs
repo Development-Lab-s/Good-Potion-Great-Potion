@@ -40,14 +40,14 @@ namespace TMPro.Examples
             switch (Motion)
             {
                 case MotionType.Rotation:
-                    m_transform.Rotate(0, SpinSpeed * Time.deltaTime, 0);
+                    m_transform.Rotate(0, SpinSpeed * UnityEngine.Time.deltaTime, 0);
                     break;
                 case MotionType.SearchLight:
-                    m_time += SpinSpeed * Time.deltaTime;
+                    m_time += SpinSpeed * UnityEngine.Time.deltaTime;
                     m_transform.rotation = Quaternion.Euler(m_initial_Rotation.x, Mathf.Sin(m_time) * RotationRange + m_initial_Rotation.y, m_initial_Rotation.z);
                     break;
                 case MotionType.Translation:
-                    m_time += TranslationSpeed * Time.deltaTime;
+                    m_time += TranslationSpeed * UnityEngine.Time.deltaTime;
 
                     float x = TranslationDistance.x * Mathf.Cos(m_time);
                     float y = TranslationDistance.y * Mathf.Sin(m_time) * Mathf.Cos(m_time * 1f);

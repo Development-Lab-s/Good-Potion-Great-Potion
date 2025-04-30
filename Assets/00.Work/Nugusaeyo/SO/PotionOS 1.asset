@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: PotionOS 1
+  m_EditorClassIdentifier: 
+  unlockWeek: 0
+  potionImage: {fileID: -5649470061204452833, guid: a68a677068912da4a8151c8e4a6667df, type: 3}
+  potionName: "\uD56D\uC544\uB9AC"
+  potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  potionLockName: "\uD3EC\uC158 \uC7A0\uAE40"
+  slotImage1: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  slotName1: "\uB9DB\uC788"
+  slotImage2: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  slotName2: "\uACA0"
+  slotImage3: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  slotName3: "\uB530"
+  slotLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  slotLockName: "\uC7A0\uAE40"
