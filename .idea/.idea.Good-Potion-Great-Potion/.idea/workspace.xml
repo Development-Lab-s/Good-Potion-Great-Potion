@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc9143fe-cd13-4f96-8247-3f249dc388d0" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/LABdigital SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/LABdigital SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/PBG/04.Sprites/Pot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/PBG/04.Sprites/Pot.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
-    "git-widget-placeholder": "PMC",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Unity 에디터에 연결.Unity 에디터에 연결.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PMC&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe" />
@@ -58,15 +62,13 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="70920">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="70920" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -99,6 +101,9 @@
       <workItem from="1744798879411" duration="1103000" />
       <workItem from="1744877673969" duration="2480000" />
       <workItem from="1745242725953" duration="5197000" />
+      <workItem from="1745910198415" duration="1422000" />
+      <workItem from="1745940792170" duration="42000" />
+      <workItem from="1746001256597" duration="2170000" />
     </task>
     <servers />
   </component>
