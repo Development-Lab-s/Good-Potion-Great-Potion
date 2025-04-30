@@ -1589,10 +1589,17 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4. \uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4.
     \uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4. \uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4.
+<<<<<<< Updated upstream
     \uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4c1d88886ac05941bb4748c7af76a44, type: 2}
   m_sharedMaterial: {fileID: -8856327996163529554, guid: c4c1d88886ac05941bb4748c7af76a44, type: 2}
+=======
+    \uC608\uC2DC \uD14D\uC2A4\uD2B8\uC785\uB2C8\uB2E4. "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
+  m_sharedMaterial: {fileID: -6632194752431957586, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1616,8 +1623,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+<<<<<<< Updated upstream
   m_fontSize: 50
   m_fontSizeBase: 50
+=======
+  m_fontSize: 55
+  m_fontSizeBase: 55
+>>>>>>> Stashed changes
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1654,7 +1666,11 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< Updated upstream
   m_margin: {x: 0, y: 0, z: -1.5356445, w: 40.80484}
+=======
+  m_margin: {x: 0, y: 0, z: -1.5356445, w: 0}
+>>>>>>> Stashed changes
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1977,10 +1993,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 6697056254826211843, guid: 19d8a0cc65fd8954fbc2a287cf866c7b, type: 3}
       propertyPath: startTime
       value: 10
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 6764676435902998329, guid: 19d8a0cc65fd8954fbc2a287cf866c7b, type: 3}
       propertyPath: m_Name
       value: TimerUI
