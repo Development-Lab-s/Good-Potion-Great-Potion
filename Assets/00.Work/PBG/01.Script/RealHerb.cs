@@ -1,25 +1,39 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RealHerb : Herb
 {
-
-    protected override void Awake()
-    {
-        base.Awake();
-    }
     protected override void Update()
     {
-        base.Update();
+        if(_isSet == false)
+        {
+            base.Update();
+        }
     }
 
-    private void FixedUpdate()
-    {   
-        if(_isSet == false)
-            return;
-    }
-    public override void OnClickInteractable()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(_isSet == false)
-        base.OnClickInteractable();
+        if(collision.gameObject.CompareTag("Pot"))
+        {
+            _isPot = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) 
+    {
+        if(collision.gameObject.CompareTag("Pot"))
+        {
+            _isPot = false;
+        }
+    }
+
+
+    public void OnMouseDown()
+    {
+        if(_isPot)
+        {
+            GameManager.Instance.AddHerb(data);
+        }
     }
 }
