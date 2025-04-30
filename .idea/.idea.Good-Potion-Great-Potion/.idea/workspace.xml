@@ -7,6 +7,7 @@
     <list default="true" id="cc9143fe-cd13-4f96-8247-3f249dc388d0" name="변경" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" afterDir="false" />
@@ -18,6 +19,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
 >>>>>>> Stashed changes
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
       <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
@@ -47,6 +51,7 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
@@ -66,6 +71,8 @@
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,7 +80,11 @@
     "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "git-widget-placeholder": "Base",
+=======
+    "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
     "git-widget-placeholder": "PMC",
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
@@ -89,7 +100,10 @@
     "vue.rearranger.settings.migration": "true"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======

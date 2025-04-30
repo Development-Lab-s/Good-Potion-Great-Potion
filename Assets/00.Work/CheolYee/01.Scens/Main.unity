@@ -737,6 +737,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1929516957
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +913,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929516957}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
 >>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
 =======
