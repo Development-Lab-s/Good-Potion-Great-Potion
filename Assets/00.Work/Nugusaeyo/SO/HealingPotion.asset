@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unlockWeek: 0
   potionImage: {fileID: 6938507106872539919, guid: 2e427f60062ceb14da5674aa67e40646, type: 3}
-  potionName: "\uD56D\uC544\uB9AC"
+  potionName: "\uD68C\uBCF5\uC758 \uD3EC\uC158"
   potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
-  potionLockName: "\uD68C\uBCF5 \uD3EC\uC158"
+  potionLockName: "\uC7A0\uAE40"
   slotImage1: {fileID: 4171932925159491428, guid: 268c60b66d22e03408c39846445d92ac, type: 3}
   slotName1: "\uB808\uD544\uB77C\uD504"
   slotImage2: {fileID: -2689141045834474053, guid: 40fd1c80683203147a9daae2122b8239, type: 3}
