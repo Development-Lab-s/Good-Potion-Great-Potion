@@ -3,9 +3,9 @@ using System.Diagnostics.Tracing;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class HerbRecipeManager : MonoBehaviour
 {
-    public static GameManager Instance {get; private set;}
+    public static HerbRecipeManager Instance {get; private set;}
 
 
     public bool _canProduce = false;

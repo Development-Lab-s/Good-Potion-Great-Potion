@@ -33,7 +33,7 @@ public class RealHerb : Herb
     {
         if(_isPot)
         {
-            GameManager.Instance.AddHerb(data);
+            HerbRecipeManager.Instance.AddHerb(data);
         }
     }
 }
