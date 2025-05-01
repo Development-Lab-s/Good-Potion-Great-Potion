@@ -765,6 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1943729858}
   animator: {fileID: 883010666}
+  customerData: {fileID: 0}
 --- !u!224 &598620908 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4937325640817719817, guid: 19d8a0cc65fd8954fbc2a287cf866c7b, type: 3}
@@ -965,6 +966,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1169930902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169930903}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169930903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169930902}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1222269987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1763,6 +1795,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2050110253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050110255}
+  - component: {fileID: 2050110254}
+  m_Layer: 0
+  m_Name: CustomerChatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2050110254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050110253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191a0122f593ec149807b3a5e611fa30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customerChatUI: {fileID: 1853324472}
+  mainText: {fileID: 1254047662}
+  yesButton: {fileID: 1324390634}
+  whatButton: {fileID: 1397636601}
+--- !u!4 &2050110255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050110253}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2111867293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +1933,10 @@ PrefabInstance:
     - target: {fileID: 4249492546060197437, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
       propertyPath: m_Name
       value: MoneyManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4249492546060197437, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6415313191941962742, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2069,7 +2153,9 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 446697904}
   - {fileID: 2291952478720571485}
+  - {fileID: 6027045601056861676}
+  - {fileID: 1169930903}
+  - {fileID: 2050110255}
   - {fileID: 434634425}
   - {fileID: 2111867296}
-  - {fileID: 6027045601056861676}
   - {fileID: 1312084272}
