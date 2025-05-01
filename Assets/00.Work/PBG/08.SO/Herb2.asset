@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Herb2
   m_EditorClassIdentifier: 
   herbName: B
-  herbIcon: {fileID: -9116823752206262624, guid: f5564ed69e198fa419d20ab3fe794580, type: 3}
+  herbIcon: {fileID: -9116823752206262624, guid: 978748dc497777b48b95175ccc4ad082, type: 3}
