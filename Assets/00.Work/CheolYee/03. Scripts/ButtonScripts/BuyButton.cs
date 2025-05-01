@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class BuyButton : MonoBehaviour
 {
+    [SerializeField] BuyMoneySO moneySO;
+    [SerializeField] private int index;
     public void ItemBuy()
     {
-        MoneyManager.Instance.SpendMoney(100);
+        MoneyManager.Instance.SpendMoney(moneySO.value[index - 1]);
     }
 }
