@@ -7,7 +7,11 @@ public class HerbButton : MonoBehaviour
     [SerializeField] private HerbDataSO data;
     public void SetHerb()
     {    
-        Herb newHerb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
-        newHerb.Initialized(data);
+        if(herb._inHand == false)
+        {
+            Herb newHerb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
+            newHerb.Initialized(data);
+            herb._inHand = true;
+        }
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RealHerb : Herb
 {
+
+    [SerializeField] private HerbButton herbButton;
     protected override void Update()
     {
         if(_isSet == false)

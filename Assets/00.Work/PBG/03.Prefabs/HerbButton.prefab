@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   herb: {fileID: 2202034769099541740, guid: fe68107e6f7d06d429887dd50bcb25c7, type: 3}
   data: {fileID: 11400000, guid: c5853630d9778f144bb8760f80b6d2d1, type: 2}
+  _inHand: 0
 --- !u!1 &8961475634407238101
 GameObject:
   m_ObjectHideFlags: 0
