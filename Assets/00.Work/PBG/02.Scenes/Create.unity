@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d5b5898a28fdc40be18ddce0b06ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _page: -1
+  _page: 1
   herbPanel1: {fileID: 1665517065}
   herbPanel2: {fileID: 1378596493}
   herbPanel3: {fileID: 2094178480}
@@ -3071,6 +3071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeImageUi: {fileID: 1287314373}
+  herb: {fileID: 2202034769099541740, guid: fe68107e6f7d06d429887dd50bcb25c7, type: 3}
   deleteButton: {fileID: 1271344232}
 --- !u!1 &1287314372
 GameObject:
@@ -3517,6 +3518,7 @@ GameObject:
   - component: {fileID: 1665517069}
   - component: {fileID: 1665517068}
   - component: {fileID: 1665517067}
+  - component: {fileID: 1665517070}
   m_Layer: 5
   m_Name: HerbButtonPanel
   m_TagString: Untagged
@@ -3611,6 +3613,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665517065}
   m_CullTransparentMesh: 1
+--- !u!114 &1665517070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665517065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fb86b07f348694b893b11cdf639338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1684866446
 PrefabInstance:
   m_ObjectHideFlags: 0

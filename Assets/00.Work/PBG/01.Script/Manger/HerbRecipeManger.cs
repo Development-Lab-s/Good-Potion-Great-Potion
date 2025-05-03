@@ -41,17 +41,92 @@ public class HerbRecipeManager : MonoBehaviour
 
     public void CheckCombination()
     {
-        if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "A" && selectedHerbs[1].herbName == "B")
-        {
-            Debug.Log("포션 1 성공");
-        }
-        else if (selectedHerbs[0].herbName == "A" && selectedHerbs[1].herbName == "B" && selectedHerbs[2].herbName == "C")
-        {
-            Debug.Log("포션 2 성공");
-        }
+        
+        LowHerbCombination(); //하급 포션 레시피
+
+        MiidleHerbCombination(); //중급 포션 레시피
 
         _canProduce = false;
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
+    }
+
+
+
+
+    public void LowHerbCombination()
+    {
+        if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "A" && selectedHerbs[1].herbName == "E")
+        {
+            Debug.Log("회복 포션");
+        }
+
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C" && selectedHerbs[1].herbName == "F")
+        {
+            Debug.Log("힘 포션");
+        }
+
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "D" && selectedHerbs[1].herbName == "B")
+        {
+            Debug.Log("정신정화포션");
+        }
+
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "F" && selectedHerbs[1].herbName == "B")
+        {
+            Debug.Log("속도증가포션");
+        }
+
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C" && selectedHerbs[1].herbName == "B")
+        {
+            Debug.Log("활력포션");
+        }
+
+        else
+        {
+            Debug.Log("수상한 포션");
+        }
+    }
+
+    public void MiidleHerbCombination()
+    {
+        if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C2" && selectedHerbs[1].herbName == "F2")
+        {
+            Debug.Log("기억력포션");
+        }
+        
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C2" && selectedHerbs[1].herbName == "H2")
+        {
+            Debug.Log("기억제거포션");
+        }
+
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "E2" && selectedHerbs[1].herbName == "B2")
+        {
+            Debug.Log("행운포션");
+        }
+
+        else if (selectedHerbs[0].herbName == "A2" && selectedHerbs[1].herbName == "B2" && selectedHerbs[2].herbName == "C")
+        {
+            Debug.Log("신경강화포션");
+        }
+
+        else if (selectedHerbs[0].herbName == "D2" && selectedHerbs[1].herbName == "B" && selectedHerbs[2].herbName == "F")
+        {
+            Debug.Log("고속점프포션");
+        }
+
+        else if (selectedHerbs[0].herbName == "B2" && selectedHerbs[1].herbName == "D" && selectedHerbs[2].herbName == "C")
+        {
+            Debug.Log("하루집중포션");
+        }
+
+        else if (selectedHerbs[0].herbName == "F2" && selectedHerbs[1].herbName == "E" && selectedHerbs[2].herbName == "A")
+        {
+            Debug.Log("불면회복포션");
+        }
+
+        else
+        {
+            Debug.Log("수상한 포션");
+        }
     }
 
     
