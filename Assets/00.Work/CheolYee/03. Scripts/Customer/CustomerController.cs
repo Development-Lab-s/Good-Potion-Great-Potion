@@ -1,67 +1,43 @@
-using System;
-using _00.Work.CheolYee._05._SO.CustomerChatSO;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random = UnityEngine.Random;
+using TMPro;
+using UnityEngine.UI;
 
 namespace _00.Work.CheolYee._03._Scripts.Customer
 {
     public class CustomerController : MonoBehaviour
     {
-        public static CustomerController Instance {get; private set;}
+        public GameObject customerChatUI;
+        public TextMeshProUGUI mainText;
+        public Button yesButton;
+        public Button whatButton;
         
-        public SpriteRenderer spriteRenderer;
-        public Animator animator;
-        
-        public CustomerDataSo customerData;
+        private System.Action _onYesAction;
+        private System.Action _onWhatAction;
 
         private static readonly int Enter = Animator.StringToHash("Enter");
-        private static readonly int Exit = Animator.StringToHash("Exit");
-
-        private void Awake()
+        public void ShowChat(string text, System.Action onYes, System.Action onWhat)
         {
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(this.gameObject);
-            }
-            else
-            {
-                if (Instance != this)
-                    Destroy(this.gameObject);
-            }
+            mainText.text = text;
+            customerChatUI.SetActive(true);
+
+            _onYesAction = onYes;
+            _onWhatAction = onWhat;
         }
 
-        public void SetCustomerSprite(CustomerDataSo data)
+        public void OnClickYes()
         {
-            customerData = data;
-            spriteRenderer.sprite = customerData.customerSprite;
+            customerChatUI.SetActive(false);
+            SceneManager.Instance.currentCustomerData = CustomerChatManager.Instance.customerDataSo; // 넘어가기 전에 손님의 정보 저장
+            _onYesAction?.Invoke();
+            Debug.Log("제작 씬으로 이동합니다");
         }
 
-        public string GetChatLine() // 현재 손님의 대사를 랜덤으로 가져오는 메서드
+        public void OnClickWhat()
         {
-            string currentLine = customerData.mainLines
-                [Random.Range(0, customerData.mainLines.Length)];
-            
-            return currentLine;
+            customerChatUI.SetActive(false);
+            _onWhatAction?.Invoke();
+            CustomerChatManager.Instance.animator.SetTrigger(Enter);
         }
-        
-        public string GetPotion() // 현재 손님이 주문하는 포션을 랜덤으로 가져오는 메서드
-        {
-            string currentPotion = customerData.requiredPotions;
-            
-            return currentPotion;
-        }
-        
-        public void PlayEnterAnimation()
-        {
-            animator.SetTrigger(Enter);
-        }
-
-        public void PlayExitAnimation()
-        {
-            animator.SetTrigger(Exit);
-        }
-
     }
 }

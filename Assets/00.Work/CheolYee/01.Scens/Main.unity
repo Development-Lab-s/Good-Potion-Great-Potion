@@ -760,12 +760,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 565291686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4125607f7e30d934288f143839264b73, type: 3}
+  m_Script: {fileID: 11500000, guid: 191a0122f593ec149807b3a5e611fa30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1943729858}
-  animator: {fileID: 883010666}
-  customerData: {fileID: 0}
+  customerChatUI: {fileID: 1853324472}
+  mainText: {fileID: 1254047662}
+  yesButton: {fileID: 1324390634}
+  whatButton: {fileID: 1397636601}
 --- !u!224 &598620908 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4937325640817719817, guid: 19d8a0cc65fd8954fbc2a287cf866c7b, type: 3}
@@ -966,37 +967,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1169930902
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1169930903}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1169930903
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169930902}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1222269987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1370,7 +1340,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324390635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 565291688}
+        m_TargetAssemblyTypeName: _00.Work.CheolYee._03._Scripts.Customer.CustomerController,
+          Assembly-CSharp
+        m_MethodName: OnClickYes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324390635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,7 +1474,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1397636602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 565291688}
+        m_TargetAssemblyTypeName: _00.Work.CheolYee._03._Scripts.Customer.CustomerController,
+          Assembly-CSharp
+        m_MethodName: OnClickWhat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1397636602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1530,6 +1526,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397636599}
   m_CullTransparentMesh: 1
+--- !u!1 &1574765318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574765320}
+  - component: {fileID: 1574765319}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1574765319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574765318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a201074c97f3154ca22b3674649d9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDay: 1
+  currentWeek: 1
+  customerIndexToDay: 0
+  isFinishedCrafting: 0
+  currentCustomerData: {fileID: 0}
+  onTimerFinished:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1574765320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574765318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 869.5083, y: 680.2849, z: 2.921069}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1580753512 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1171854959590819429, guid: 19d8a0cc65fd8954fbc2a287cf866c7b, type: 3}
@@ -1804,7 +1852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2050110255}
-  - component: {fileID: 2050110254}
+  - component: {fileID: 2050110256}
   m_Layer: 0
   m_Name: CustomerChatManager
   m_TagString: Untagged
@@ -1812,22 +1860,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2050110254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050110253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191a0122f593ec149807b3a5e611fa30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customerChatUI: {fileID: 1853324472}
-  mainText: {fileID: 1254047662}
-  yesButton: {fileID: 1324390634}
-  whatButton: {fileID: 1397636601}
 --- !u!4 &2050110255
 Transform:
   m_ObjectHideFlags: 0
@@ -1843,6 +1875,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050110256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050110253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4125607f7e30d934288f143839264b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1943729858}
+  animator: {fileID: 883010666}
+  customerDataList: {fileID: 11400000, guid: 2ba908aa83f63b64bb11bab28823657a, type: 2}
+  customerDataSo: {fileID: 0}
 --- !u!1 &2111867293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,8 +2202,8 @@ SceneRoots:
   - {fileID: 446697904}
   - {fileID: 2291952478720571485}
   - {fileID: 6027045601056861676}
-  - {fileID: 1169930903}
   - {fileID: 2050110255}
+  - {fileID: 1574765320}
   - {fileID: 434634425}
   - {fileID: 2111867296}
   - {fileID: 1312084272}
