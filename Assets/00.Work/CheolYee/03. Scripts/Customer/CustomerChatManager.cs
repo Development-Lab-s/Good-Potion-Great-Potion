@@ -15,9 +15,16 @@ public class CustomerChatManager : MonoBehaviour
         
         public CustomerDataSo customerDataSo; // 랜덤으로 돌린 손님의 진짜 데이터가 저장될 SO 저장변수
 
-        private static readonly int Enter = Animator.StringToHash("Enter"); // 그냥 스트링으로 하는 거 보다 hash가 더 좋아서 함
-        private static readonly int Exit = Animator.StringToHash("Exit"); // 그냥 스트링으로 하는 거 보다 hash가 더 좋아서 함 2
+        private static readonly int Enter = Animator.StringToHash("Enter"); // 스트링으로 하는 거 보다 hash가 더 좋아서 함
+        private static readonly int Exit = Animator.StringToHash("Exit"); // 스트링으로 하는 거 보다 hash가 더 좋아서 함 2
 
+        private int _randomIndex = -1; //대사 불러올 때 랜덤 값을 저장할 변수
+        public string SelectedLine { get; private set; } // 랜덤값의 인덱스로 가져온 대사가 저장될 변수
+        public string SelectedHint {get; private set;}// 랜덤값의 인덱스로 가져온 힌트가 저장될 변수
+        public string SelectedHint2 {get; private set;}// 랜덤값의 인덱스로 가져온 힌트(2번째)가 저장될 변수
+        public string SelectedExitLine {get; private set;}// 랜덤값의 인덱스로 가져온 퇴장 대사가 저장될 변수
+        public string SelectedForcedExitLine {get; private set;}// 랜덤값의 인덱스로 가져온 강제퇴장 대사가 저장될 변수
+        
         private void Awake() // 싱글톤 기본
         {
             if (Instance == null)
@@ -39,12 +46,13 @@ public class CustomerChatManager : MonoBehaviour
 
         public void GetRandomCustomerData()
         {
-            switch (SceneManager.Instance.currentWeek) // 몇주차인지 switch 문으로 확인하기
+            switch (SceneManagerScript.Instance.currentWeek) // 몇주차인지 switch 문으로 확인하기
             {
                 case 1:
                 {
-                    customerDataSo = customerDataList.customerLists1Week // 손님의 데이터를 랜덤으로 뽑아와 변수에 저장
-                        [Random.Range(0, customerDataList.customerLists1Week.Count)];
+                    customerDataSo = customerDataList.customerLists1Week // 손님의 데이터(1주차)중 한명을
+                        [Random.Range(0, customerDataList.customerLists1Week.Count)]; // 랜덤으로 뽑아와 변수에 저장
+                    PickRandomLine(); // 대사랑 힌트도 뽑아서 변수저장
                     break; //스위치문 탈출
                 }
                 case 2:
@@ -67,12 +75,14 @@ public class CustomerChatManager : MonoBehaviour
             spriteRenderer.sprite = customerDataSo.customerSprite; // SO에 있는 sprite를 렌더러 스프라이트로 바꿔줌
         }
 
-        public string GetChatLine() // 현재 손님의 대사를 랜덤으로 가져오는 메서드
+        public void PickRandomLine()
         {
-            string currentLine = customerDataSo.mainLines // 현재 출력된 대사를 SO에서 랜덤으로 받아와 currentLine 변수에 저장
-                [Random.Range(0, customerDataSo.mainLines.Length)];
-        
-            return currentLine; // 가져온 대사 데이터 리턴
+            _randomIndex = Random.Range(0, customerDataSo.mainLines.Length); // 랜덤으로 값 가져오기
+            SelectedLine = customerDataSo.mainLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 대사 가져오기
+            SelectedHint = customerDataSo.hint[_randomIndex]; // 랜덤값의 인덱스에 해당하는 힌트 가져오기
+            SelectedHint2 = customerDataSo.hint2[_randomIndex]; // 랜덤값의 인덱스에 해당하는 힌트 가져오기
+            SelectedExitLine = customerDataSo.exitLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 강제퇴장대사 가져오기
+            SelectedForcedExitLine = customerDataSo.forcedExitLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 강제퇴장대사 가져오기
         }
     
         public string GetPotion() // 현재 손님이 주문하는 포션을 가져오는 메서드

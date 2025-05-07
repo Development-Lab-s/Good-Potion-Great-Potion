@@ -16,4 +16,16 @@ MonoBehaviour:
   mainLines:
   - "\uD14C\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 1"
   - "\uD14C\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 2"
+  hint:
+  - "\uD78C\uD2B8 1"
+  - "\uD78C\uD2B8 2"
+  hint2:
+  - "\uD78C\uD2B8 2-1"
+  - "\uD78C\uD2B8 2-2"
+  exitLines:
+  - "\uB098\uAC04\uB2E4"
+  - "\uB098\uAC04\uB2E4 2"
+  forcedExitLines:
+  - "\uAC15\uD1F4"
+  - "\uAC15\uD1F4 2"
   requiredPotions: "\uC5C4\uB9C8"
