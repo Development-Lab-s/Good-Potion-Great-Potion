@@ -5,7 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc9143fe-cd13-4f96-8247-3f249dc388d0" name="변경" comment="">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Good-Potion-Great-Potion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/01.Scens/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/LABdigital SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/LABdigital SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/PBG/04.Sprites/Pot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/PBG/04.Sprites/Pot.png.meta" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/06. Fonts/Galmuri11 SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+>>>>>>> Stashed changes
+=======
       <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/GoldUI.cs" afterDir="false" />
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +53,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/00.Work/CheolYee/03. Scripts/ButtonScripts/TestButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@22ebcc83720a/Runtime/TMP/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -26,12 +63,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
+<<<<<<< Updated upstream
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Unity 에디터에 연결.Unity 에디터에 연결.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PMC&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
+    "git-widget-placeholder": "Base",
+=======
     "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+    "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+    "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+<<<<<<< HEAD
+=======
+    "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+    "git-widget-placeholder": "PMC",
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -39,6 +138,28 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 69ab33a (ADD CustomerAnim, ConversationUI)
+=======
+>>>>>>> parent of 63c9ea3 (CommitErrorLastFixed)
   }
 }]]></component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
