@@ -8,11 +8,7 @@ public class StickTrigger : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PosIndex posindex;
-        if (collision.TryGetComponent(out posindex))
-        {
-            stickDrag.OnCheckPointTrigger(posindex.posIndex);
-        }
+      
 
     }
 }
