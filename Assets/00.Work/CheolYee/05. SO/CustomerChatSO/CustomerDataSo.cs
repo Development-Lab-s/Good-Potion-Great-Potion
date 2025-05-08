@@ -16,6 +16,8 @@ namespace _00.Work.CheolYee._05._SO.CustomerChatSO
         public string[] forcedExitLines;
         [Header("PotionData")]
         public string requiredPotions;
+        [Header("Waiting Chat Time")]
+        public float waitingChatTime;
 
         [ContextMenu("Create Line")]
         public void CreateLine()

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
   m_Name: CDS_test2
   m_EditorClassIdentifier: 
-  customerSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  customerSprite: {fileID: 1893342245977025725, guid: 6bff6891c99451f45b59f1e79fa3a317, type: 3}
   mainLines:
   - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 1"
   - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 2"
@@ -23,9 +23,10 @@ MonoBehaviour:
   - "\uD788\uC774\uC778\uD2B82-1"
   - "\uD788\uC774\uC778\uD2B82-2"
   exitLines:
-  - "\uBB3C\uC57D \uBC1B\uACE0 \uB098\uAC10"
-  - "\uBB3C\uC57D \uBC1B\uACE0 \uB098\uAC102"
+  - "\uAC10\uC0AC\uD574\uC694!!!!"
+  - "\uAC10\uC0AC\uD574\uC694!!!!2"
   forcedExitLines:
-  - "\uAC15\uC81C \uD1F4\uC7A5\uD55C\uB2E4"
-  - "\uAC15\uC81C \uD1F4\uC7A5\uD55C\uB2E4 2"
+  - "\uC774\uAC78 \uBABB\uD558\uB0D0"
+  - "\uC774\uAC78 \uBABB\uD558\uB0D02"
   requiredPotions: "\uC544\uBE60"
+  waitingChatTime: 0.05

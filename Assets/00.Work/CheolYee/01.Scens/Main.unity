@@ -243,7 +243,7 @@ MonoBehaviour:
       - m_Target: {fileID: 565291688}
         m_TargetAssemblyTypeName: _00.Work.CheolYee._03._Scripts.Customer.CustomerController,
           Assembly-CSharp
-        m_MethodName: OnClickRealYes
+        m_MethodName: OnClickYes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1628,8 +1628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD14C\uC5D0\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0\uC774\uBE48\uB2E4.\n\uD14C\uC5D0\uC2A4\uD2B8
-    \uBA54\uC2DC\uC9C0\uC774\uBE48\uB2E4."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
   m_sharedMaterial: {fileID: -6632194752431957586, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
@@ -1721,7 +1720,7 @@ GameObject:
   - component: {fileID: 1312084273}
   m_Layer: 0
   m_Name: Customer
-  m_TagString: Untagged
+  m_TagString: CustomerAnimator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2213,6 +2212,7 @@ MonoBehaviour:
   currentWeek: 1
   customerIndexToDay: 0
   isFinishedCrafting: 0
+  isSuccessCrafting: 0
   currentCustomerData: {fileID: 0}
   onTimerFinished:
     m_PersistentCalls:
@@ -2559,7 +2559,7 @@ GameObject:
   - component: {fileID: 1943729858}
   m_Layer: 0
   m_Name: CustomerRenderer
-  m_TagString: Untagged
+  m_TagString: CustomerRenderer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2678,10 +2678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125607f7e30d934288f143839264b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1943729858}
-  animator: {fileID: 1312084274}
   customerDataList: {fileID: 11400000, guid: 2ba908aa83f63b64bb11bab28823657a, type: 2}
   customerDataSo: {fileID: 0}
+  spriteRenderer: {fileID: 1943729858}
+  animator: {fileID: 1312084274}
 --- !u!1 &2111867293
 GameObject:
   m_ObjectHideFlags: 0

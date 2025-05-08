@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Pot
   - Herb
+  - CustomerAnimator
+  - CustomerRenderer
   layers:
   - Default
   - TransparentFX
