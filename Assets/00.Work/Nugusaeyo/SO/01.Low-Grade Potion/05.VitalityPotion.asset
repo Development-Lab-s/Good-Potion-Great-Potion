@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: 05.VitalityPotion
+  m_EditorClassIdentifier: 
+  unlockWeek: 0
+  potionImage: {fileID: -7767047840915858998, guid: 98514a31e987791428db0620533dca87, type: 3}
+  potionName: "\uC18D\uB3C4 \uC99D\uAC00 \uD3EC\uC158"
+  potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  potionLockName: "\uD3EC\uC158 \uC7A0\uAE40"
+  slotImage1: {fileID: 5228242027498588030, guid: c6d69aee19a2d6f45895b76e6f2157f7, type: 3}
+  slotName1: "\uD06C\uB9BC\uC18C\uBA38"
+  slotImage2: {fileID: -9116823752206262624, guid: d65d79c892626ff4ca463444ded07000, type: 3}
+  slotName2: "\uC194\uB80C\uB514\uB974"
+  slotImage3: {fileID: 0}
+  slotName3: 
+  slotLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  slotLockName: "\uC7A0\uAE40"
