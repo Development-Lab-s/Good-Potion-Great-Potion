@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: 12.SleepingPotion
+  m_EditorClassIdentifier: 
+  unlockWeek: 1
+  potionImage: {fileID: -8015641449687395100, guid: e2252186e224a994f8b239ffa60635ad, type: 3}
+  potionName: "\uBD88\uBA74 \uD68C\uBCF5\uC81C"
+  potionLockImg: {fileID: 0}
+  potionLockName: 
+  slotImage1: {fileID: -2631917811296486490, guid: 4ab0e17fa6ea37d42a02dd4e1ff4d78f, type: 3}
+  slotName1: "\uC5D0\uB9AC\uC2A4\uD2F0\uC544"
+  slotImage2: {fileID: 4171932925159491428, guid: 2a39bb5c20e4ce242b478a351042f22a, type: 3}
+  slotName2: "\uAC94\uBC14\uB780"
+  slotImage3: {fileID: -2689141045834474053, guid: 62a3e1f74c8422d4b8cc64e8d1728e1f, type: 3}
+  slotName3: "\uB808\uD544\uB77C\uD504"
+  slotLockImg: {fileID: 0}
+  slotLockName: 
