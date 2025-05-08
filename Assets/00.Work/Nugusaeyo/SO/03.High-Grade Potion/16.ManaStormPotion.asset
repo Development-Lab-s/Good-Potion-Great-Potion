@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: 16.ManaStormPotion
   m_EditorClassIdentifier: 
-  unlockWeek: 0
+  unlockWeek: 2
   potionImage: {fileID: 8974925780899035532, guid: eea85f28fdfea5f4bb74b435733221b9, type: 3}
   potionName: "\uB9C8\uB098 \uD3ED\uD48D\uC758 \uD3EC\uC158"
   potionLockImg: {fileID: 0}

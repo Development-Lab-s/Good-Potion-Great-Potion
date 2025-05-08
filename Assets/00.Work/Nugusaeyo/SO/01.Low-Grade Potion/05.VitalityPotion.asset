@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 05.VitalityPotion
   m_EditorClassIdentifier: 
   unlockWeek: 0
-  potionImage: {fileID: -7767047840915858998, guid: 98514a31e987791428db0620533dca87, type: 3}
-  potionName: "\uC18D\uB3C4 \uC99D\uAC00 \uD3EC\uC158"
+  potionImage: {fileID: -5566853201048301313, guid: 859b320b52da0ea429a7b9a6ccbc2b5f, type: 3}
+  potionName: "\uD65C\uB825\uC758 \uD3EC\uC158"
   potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
   potionLockName: "\uD3EC\uC158 \uC7A0\uAE40"
   slotImage1: {fileID: 5228242027498588030, guid: c6d69aee19a2d6f45895b76e6f2157f7, type: 3}

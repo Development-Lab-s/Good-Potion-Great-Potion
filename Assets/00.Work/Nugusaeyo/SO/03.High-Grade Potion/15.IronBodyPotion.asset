@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: 15.IronBodyPotion
   m_EditorClassIdentifier: 
-  unlockWeek: 0
+  unlockWeek: 2
   potionImage: {fileID: -8694482708274429852, guid: ee578a7512da8d846a0d34dc5f6a1e9c, type: 3}
   potionName: "\uAE08\uAC15\uBD88\uAD34\uC758 \uD3EC\uC158"
   potionLockImg: {fileID: 0}

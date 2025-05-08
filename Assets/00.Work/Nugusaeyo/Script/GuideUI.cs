@@ -36,7 +36,7 @@ public class GuideUI : MonoBehaviour
     private void Start()
     {
         unlockWeek = _guideSO.unlockWeek;
-        day = 6;
+        day = 12;
 
         if (day / 4 >= unlockWeek)
         {
@@ -45,11 +45,8 @@ public class GuideUI : MonoBehaviour
             potionName.text = _guideSO.potionName;
 
             slotImg1.sprite = _guideSO.slotImage1;
-            slotImg1.SetNativeSize();
             slotImg2.sprite = _guideSO.slotImage2;
-            slotImg2.SetNativeSize();
             slotImg3.sprite = _guideSO.slotImage3;
-            slotImg3.SetNativeSize();
             slotName1.text = _guideSO.slotName1;
             slotName2.text = _guideSO.slotName2;
             slotName3.text = _guideSO.slotName3;

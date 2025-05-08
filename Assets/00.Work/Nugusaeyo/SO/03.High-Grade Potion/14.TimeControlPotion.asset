@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: 14.TimeControlPotion
   m_EditorClassIdentifier: 
-  unlockWeek: 0
+  unlockWeek: 2
   potionImage: {fileID: 6220589446371522360, guid: 4939c6b5c1cac3c41b607ea816e310d6, type: 3}
   potionName: "\uBCC0\uC2E0\uC758 \uBB18\uC57D"
   potionLockImg: {fileID: 0}
