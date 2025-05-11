@@ -5,16 +5,18 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class ClockHand : MonoBehaviour
 {
+    private CamShake _camShake;
     private TimerLogic _timerLogic;
     private FinishRotation _finishRotation;
     private bool _finishCheck = false;
     private int _finishCount;
-
     
-    private void Start()
+    
+    private void Awake()
     {
         _timerLogic = GameObject.FindAnyObjectByType<TimerLogic>();
         _finishRotation = GameObject.FindAnyObjectByType<FinishRotation>();
+        _camShake = GameObject.FindAnyObjectByType<CamShake>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +33,9 @@ public class ClockHand : MonoBehaviour
             _finishCheck = false;
         }
     }
+
+    [SerializeField] ParticleSystem particlePrefab;
+    [SerializeField] Transform particleTrm;
     private void Update()
     {
         if (_finishCheck)
@@ -39,6 +44,10 @@ public class ClockHand : MonoBehaviour
             {
                 _timerLogic.ClockHandDir();
                 _timerLogic.ClockHandSpeed();
+
+                ParticleSystem particle = Instantiate(particlePrefab);
+                particle.gameObject.transform.position = particleTrm.position;
+                particle.Play();
                 SquareScale();
                 _finishCount++;
                 _finishRotation.FinishRotaton(true);
@@ -48,16 +57,19 @@ public class ClockHand : MonoBehaviour
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
-                Time.timeScale = 0;
+                _timerLogic.ClockHandStop();
+                _camShake.CameraShakeStop(false);
             }
         }
         if (_finishCount == 3)
         {
-            Time.timeScale = 0;
+            _timerLogic.ClockHandStop();
+            _camShake.CameraShakeStop(false);
         }
     }
     private void SquareScale()
     {
         transform.localScale -= new Vector3(0.09f,0f,0f);
     }
+    
 }

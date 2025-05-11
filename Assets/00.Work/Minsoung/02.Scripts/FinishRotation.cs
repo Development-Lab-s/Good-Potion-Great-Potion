@@ -31,7 +31,6 @@ public class FinishRotation : MonoBehaviour
     {
         Vector3 angle = new Vector3(0, 0, Random.Range(30, 310));
         transform.Rotate(angle);
-        Debug.Log(angle);
         _currentRotation = false;
     }
 }

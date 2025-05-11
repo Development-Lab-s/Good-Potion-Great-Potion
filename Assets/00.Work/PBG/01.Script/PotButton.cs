@@ -1,10 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PotButton : MonoBehaviour
 {
     [SerializeField] private ChangeImageUi changeImageUi;
-    private string targetTag = "Herb";
+    private string targetTag = "Herb"; 
     public Button deleteButton;
 
     private void Start()
