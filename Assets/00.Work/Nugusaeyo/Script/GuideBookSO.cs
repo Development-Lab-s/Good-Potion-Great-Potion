@@ -3,8 +3,13 @@
 [CreateAssetMenu(menuName ="SO/GuideBookSO")]
 public class GuideBookSO : ScriptableObject
 {
+    public int unlockWeek;
+
     public Sprite potionImage;
     public string potionName;
+
+    public Sprite potionLockImg;
+    public string potionLockName;
 
     public Sprite slotImage1;
     public string slotName1;
@@ -14,4 +19,7 @@ public class GuideBookSO : ScriptableObject
 
     public Sprite slotImage3;
     public string slotName3;
+
+    public Sprite slotLockImg;
+    public string slotLockName;
 }

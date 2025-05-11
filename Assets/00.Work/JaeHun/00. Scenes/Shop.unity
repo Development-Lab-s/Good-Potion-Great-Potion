@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 100G
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: index
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: moneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button (1)
@@ -1949,7 +1957,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &748175703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1967,7 +1975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -839, y: -406}
+  m_AnchoredPosition: {x: 857, y: 436}
   m_SizeDelta: {x: 120.7193, y: 111.0104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748175704
@@ -2735,7 +2743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -15
+      value: -191
       objectReference: {fileID: 0}
     - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3002,6 +3010,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 100G
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: index
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: moneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button (2)
@@ -3103,6 +3119,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 100G
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: index
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: moneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button (3)
@@ -4600,6 +4624,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 100G
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: moneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button

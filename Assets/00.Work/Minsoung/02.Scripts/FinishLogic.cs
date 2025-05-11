@@ -71,4 +71,5 @@ public class ClockHand : MonoBehaviour
     {
         transform.localScale -= new Vector3(0.09f,0f,0f);
     }
+    
 }

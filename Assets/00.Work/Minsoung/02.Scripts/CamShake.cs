@@ -21,7 +21,7 @@ public class CamShake : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _canSpaceKey == true)
         {
             StartCoroutine(Shake(1f));
-            Camera.main.orthographicSize = Camera.main.orthographicSize - 0.9f;
+            Camera.main.orthographicSize = Camera.main.orthographicSize - 0.5f;
             _Count++;
         }
     }

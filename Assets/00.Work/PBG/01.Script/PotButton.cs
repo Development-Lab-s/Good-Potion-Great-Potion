@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PotButton : MonoBehaviour
 {
-    private string targetTag = "Herb";
+    [SerializeField] private ChangeImageUi changeImageUi;
+    private string targetTag = "Herb"; 
     public Button deleteButton;
 
     private void Start()
@@ -19,16 +20,18 @@ public class PotButton : MonoBehaviour
     public void DeleteTaggedObjects()
     {
         // 해당 태그를 가진 모든 오브젝트 찾기
-        GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(targetTag);
+        Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None);
         
         if (taggedObjects.Length > 0)
         {
             // 모든 태그된 오브젝트 삭제
-            foreach (GameObject obj in taggedObjects)
+            foreach (Herb obj in taggedObjects)
             {
-                Destroy(obj);
+                changeImageUi.ShowResult(obj.data);
+                Destroy(obj.gameObject);
             }
         }
+        
     }
 
     private void OnDestroy()

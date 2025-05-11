@@ -25,7 +25,7 @@ public class TimerLogic : MonoBehaviour
     }
     public void ClockHandSpeed()
     {
-        speed += 40;
+        speed += 50;
     }
     public void ClockHandStop()
     {

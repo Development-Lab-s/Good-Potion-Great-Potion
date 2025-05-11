@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 
@@ -101,7 +101,7 @@ namespace TMPro.Examples
                 if (MovementSmoothing == true)
                 {
                     // Using Smoothing
-                    cameraTransform.position = Vector3.SmoothDamp(cameraTransform.position, desiredPosition, ref currentVelocity, MovementSmoothingValue * Time.fixedDeltaTime);
+                    cameraTransform.position = Vector3.SmoothDamp(cameraTransform.position, desiredPosition, ref currentVelocity, MovementSmoothingValue * UnityEngine.Time.fixedDeltaTime);
                     //cameraTransform.position = Vector3.Lerp(cameraTransform.position, desiredPosition, Time.deltaTime * 5.0f);
                 }
                 else
@@ -111,7 +111,7 @@ namespace TMPro.Examples
                 }
 
                 if (RotationSmoothing == true)
-                    cameraTransform.rotation = Quaternion.Lerp(cameraTransform.rotation, Quaternion.LookRotation(CameraTarget.position - cameraTransform.position), RotationSmoothingValue * Time.deltaTime);
+                    cameraTransform.rotation = Quaternion.Lerp(cameraTransform.rotation, Quaternion.LookRotation(CameraTarget.position - cameraTransform.position), RotationSmoothingValue * UnityEngine.Time.deltaTime);
                 else
                 {
                     cameraTransform.LookAt(CameraTarget);

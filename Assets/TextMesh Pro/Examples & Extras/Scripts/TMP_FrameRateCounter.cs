@@ -63,7 +63,7 @@ namespace TMPro.Examples
 
         void Start()
         {
-            m_LastInterval = Time.realtimeSinceStartup;
+            m_LastInterval = UnityEngine.Time.realtimeSinceStartup;
             m_Frames = 0;
         }
 
@@ -75,7 +75,7 @@ namespace TMPro.Examples
             last_AnchorPosition = AnchorPosition;
 
             m_Frames += 1;
-            float timeNow = Time.realtimeSinceStartup;
+            float timeNow = UnityEngine.Time.realtimeSinceStartup;
 
             if (timeNow > m_LastInterval + UpdateInterval)
             {
