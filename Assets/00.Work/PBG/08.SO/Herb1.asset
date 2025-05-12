@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
   m_Name: Herb1
   m_EditorClassIdentifier: 
-  herbName: A
+  herbName: RRP
   herbIcon: {fileID: -2689141045834474053, guid: 1ae8b3bf295f9b848bd801427a18f2db, type: 3}
