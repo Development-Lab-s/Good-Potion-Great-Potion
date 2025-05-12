@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
-  m_Name: Herb6
+  m_Name: MiddleHerb 4
   m_EditorClassIdentifier: 
-  herbName: F
-  herbIcon: {fileID: -4380812695539967525, guid: 494e10ff8e860e94f9782436444cc781, type: 3}
+  herbName: D2
+  herbIcon: {fileID: -7779443466022996127, guid: 4418d997fd610d649ad7d29939b2bf17, type: 3}
