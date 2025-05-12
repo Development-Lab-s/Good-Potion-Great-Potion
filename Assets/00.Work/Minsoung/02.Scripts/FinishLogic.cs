@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _00.Work.CheolYee._03._Scripts.Customer.Manager;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
@@ -65,6 +66,7 @@ public class ClockHand : MonoBehaviour
         {
             _timerLogic.ClockHandStop();
             _camShake.CameraShakeStop(false);
+            SceneManagerScript.Instance.LoadToScene(3);
         }
     }
     private void SquareScale()

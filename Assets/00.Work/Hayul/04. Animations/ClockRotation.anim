@@ -428,7 +428,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.9111111
-    functionName: RotatingFalse
+    functionName: CurrentDirection
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

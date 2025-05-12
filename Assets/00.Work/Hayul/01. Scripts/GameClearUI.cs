@@ -1,28 +1,11 @@
-﻿using UnityEngine;
+﻿using _00.Work.CheolYee._03._Scripts.Customer.Manager;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameClearUI : MonoBehaviour
 {
-
-    public static GameObject Instance { get; private set; }
-
-    public int RotaiteCount = 0;
-
-    private void Start()
+    public void BackButtonClicked()
     {
-        if (Instance = null)
-        {
-            Instance = this.gameObject;
-        }
-    }
-
-
-    private void Awake()
-    {
-        gameObject.SetActive(false); // 내 게임 오브젝트를 비활성화
-    }
-    public void Back()
-    {
-        //SceneManager.LoadScene("GameScene"); 다음 씬 넣어야함.
+        SceneManagerScript.Instance.LoadToScene(0);
     }
 }

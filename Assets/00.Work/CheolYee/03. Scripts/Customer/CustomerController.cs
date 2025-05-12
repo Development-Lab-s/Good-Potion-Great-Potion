@@ -59,7 +59,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             // 넘어가기 전에 손님의 정보 저장 (힌트 없음)
             SceneManagerScript.Instance.currentCustomerData = 
                 CustomerChatManager.Instance.customerDataSo; //넘어가기 전에 손님의 정보 저장
-            SceneManagerScript.Instance.LoadToScene("TestCreate");
+            SceneManagerScript.Instance.LoadToScene(1);
             Debug.Log("제작 씬으로 이동합니다");
         }
 

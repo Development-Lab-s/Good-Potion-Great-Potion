@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
@@ -116,6 +117,7 @@ public class HerbRecipeManager : MonoBehaviour
         else
         {
             Debug.Log("수상한 포션");
+            SceneManagerScript.Instance.LoadToScene(2);
         }
         
     }

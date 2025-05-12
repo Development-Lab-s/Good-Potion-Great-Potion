@@ -36,14 +36,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.Manager
             
         }
 
-        public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        public void LoadToScene(int sceneIndex)
         {
-            Debug.Log("씬 로드됨");
-        }
-
-        public void LoadToScene(string sceneName)
-        {
-            SceneManager.LoadScene(sceneName); // 씬 이름으로 이동한다
+            SceneManager.LoadScene(sceneIndex); // 씬 인덱스으로 이동한다
         }
         
         public void FinishTimer()

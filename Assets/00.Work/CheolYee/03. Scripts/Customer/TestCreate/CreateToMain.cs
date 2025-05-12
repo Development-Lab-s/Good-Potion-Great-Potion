@@ -10,7 +10,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.TestCreate
         {
             SceneManagerScript.Instance.isFinishedCrafting = true;
             SceneManagerScript.Instance.isSuccessCrafting = true;
-            SceneManager.LoadScene(3);
+            SceneManagerScript.Instance.LoadToScene(0);
         }
     }
 }
