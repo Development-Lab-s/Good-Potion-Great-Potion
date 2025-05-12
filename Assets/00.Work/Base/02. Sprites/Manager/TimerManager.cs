@@ -57,6 +57,12 @@ namespace _00.Work.Base._02._Sprites.Manager
             StopCoroutine(_countDownCoroutine); //타이머 코루틴 멈춤
             _isRunning = false; //타이머 작동 안하고 있다고 표시
         }
+
+        public void LessTimer(float setTime) // 타이머의 시간을 감소시킬 수 있는 기능
+        {
+            _remainingSeconds -= setTime;
+            UpdateTimerUI();
+        }
         
         //타이머 동작
         private void UpdateTimerUI() //화면에 시간 표시하는 함수
@@ -77,8 +83,8 @@ namespace _00.Work.Base._02._Sprites.Manager
             while (_remainingSeconds > 0) //시간이 0보다 클 시 무한 반복
             {
                 UpdateTimerUI(); //화면에 시간 보여주기
-                yield return new WaitForSeconds(1f); //1초 기다리기
-                _remainingSeconds--; //현재 타이머 시간 1초 감소
+                yield return null; //1초 기다리기
+                _remainingSeconds -= Time.deltaTime; //현재 타이머 시간 1초 감소
             }
 
             
