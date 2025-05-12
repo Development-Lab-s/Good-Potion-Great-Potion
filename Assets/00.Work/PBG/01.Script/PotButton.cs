@@ -6,7 +6,6 @@ public class PotButton : MonoBehaviour
 {
     [SerializeField] private ChangeImageUi changeImageUi;
     [SerializeField] private Herb herb;
-    private string targetTag = "Herb";
     public Button deleteButton;
 
     private void Start()
