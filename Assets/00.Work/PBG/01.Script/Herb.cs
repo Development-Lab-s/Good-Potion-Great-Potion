@@ -11,6 +11,7 @@ public abstract class Herb : MonoBehaviour
     protected bool _isPot = false;
     private Camera cam;
     protected bool _isSet = false;
+    public bool _inHand {get; set;}
 
 
     

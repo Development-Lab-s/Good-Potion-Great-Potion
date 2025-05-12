@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RealHerb : Herb
 {
+
+    [SerializeField] private HerbButton herbButton;
     protected override void Update()
     {
         if(_isSet == false)
@@ -33,7 +35,7 @@ public class RealHerb : Herb
     {
         if(_isPot)
         {
-            GameManager.Instance.AddHerb(data);
+            HerbRecipeManager.Instance.AddHerb(data);
         }
     }
 }

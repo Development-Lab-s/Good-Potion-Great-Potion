@@ -253,6 +253,18 @@ PrefabInstance:
       propertyPath: herbName
       value: PMR
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-4
@@ -377,6 +389,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: BPR
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -640,6 +664,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: BTA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -940,6 +976,18 @@ PrefabInstance:
       propertyPath: herbName
       value: SDR
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2
@@ -1201,6 +1249,18 @@ PrefabInstance:
       propertyPath: herbName
       value: TBR
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-5
@@ -1326,6 +1386,26 @@ PrefabInstance:
       propertyPath: herbName
       value: RGA
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: buyMoneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1992154662}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-1
@@ -1450,6 +1530,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: STA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -2242,10 +2334,6 @@ Transform:
   - {fileID: 1566769036}
   - {fileID: 1703950724}
   - {fileID: 1179635899}
-  - {fileID: 1659749830}
-  - {fileID: 1888687373}
-  - {fileID: 1573777087}
-  - {fileID: 1985969982}
   m_Father: {fileID: 602730734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &449569300
@@ -2373,7 +2461,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 449569299}
+    m_TransformParent: {fileID: 1179635899}
     m_Modifications:
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_text
@@ -2382,11 +2470,11 @@ PrefabInstance:
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 3f3b83cd004505245b53ab7093484102, type: 2}
+      objectReference: {fileID: 11400000, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6026035487574980092, guid: 3f3b83cd004505245b53ab7093484102, type: 2}
+      objectReference: {fileID: -6632194752431957586, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2402,6 +2490,22 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: SND
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: buyMoneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3096,6 +3200,18 @@ PrefabInstance:
       propertyPath: herbName
       value: DSR
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-3
@@ -3196,7 +3312,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 449569299}
+    m_TransformParent: {fileID: 1179635899}
     m_Modifications:
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_text
@@ -3225,6 +3341,22 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: RSR
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: buyMoneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3344,25 +3476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e718559894eacc429fb65c0ee35c3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  herbNames:
-  - RRP
-  - SDR
-  - CSM
-  - BPR
-  - GBR
-  - RMB
-  - RGA
-  - BTA
-  - DSR
-  - PMR
-  - TBR
-  - ATA
-  - STA
-  - DTA
-  - RSR
-  - PST
-  - SPD
-  - SND
 --- !u!4 &1148842937
 Transform:
   m_ObjectHideFlags: 0
@@ -3416,6 +3529,10 @@ Transform:
   - {fileID: 1827627046}
   - {fileID: 331901415}
   - {fileID: 264141554}
+  - {fileID: 1659749830}
+  - {fileID: 1888687373}
+  - {fileID: 1573777087}
+  - {fileID: 1985969982}
   m_Father: {fileID: 449569299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1232555160 stripped
@@ -3904,6 +4021,18 @@ PrefabInstance:
       propertyPath: herbName
       value: ATA
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-6
@@ -4372,7 +4501,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 449569299}
+    m_TransformParent: {fileID: 1179635899}
     m_Modifications:
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_text
@@ -4401,6 +4530,22 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: PST
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: buyMoneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -4526,6 +4671,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: RRP
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -5049,7 +5206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31581b50a74d01429a19aac6ad3cca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 1000
 --- !u!4 &1853406345
 Transform:
   m_ObjectHideFlags: 0
@@ -5071,7 +5228,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 449569299}
+    m_TransformParent: {fileID: 1179635899}
     m_Modifications:
     - target: {fileID: 461221126920675399, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_text
@@ -5100,6 +5257,26 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: SPD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: buyMoneySO
+      value: 
+      objectReference: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -5230,6 +5407,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: CSM
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -5402,6 +5591,18 @@ PrefabInstance:
       propertyPath: herbName
       value: GBR
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 5
@@ -5496,6 +5697,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7781961124660709996, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
   m_PrefabInstance: {fileID: 561929543}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1992154662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+  m_PrefabInstance: {fileID: 160896373}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57269b118bb6d5d4981e32b2f6178c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2052977132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5808,6 +6020,18 @@ PrefabInstance:
       propertyPath: herbName
       value: RMB
       objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 6
@@ -5932,6 +6156,18 @@ PrefabInstance:
     - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: herbName
       value: DTA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683408581981352787, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: herbPrice
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name

@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PotButton : MonoBehaviour
 {
     [SerializeField] private ChangeImageUi changeImageUi;
-    private string targetTag = "Herb"; 
+    [SerializeField] private Herb herb;
     public Button deleteButton;
 
     private void Start()
@@ -27,11 +28,11 @@ public class PotButton : MonoBehaviour
             // 모든 태그된 오브젝트 삭제
             foreach (Herb obj in taggedObjects)
             {
+                herb._inHand = false;
                 changeImageUi.ShowResult(obj.data);
                 Destroy(obj.gameObject);
             }
         }
-        
     }
 
     private void OnDestroy()
