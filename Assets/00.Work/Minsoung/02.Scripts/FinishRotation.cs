@@ -5,8 +5,6 @@ using UnityEngine.UIElements;
 
 public class FinishRotation : MonoBehaviour
 {
-    [SerializeField] private float speed;
-
     private bool _currentRotation = false;
     
     private void Start()
