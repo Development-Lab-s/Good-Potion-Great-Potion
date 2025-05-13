@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace _00.Work.Base._02._Sprites.Manager
