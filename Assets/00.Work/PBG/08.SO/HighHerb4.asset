@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
   m_Name: HighHerb4
   m_EditorClassIdentifier: 
-  herbName: D3
+  herbName: SND
   herbIcon: {fileID: 600708726713020152, guid: 8332c861c2a24494cbc0f4da1dfc56a1, type: 3}
