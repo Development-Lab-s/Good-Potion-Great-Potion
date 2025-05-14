@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
   m_Name: MiddleHerb 1
   m_EditorClassIdentifier: 
-  herbName: A2
+  herbName: RGA
   herbIcon: {fileID: -5365253337230653855, guid: bd1e902ddd1c37247a59f091664d2600, type: 3}
