@@ -11,6 +11,8 @@ public class HerbRecipeManager : MonoBehaviour
 
     public bool _canProduce = false;
     
+    public string _potionName{get; set;}
+
 
     private List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
 
@@ -43,10 +45,12 @@ public class HerbRecipeManager : MonoBehaviour
     public void CheckCombination()
     {
         
-        HerbCombination(); //하급 포션 레시피
+        HerbCombination(); //포션 레시피
 
         _canProduce = false;
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
+        
+        SceneManagerScript.Instance.LoadToScene(2);
     }
 
 
@@ -54,70 +58,90 @@ public class HerbRecipeManager : MonoBehaviour
 
     public void HerbCombination()
     {
-        if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "RRP" && selectedHerbs[1].herbName == "E")
+        if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "RRP" && selectedHerbs[1].herbName == "GBR")
         {
-            Debug.Log("회복 포션");
+            _potionName = "RRPGBR";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "CSM" && selectedHerbs[1].herbName == "F")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "CSM" && selectedHerbs[1].herbName == "RMB")
         {
-            Debug.Log("힘 포션");
+            _potionName = "CSMRMB";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "D" && selectedHerbs[1].herbName == "SDR")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "BPR" && selectedHerbs[1].herbName == "SDR")
         {
-            Debug.Log("정신정화포션");
+            _potionName = "BPRSDR";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "F" && selectedHerbs[1].herbName == "SDR")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "RMB" && selectedHerbs[1].herbName == "SDR")
         {
-            Debug.Log("속도증가포션");
+            _potionName = "RMBSDR";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "CSM" && selectedHerbs[1].herbName == "B")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "CSM" && selectedHerbs[1].herbName == "SDR")
         {
-            Debug.Log("활력포션");
+            _potionName = "CSMSDR";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C2" && selectedHerbs[1].herbName == "F2")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "DSR" && selectedHerbs[1].herbName == "ATA")
         {
-            Debug.Log("기억력포션");
+            _potionName = "DSRATA"; 
         }
         
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "C2" && selectedHerbs[1].herbName == "H2")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "DSR" && selectedHerbs[1].herbName == "DTA")
         {
-            Debug.Log("기억제거포션");
+            _potionName = "DSRDTA";
         }
 
-        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "E2" && selectedHerbs[1].herbName == "B2")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "TBR" && selectedHerbs[1].herbName == "BTA")
         {
-            Debug.Log("행운포션");
+            _potionName = "TBRBTA";
         }
 
-        else if (selectedHerbs[0].herbName == "A2" && selectedHerbs[1].herbName == "B2" && selectedHerbs[2].herbName == "C")
+        else if (selectedHerbs.Count == 2 && selectedHerbs[0].herbName == "SND" && selectedHerbs[1].herbName == "RSR")
         {
-            Debug.Log("신경강화포션");
+            _potionName = "SMDRSR";
         }
 
-        else if (selectedHerbs[0].herbName == "D2" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "F")
+        else if (selectedHerbs[0].herbName == "RGA" && selectedHerbs[1].herbName == "BTA" && selectedHerbs[2].herbName == "CSM")
         {
-            Debug.Log("고속점프포션");
+            _potionName = "RGABTACSM";
         }
 
-        else if (selectedHerbs[0].herbName == "B2" && selectedHerbs[1].herbName == "D" && selectedHerbs[2].herbName == "CSM")
+        else if (selectedHerbs[0].herbName == "PMR" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "RMB")
         {
-            Debug.Log("하루집중포션");
+            _potionName = "PMRSDRRMB";
         }
 
-        else if (selectedHerbs[0].herbName == "F2" && selectedHerbs[1].herbName == "E" && selectedHerbs[2].herbName == "RRP")
+        else if (selectedHerbs[0].herbName == "BTA" && selectedHerbs[1].herbName == "BPR" && selectedHerbs[2].herbName == "CSM")
         {
-            Debug.Log("불면회복포션");
+            _potionName = "BTABPRCSM";
+        }
+
+        else if (selectedHerbs[0].herbName == "ATA" && selectedHerbs[1].herbName == "GBR" && selectedHerbs[2].herbName == "RRP")
+        {
+            _potionName = "ATAGBRRRP";
+        }
+
+        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "DTA" && selectedHerbs[2].herbName == "TBR")
+        {
+            _potionName = "SPDDTATBR";
+        }
+
+        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "RSR" && selectedHerbs[2].herbName == "BPR")
+        {
+            _potionName = "SPDRSRBPR";
+        }
+
+        else if (selectedHerbs[0].herbName == "RSR" && selectedHerbs[1].herbName == "PST" && selectedHerbs[2].herbName == "SND")
+        {
+            _potionName = "RSRPSTSND";
         }
 
         else
         {
-            Debug.Log("수상한 포션");
-            SceneManagerScript.Instance.LoadToScene(2);
+            _potionName = "FAILPOTION";
+            Debug.Log(_potionName);
         }
         
     }

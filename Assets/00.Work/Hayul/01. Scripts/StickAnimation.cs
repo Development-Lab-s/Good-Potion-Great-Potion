@@ -13,6 +13,7 @@ public class StickAnimation : MonoBehaviour
 
     [SerializeField] private UISystemManager systemManager;
     [SerializeField] private GameObject gameClearUI;
+    [SerializeField] private GameObject gameFailUI;
 
     SpriteRenderer spriteRenderer;
 
@@ -85,8 +86,8 @@ public class StickAnimation : MonoBehaviour
         }
         else if (rotationRunCount == maxRotateCount)
         {
+            gameFailUI.SetActive(true);
             Debug.Log("최종 실패하였습니다.");
-            SceneManagerScript.Instance.LoadToScene(0);
         }
 
         currentDirection = -1;

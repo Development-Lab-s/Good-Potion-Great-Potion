@@ -253,6 +253,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &193383768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4249492546060197437, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
+  m_PrefabInstance: {fileID: 2291952478720571485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &193383771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193383768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e187a4789d27cae49ba77b2f9dd3d431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361131394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,18 +1516,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1557,10 +1562,6 @@ PrefabInstance:
     - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3420009395259655326, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123446551204321984, guid: b62c5d30d489d15488e0f3a30339d688, type: 3}
       propertyPath: m_Name
@@ -2211,8 +2212,10 @@ MonoBehaviour:
   currentDay: 1
   currentWeek: 1
   customerIndexToDay: 0
+  isEndToDay: 0
   isFinishedCrafting: 0
   isSuccessCrafting: 0
+  currentRandomIndex: 0
   currentCustomerData: {fileID: 0}
   onTimerFinished:
     m_PersistentCalls:
@@ -2631,7 +2634,7 @@ SpriteRenderer:
   m_Size: {x: 1.22, y: 1.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2050110253
@@ -2773,9 +2776,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoneyManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4249492546060197437, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
+    - target: {fileID: 5462400751209697464, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
+      propertyPath: money
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6415313191941962742, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2820,7 +2823,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4249492546060197437, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 193383771}
   m_SourcePrefab: {fileID: 100100000, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
 --- !u!1001 &6027045601056861676
 PrefabInstance:

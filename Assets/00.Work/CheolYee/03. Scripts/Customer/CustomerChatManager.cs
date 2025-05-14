@@ -27,7 +27,8 @@ public class CustomerChatManager : MonoBehaviour
         
         private static readonly int Enter = Animator.StringToHash("Enter"); // 스트링으로 하는 거 보다 hash가 더 좋아서 함
         private static readonly int Exit = Animator.StringToHash("Exit"); // 스트링으로 하는 거 보다 hash가 더 좋아서 함 2
-        
+        private static readonly int Idle = Animator.StringToHash("Idle"); // 스트링으로 하는 거 보다 hash가 더 좋아서 함 3
+
         private void Awake() // 싱글톤 기본
         {
             if (Instance == null)
@@ -112,6 +113,11 @@ public class CustomerChatManager : MonoBehaviour
         public void PlayExitAnimation()
         {
             animator.SetTrigger(Exit); // 손님 퇴장 애니메이션 재생
+        }
+
+        public void PlayIdleAnimation()
+        {
+            animator.SetTrigger(Idle); //손님 아이들 상태 재생
         }
     }
 }

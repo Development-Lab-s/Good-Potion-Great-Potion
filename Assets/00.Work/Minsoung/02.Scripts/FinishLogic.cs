@@ -60,6 +60,9 @@ public class ClockHand : MonoBehaviour
             {
                 _timerLogic.ClockHandStop();
                 _camShake.CameraShakeStop(false);
+                SceneManagerScript.Instance.isFinishedCrafting = true;
+                SceneManagerScript.Instance.isSuccessCrafting = false;
+                SceneManagerScript.Instance.LoadToScene(0);
             }
         }
         if (_finishCount == 3)
@@ -71,7 +74,7 @@ public class ClockHand : MonoBehaviour
     }
     private void SquareScale()
     {
-        transform.localScale -= new Vector3(0.09f,0f,0f);
+        transform.localScale -= new Vector3(0.01f,0f,0f);
     }
     
 }

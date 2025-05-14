@@ -32,7 +32,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 : CustomerEnterRoutine()); // 아니라면 이거 실행
         }
 
-        private static void CustomerAnimAndRendererSetting()
+        private void CustomerAnimAndRendererSetting()
         {
             if (CustomerChatManager.Instance.animator == null)
             {
@@ -49,6 +49,10 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 if (CustomerChatManager.Instance.spriteRenderer == null)
                 {
                     Debug.LogWarning("Animator 재할당 실패: 태그가 올바른지 확인하세요.");
+                }
+                else
+                {
+                    CustomerChatManager.Instance.GetCustomerSprite(); //스프라이트 설정
                 }
             }
         }
@@ -95,7 +99,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             StartCoroutine(CustomerExitRoutine());
         }
 
-        private IEnumerator CustomerEnterRoutine()
+        private IEnumerator CustomerEnterRoutine() //손님 등장 루틴
         {
             CustomerChatManager.Instance.PlayEnterAnimation();// 등장 애니메이션 실행
 
@@ -111,9 +115,10 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 CustomerChatManager.Instance.customerDataSo.waitingChatTime));
         }
 
-        private IEnumerator CustomerExitRoutine()
+        private IEnumerator CustomerExitRoutine() //손님 퇴장 루틴
         {
             Debug.Log("퇴장 루틴");
+            CustomerChatManager.Instance.PlayIdleAnimation();// 가만히 있는 애니메이션 실행
             //버튼 세팅
             customerChatUI.SetActive(true);
             whatButton.gameObject.SetActive(false);
@@ -127,7 +132,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedExitLine, //퇴장 대사(긍정) 출력
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
             }
-            else
+            else if (!SceneManagerScript.Instance.isSuccessCrafting)
             {
                 StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedForcedExitLine, //퇴장 대사(부정) 출력
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
@@ -138,7 +143,10 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             CustomerChatManager.Instance.PlayExitAnimation();// 퇴장 애니메이션 실행
             
             yield return new WaitForSeconds(1f);
-            EndCustomerCycle();
+            
+            
+            //여기에 손님 정보 초기화하고 다시 손님 오게하면 됨
+            //만약 오늘 손님이 다 왔다면 하루 종료하면 됨
         }
 
         private void EndCustomerCycle() //손님 오늘 몇명왔나 확인하는 메서드

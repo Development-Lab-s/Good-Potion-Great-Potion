@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
   m_Name: CDS_test2
   m_EditorClassIdentifier: 
-  customerSprite: {fileID: 1893342245977025725, guid: 6bff6891c99451f45b59f1e79fa3a317, type: 3}
+  customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
   mainLines:
   - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 1"
   - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 2"
