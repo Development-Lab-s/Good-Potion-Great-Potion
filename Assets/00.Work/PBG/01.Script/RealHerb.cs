@@ -6,7 +6,6 @@ public class RealHerb : Herb
 {
 
     [SerializeField] private HerbButton herbButton;
-    [SerializeField] private string herbName;
     protected override void Update()
     {
         if(_isSet == false)
@@ -34,7 +33,7 @@ public class RealHerb : Herb
 
     public void OnMouseDown()
     {
-        if(_isPot)
+        if (_isPot)
         {
             HerbRecipeManager.Instance.AddHerb(data);
         }

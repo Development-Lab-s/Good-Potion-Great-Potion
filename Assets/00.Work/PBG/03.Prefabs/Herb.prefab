@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCompo: {fileID: 6387537460175763759}
-  _inHand: 0
+  potButton: {fileID: 4608521987020161743, guid: 7da2751629d404745b938a9582c1ab2c, type: 3}
+  <_inHand>k__BackingField: 1
   herbButton: {fileID: 7803528318405792291, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
 --- !u!61 &7256922807470161491
 BoxCollider2D:

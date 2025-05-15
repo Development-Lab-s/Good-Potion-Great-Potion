@@ -7,7 +7,7 @@ public class PotButton : MonoBehaviour
     [SerializeField] private ChangeImageUi changeImageUi;
     [SerializeField] private Herb herb;
     public Button deleteButton;
-
+    public string herbName { get; set;}
     private void Start()
     {
         // 버튼에 리스너 추가
@@ -29,6 +29,12 @@ public class PotButton : MonoBehaviour
             foreach (Herb obj in taggedObjects)
             {
                 herb._inHand = false;
+                InventoryManager.Instance.RevokeHerb(herbName);
+
+                if (InventoryManager.Instance.RevokeHerb(herbName))
+                {
+                    Debug.Log(1);
+                }
                 changeImageUi.ShowResult(obj.data);
                 Destroy(obj.gameObject);
             }

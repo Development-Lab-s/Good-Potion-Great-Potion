@@ -60,11 +60,6 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
             return true;
         }
 
-        if (InventoryManager.Instance.RevokeHerb(herbName))
-        {
-            Debug.Log("허브 차감");
-        }
-
         Debug.LogWarning($"'{herbName}' 허브가 인벤토리에 없습니다.");
         return false;
 
