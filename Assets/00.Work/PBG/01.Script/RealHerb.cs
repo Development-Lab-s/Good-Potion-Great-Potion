@@ -6,6 +6,7 @@ public class RealHerb : Herb
 {
 
     [SerializeField] private HerbButton herbButton;
+    [SerializeField] private string herbName;
     protected override void Update()
     {
         if(_isSet == false)
