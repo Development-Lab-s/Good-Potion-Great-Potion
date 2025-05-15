@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using _00.Work.Base._02._Sprites.Manager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
@@ -26,13 +27,20 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
 
         private void Start()
         {
+            TimerManager.Instance.OnTimerFinished += ResetButtons; // 타이머 종료 이벤트에 대화창 끄는거 넣기
+            
             CustomerAnimAndRendererSetting();
             StartCoroutine(SceneManagerScript.Instance.isFinishedCrafting //만약 제작이 끝났다면?
                 ? CustomerExitRoutine() // 맞다면 이거 실행
                 : CustomerEnterRoutine()); // 아니라면 이거 실행
         }
 
-        private void CustomerAnimAndRendererSetting()
+        private void OnDisable()
+        {
+            TimerManager.Instance.OnTimerFinished -= ResetButtons; // 구독 해제
+        }
+
+        private void CustomerAnimAndRendererSetting() //애니메이터와 랜더러를 둘 다 재할당 하는 메서드
         {
             if (CustomerChatManager.Instance.animator == null)
             {
@@ -48,7 +56,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 CustomerChatManager.Instance.spriteRenderer = GameObject.FindWithTag("CustomerRenderer")?.GetComponent<SpriteRenderer>();
                 if (CustomerChatManager.Instance.spriteRenderer == null)
                 {
-                    Debug.LogWarning("Animator 재할당 실패: 태그가 올바른지 확인하세요.");
+                    Debug.LogWarning("SpriteRenderer 재할당 실패: 태그가 올바른지 확인하세요.");
                 }
                 else
                 {
@@ -117,6 +125,11 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 CustomerChatManager.Instance.customerDataSo.waitingChatTime));
         }
 
+        private void ResetButtons() // 모든 버튼 UI를 끄는 메서드
+        {
+            customerChatUI.SetActive(false);
+        }
+
         private IEnumerator CustomerExitRoutine() //손님 퇴장 루틴
         {
             Debug.Log("퇴장 루틴");
@@ -145,7 +158,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             customerChatUI.SetActive(false);
             CustomerChatManager.Instance.PlayExitAnimation();// 퇴장 애니메이션 실행
             
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.5f);
             
             //여기에 손님 정보 초기화하고 다시 손님 오게하면 됨
             if (EndCustomerCycle()) // 손님 사이클이 끝났는가?
@@ -163,12 +176,11 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
 
         private bool EndCustomerCycle() //손님 오늘 몇명왔나 확인하는 메서드
         {
-            int maxCustomersThisWeek = 4 + SceneManagerScript.Instance.currentWeek;
+            int maxCustomersThisWeek = 4 + SceneManagerScript.Instance.currentWeek; //총 손님 수 계산식
 
-            if (SceneManagerScript.Instance.customerIndexToDay <= maxCustomersThisWeek)
+            if (++SceneManagerScript.Instance.customerIndexToDay < maxCustomersThisWeek) 
+                //현재 손님수 +1 이 총 손님수보다 크면 true 작으면 false반환
             {
-                Debug.Log(maxCustomersThisWeek);
-                SceneManagerScript.Instance.customerIndexToDay++;
                 return false;
             }
             
@@ -180,9 +192,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
         {
             mainText.text = null;
 
-            foreach (var t in line)
+            foreach (var text in line)
             {
-                mainText.text += t;
+                mainText.text += text;
                 yield return new WaitForSeconds(time);
             }
         }

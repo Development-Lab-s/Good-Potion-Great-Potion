@@ -38,6 +38,11 @@ namespace _00.Work.Base._02._Sprites.Manager
             //씬이 바뀌어도 사라지지 않게하기
             DontDestroyOnLoad(this.gameObject);
         }
+
+        private void Start()
+        {
+            StartTimer(startSeconds); //시작 시 시작 초로 타이머 시작
+        }
         
         //타이머 시작 (어디서든 TimerManager.Instance.StartTimer()로 호출 가능)
         public void StartTimer(float setTime)
