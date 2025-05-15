@@ -101,7 +101,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
 
         private IEnumerator CustomerEnterRoutine() //손님 등장 루틴
         {
+            Debug.Log("손놈이 등장했다");
             CustomerChatManager.Instance.PlayEnterAnimation();// 등장 애니메이션 실행
+            CustomerChatManager.Instance.PlayIdleAnimation();// 등장 애니메이션 실행
 
             yield return new WaitForSeconds(0.5f); // 1단기다려
             
@@ -140,27 +142,37 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             
             yield return new WaitForSeconds(2f);
             
+            customerChatUI.SetActive(false);
             CustomerChatManager.Instance.PlayExitAnimation();// 퇴장 애니메이션 실행
             
             yield return new WaitForSeconds(1f);
             
-            
             //여기에 손님 정보 초기화하고 다시 손님 오게하면 됨
+            if (EndCustomerCycle()) // 손님 사이클이 끝났는가?
+                SceneManagerScript.Instance.FinishTimer(); // 끝났다면 타이머 종료(하루 종료)
+            else
+                ResetCustomer(); // 끝나지 않았다면 다시 실행
             //만약 오늘 손님이 다 왔다면 하루 종료하면 됨
         }
 
-        private void EndCustomerCycle() //손님 오늘 몇명왔나 확인하는 메서드
+        private void ResetCustomer() //손님 재등장 메서드
+        {
+            CustomerChatManager.Instance.GetRandomCustomerData(); // 손님 데이터 랜덤 돌리고
+            StartCoroutine(CustomerEnterRoutine()); //손님 등장 시키기
+        }
+
+        private bool EndCustomerCycle() //손님 오늘 몇명왔나 확인하는 메서드
         {
             int maxCustomersThisWeek = 4 + SceneManagerScript.Instance.currentWeek;
 
             if (SceneManagerScript.Instance.customerIndexToDay <= maxCustomersThisWeek)
             {
+                Debug.Log(maxCustomersThisWeek);
                 SceneManagerScript.Instance.customerIndexToDay++;
+                return false;
             }
-            else
-            {
-                SceneManagerScript.Instance.FinishTimer();
-            }
+            
+            return true;
         }
         
 

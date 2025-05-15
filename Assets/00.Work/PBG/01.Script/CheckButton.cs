@@ -11,6 +11,7 @@ public class CheckButton : MonoBehaviour
         {
             herbRecipeManager.CheckCombination();  // 제작이 가능한 상황이면 조합식 감지 후 초기화
             changeImageUi._isHerb = 4;
+            Debug.LogWarning("엄");
         }                                      
     }
 }

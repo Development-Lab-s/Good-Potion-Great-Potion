@@ -22,6 +22,10 @@ public class HerbRecipeManager : MonoBehaviour
         {
             Instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(this);
     }
@@ -34,7 +38,8 @@ public class HerbRecipeManager : MonoBehaviour
                 Debug.Log("초과");
                 return;  //넣은 허브 갯수가 3이상이면 반환하고 3이라면 레시피 식별 후 다음으로 넘어감
             }
-        else if (selectedHerbs.Count >= 1)
+
+        if (selectedHerbs.Count >= 1)
         {
             _canProduce = true; // 제작 버튼을 누를 수 있는 조건
         }
@@ -49,6 +54,7 @@ public class HerbRecipeManager : MonoBehaviour
 
         _canProduce = false;
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
+        Debug.Log(selectedHerbs.Count);
         
         SceneManagerScript.Instance.LoadToScene(2);
     }
