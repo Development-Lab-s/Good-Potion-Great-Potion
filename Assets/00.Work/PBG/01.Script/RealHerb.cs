@@ -30,6 +30,10 @@ public class RealHerb : Herb
         }
     }
 
+    public void AAA()
+    {
+        InventoryManager.Instance.RevokeHerb(data.herbName);
+    }
 
     public void OnMouseDown()
     {

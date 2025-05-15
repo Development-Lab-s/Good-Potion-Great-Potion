@@ -13,7 +13,7 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
     // 전체 사용 금액
     private int totalSpentMoney = 0;
     // 총 구매한 허브 수
-    private int totalHerbCount = 0;
+    public int totalHerbCount = 5;
 
     //Inventory가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
     public event Action<int> OnHerbInventoryChanged;

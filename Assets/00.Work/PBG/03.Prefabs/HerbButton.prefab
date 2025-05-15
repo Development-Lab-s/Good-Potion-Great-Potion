@@ -210,6 +210,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7803528318405792291}
+        m_TargetAssemblyTypeName: HerbButton, Assembly-CSharp
+        m_MethodName: AAA
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7803528318405792291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +236,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   herb: {fileID: 2202034769099541740, guid: fe68107e6f7d06d429887dd50bcb25c7, type: 3}
   data: {fileID: 11400000, guid: c5853630d9778f144bb8760f80b6d2d1, type: 2}
+  _numberText: {fileID: 4194963172905068573}
+  _number: 
 --- !u!1 &6087407342877074071
 GameObject:
   m_ObjectHideFlags: 0
