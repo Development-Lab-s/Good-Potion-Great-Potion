@@ -7,11 +7,18 @@ public class HerbButton : MonoBehaviour
     [SerializeField] private Herb herb;
     [SerializeField] private HerbDataSO data;
     [SerializeField] private TextMeshProUGUI _numberText;
-    private string _number;
+    public string _number;
 
     void Start()
     {
+        _numberText.text = _number;
         _number = InventoryManager.Instance.totalHerbCount.ToString();
+    }
+
+    public void BBB()
+    {
+        _numberText.text = _number;
+        _numberText.text = InventoryManager.Instance.totalHerbCount.ToString();
     }
 
     public void SetHerb()
@@ -23,10 +30,13 @@ public class HerbButton : MonoBehaviour
 
             herb._inHand = true;
 
+
+
             if (InventoryManager.Instance.RevokeHerb(data.herbName))
             {
+                --InventoryManager.Instance.totalHerbCount;
                 _numberText.text = _number;
-                Debug.Log(1);
+                _numberText.text = InventoryManager.Instance.totalHerbCount.ToString();
             }
             else
             {
