@@ -11,7 +11,7 @@ namespace _00.Work.Base._02._Sprites.Manager
         [SerializeField] private int money;
         //다른 곳에서 돈 변수를 써야할 때 MoneyManager.money 사용 가능(얘 int형임))
         public int Money => money;
-    
+
         //Money가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
         public event Action<int> OnMoneyChanged;
 
@@ -23,7 +23,7 @@ namespace _00.Work.Base._02._Sprites.Manager
                 Destroy(this.gameObject);
                 return;
             }
-        
+
             //인스턴스가 없을 때 이걸로 지정
             Instance = this;
             //씬이 바뀌어도 사라지지 않게하기

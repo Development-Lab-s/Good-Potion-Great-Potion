@@ -21,7 +21,7 @@ public class PotButton : MonoBehaviour
     {
         // 해당 태그를 가진 모든 오브젝트 찾기
         Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None);
-        
+
         if (taggedObjects.Length > 0)
         {
             // 모든 태그된 오브젝트 삭제
@@ -31,7 +31,7 @@ public class PotButton : MonoBehaviour
                 Destroy(obj.gameObject);
             }
         }
-        
+
     }
 
     private void OnDestroy()
