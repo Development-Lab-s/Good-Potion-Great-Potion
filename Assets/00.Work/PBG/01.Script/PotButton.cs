@@ -25,13 +25,16 @@ public class PotButton : MonoBehaviour
         
         if (taggedObjects.Length > 0)
         {
-            // 모든 태그된 오브젝트 삭제
-            foreach (Herb obj in taggedObjects)
+            if (changeImageUi._isHerb != 3)
             {
-                herb._inHand = false;
-                
-                changeImageUi.ShowResult(obj.data);
-                Destroy(obj.gameObject);
+            // 모든 태그된 오브젝트 삭제
+                foreach (Herb obj in taggedObjects)
+                {
+                    herb._inHand = false;
+
+                    changeImageUi.ShowResult(obj.data);
+                    Destroy(obj.gameObject);
+                }
             }
         }
     }
