@@ -28,7 +28,7 @@ public class HerbRecipeManager : MonoBehaviour
     public void AddHerb(HerbDataSO herbName)
     {
         Debug.Log(selectedHerbs.Count);
-        if (selectedHerbs.Count > 2) 
+        if (selectedHerbs.Count >= 2) 
             {
                 Debug.Log("초과");
                 return;  //넣은 허브 갯수가 3이상이면 반환하고 3이라면 레시피 식별 후 다음으로 넘어감

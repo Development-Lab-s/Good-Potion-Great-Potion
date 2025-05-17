@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Work/CheolYee/01.Scens/TestCreate.unity
     guid: 385d3fde998227d40963609632395edb
+  - enabled: 1
+    path: Assets/00.Work/PBG/02.Scenes/Create.unity
+    guid: 0ff7f4286d232294d84f3d1ec1ea2ce8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

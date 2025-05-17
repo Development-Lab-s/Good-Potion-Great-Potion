@@ -11,7 +11,7 @@ public class HerbButton : MonoBehaviour
 
     void Start()
     {
-        _number = InventoryManager.Instance.totalHerbCount.ToString();
+        _number = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
         _numberText.text = _number;
     }
 
@@ -23,7 +23,7 @@ public class HerbButton : MonoBehaviour
 
     public void SetHerb()
     {
-        if (herb._inHand == false && InventoryManager.Instance.totalHerbCount != 0)
+        if (herb._inHand == false && InventoryManager.Instance.GetHerbCount(data.herbName) != 0)
         {
             Herb newHerb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
             newHerb.Initialized(data);
@@ -36,7 +36,7 @@ public class HerbButton : MonoBehaviour
             {
                 --InventoryManager.Instance.totalHerbCount;
                 _numberText.text = _number;
-                _numberText.text = InventoryManager.Instance.totalHerbCount.ToString();
+                _numberText.text = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
             }
             else
             {
