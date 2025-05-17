@@ -11,8 +11,8 @@ public class HerbButton : MonoBehaviour
 
     void Start()
     {
-        _numberText.text = _number;
         _number = InventoryManager.Instance.totalHerbCount.ToString();
+        _numberText.text = _number;
     }
 
     public void BBB()
