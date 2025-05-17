@@ -23,7 +23,7 @@ public class HerbButton : MonoBehaviour
 
     public void SetHerb()
     {
-        if (herb._inHand == false)
+        if (herb._inHand == false && InventoryManager.Instance.totalHerbCount != 0)
         {
             Herb newHerb = Instantiate(herb, Mouse.current.position.value, Quaternion.identity);
             newHerb.Initialized(data);
