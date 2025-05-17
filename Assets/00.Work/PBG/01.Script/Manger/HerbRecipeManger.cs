@@ -44,7 +44,7 @@ public class HerbRecipeManager : MonoBehaviour
             _canProduce = true; // 제작 버튼을 누를 수 있는 조건
         }
         selectedHerbs.Add(herbName);
-        Debug.Log("선택된 허브: " + herbName);
+        Debug.Log("선택된 허브: " + herbName.herbName);
     }
 
     public void CheckCombination()

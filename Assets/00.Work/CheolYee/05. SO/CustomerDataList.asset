@@ -15,5 +15,7 @@ MonoBehaviour:
   customerLists1Week:
   - {fileID: 11400000, guid: 015091ad5aff1df48a4b6a58a0fe2ddb, type: 2}
   - {fileID: 11400000, guid: ea366849eea27d04f94ad0fc725e74db, type: 2}
+  - {fileID: 11400000, guid: 241db8a62ef73d048a941e598ea919ba, type: 2}
+  - {fileID: 11400000, guid: baec657bfc5e1d144b27c4bef9b4ce18, type: 2}
   customerLists2Week: []
   customerLists3Week: []

@@ -11,9 +11,9 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
     private Dictionary<string, int> herbInventory = new Dictionary<string, int>();
 
     // 전체 사용 금액
-    private int totalSpentMoney = 0;
+    public int totalSpentMoney = 0;
     // 총 구매한 허브 수
-    private int totalHerbCount = 0;
+    public int totalHerbCount = 0;
 
     //Inventory가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
     public event Action<int> OnHerbInventoryChanged;
@@ -52,6 +52,8 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
     //재료제거
     public bool RevokeHerb(string herbName)
     {
+        Debug.Log("허브 이름 있음? " + herbInventory.ContainsKey(herbName));
+
         if (herbInventory.ContainsKey(herbName) && herbInventory[herbName] > 0)
         {
             herbInventory[herbName]--;
@@ -62,6 +64,7 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
 
         Debug.LogWarning($"'{herbName}' 허브가 인벤토리에 없습니다.");
         return false;
+
     }
     
     

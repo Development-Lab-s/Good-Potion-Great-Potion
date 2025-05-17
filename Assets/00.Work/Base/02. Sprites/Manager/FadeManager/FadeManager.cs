@@ -1,4 +1,5 @@
 using System.Collections;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,16 +8,18 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
 {
     public class FadeManager : MonoBehaviour
     {
-        public static FadeManager Instance;
+        public static FadeManager Instance { get; private set; }
         
         [Header("TEXT UI")]
         [SerializeField] public Image backGroundImg;
-        [SerializeField] public TextMeshProUGUI adjustmentText;
+        [SerializeField] public TextMeshProUGUI dayCountText;
         [SerializeField] public TextMeshProUGUI statisticText;
         [SerializeField] public TextMeshProUGUI revenueText;
+        [SerializeField] public Button checkButton;
         
         [Header("Canvas Group")]
         [SerializeField] public CanvasGroup canvasGroup;
+        [SerializeField] public CanvasGroup dayCountCanvasGroup;
         [SerializeField] public float fadeDuration = 1f;
 
         private void Awake()
@@ -31,27 +34,54 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
                 Destroy(this.gameObject);
             }
         }
+
+        
         
         public void ReassignCanvasGroup(CanvasGroup newCanvasGroup)
         {
             canvasGroup = newCanvasGroup;
         }
 
-        public IEnumerator FadeIn() // 페이드인
+        public IEnumerator FadeIn(CanvasGroup cvg) // 페이드인
         {
-            canvasGroup.gameObject.SetActive(true);
-            yield return Fade(0, 1);
+            cvg.gameObject.SetActive(true);
+            yield return Fade(cvg,0, 1);
         }
 
-        public IEnumerator FadeOut() // 페이드 아웃
+        public IEnumerator FadeOut(CanvasGroup cvg) // 페이드 아웃
         {
-            yield return Fade(1, 0);
-            canvasGroup.gameObject.SetActive(false);
+            yield return Fade(cvg,1, 0);
+        }
+        public IEnumerator EndDayCycle()
+        {
+            StartCoroutine(FadeIn(canvasGroup));
+            
+            yield return new WaitForSeconds(1.5f);
+            
+            backGroundImg.gameObject.SetActive(true);
+
+            yield return new WaitForSeconds(1f);
+            
+            statisticText.gameObject.SetActive(true);
+            StartCoroutine(TypingChat(statisticText,$"구매한 허브의 개수: {InventoryManager.Instance.totalHerbCount}개\n" +
+                                      $"알맞게 제조한 물약 수: {SceneManagerScript.Instance.isSuccessCraftingCount}개\n" +
+                                      $"오늘 번 골드량: +{SceneManagerScript.Instance.toDayTotalMoney}G\n" +
+                                      $"오늘 사용한 골드량: -{InventoryManager.Instance.totalSpentMoney}G", 0.05f));
+            yield return new WaitForSeconds(5f);
+            
+            revenueText.gameObject.SetActive(true);
+            StartCoroutine(TypingChat(revenueText, 
+                $"순수익: {SceneManagerScript.Instance.toDayTotalMoney - InventoryManager.Instance.totalSpentMoney}원",
+                0.2f));
+            
+            yield return new WaitForSeconds(3f);
+            
+            checkButton.gameObject.SetActive(true);
         }
 
-        private IEnumerator Fade(float from, float to) // 페이드 설정 (form 부터 to까지 알파값 조정(0~1))
+        private IEnumerator Fade(CanvasGroup cvg,float from, float to) // 페이드 설정 (form 부터 to까지 알파값 조정(0~1))
         {
-            if (canvasGroup == null)
+            if (cvg == null)
             {
                 Debug.LogWarning("Fade CanvasGroup이 없습니다.");
                 yield break;
@@ -62,11 +92,22 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
             while (elapsed < fadeDuration)
             {
                 elapsed += Time.deltaTime;
-                canvasGroup.alpha = Mathf.Lerp(from, to, elapsed / fadeDuration);
+                cvg.alpha = Mathf.Lerp(from, to, elapsed / fadeDuration);
                 yield return null;
             }
 
-            canvasGroup.alpha = to;
+            cvg.alpha = to;
+        }
+        
+        private IEnumerator TypingChat(TextMeshProUGUI tmp, string line, float time) // 타이핑 모션(대사와, 타이핑 대기시간 받아옴)
+        {
+            tmp.text = null;
+
+            foreach (var text in line)
+            {
+                tmp.text += text;
+                yield return new WaitForSeconds(time);
+            }
         }
     }
 }

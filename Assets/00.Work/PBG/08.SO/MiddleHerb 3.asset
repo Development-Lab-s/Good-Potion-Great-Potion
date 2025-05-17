@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
   m_Name: MiddleHerb 3
   m_EditorClassIdentifier: 
-  herbName: C2
+  herbName: DSR
   herbIcon: {fileID: -3816604124849566746, guid: c22f4401381949942be7181c4394b6a3, type: 3}

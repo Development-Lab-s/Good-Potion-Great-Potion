@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Work/Hayul/00. Scene/MiniGame2.unity
     guid: a4bfd4f7e460d0149bbdc9bd5bd21d95
-  - enabled: 1
-    path: Assets/00.Work/JaeHun/00. Scenes/Shop.unity
-    guid: 1b7180cc9a829ed4bb7c00aace3229e0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

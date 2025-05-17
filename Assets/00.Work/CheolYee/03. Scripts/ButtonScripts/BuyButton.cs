@@ -22,6 +22,8 @@ public class BuyButton : MonoBehaviour
 
         // 3. 인벤토리에 허브 추가 (이름과 가격 모두 전달)
         InventoryManager.Instance.AddHerb(herbName, price);
+        
+        
 
         // 4. 디버그 출력
         int total = InventoryManager.Instance.GetTotalSpentAll();

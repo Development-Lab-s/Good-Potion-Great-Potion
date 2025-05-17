@@ -196,6 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57269b118bb6d5d4981e32b2f6178c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buyMoneySO: {fileID: 11400000, guid: dfb68cafcb4201b42a75091a7ef09d59, type: 2}
+  herbName: 
+  price: 10
 --- !u!114 &815095950686771231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +280,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: BuyButton, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

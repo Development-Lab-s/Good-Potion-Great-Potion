@@ -63,9 +63,15 @@ namespace _00.Work.Base._02._Sprites.Manager
             _isRunning = false; //타이머 작동 안하고 있다고 표시
         }
 
-        public void LessTimer(float setTime) // 타이머의 시간을 감소시킬 수 있는 기능
+        public void LessTimer(float setTime) // 타이머의 시간을 뺄 수 있는 기능
         {
             _remainingSeconds -= setTime;
+            UpdateTimerUI();
+        }
+        
+        public void SetTimer(float setTime) // 타이머의 시간을 설정할 수 있는 기능
+        {
+            _remainingSeconds = setTime;
             UpdateTimerUI();
         }
         

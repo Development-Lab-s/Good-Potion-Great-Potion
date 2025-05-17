@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using _00.Work.Base._02._Sprites.Manager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
@@ -146,6 +145,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             {
                 StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedExitLine, //퇴장 대사(긍정) 출력
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
+                MoneyManager.Instance.AddMoney(SceneManagerScript.Instance.currentCustomerData.price); //돈UI에 추가
+                SceneManagerScript.Instance.toDayTotalMoney += //오늘 번 돈 +포션 가격해준다
+                    SceneManagerScript.Instance.currentCustomerData.price;
             }
             else if (!SceneManagerScript.Instance.isSuccessCrafting)
             {
@@ -162,7 +164,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             
             //여기에 손님 정보 초기화하고 다시 손님 오게하면 됨
             if (EndCustomerCycle()) // 손님 사이클이 끝났는가?
-                SceneManagerScript.Instance.FinishTimer(); // 끝났다면 타이머 종료(하루 종료)
+                TimerManager.Instance.SetTimer(1); // 끝났다면 타이머 종료(하루 종료)
             else
                 ResetCustomer(); // 끝나지 않았다면 다시 실행
             //만약 오늘 손님이 다 왔다면 하루 종료하면 됨

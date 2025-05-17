@@ -92,17 +92,10 @@ public class CustomerChatManager : MonoBehaviour
             _randomIndex = Random.Range(0, customerDataSo.mainLines.Length); // 랜덤으로 값 가져오기
             SceneManagerScript.Instance.currentRandomIndex = _randomIndex; //랜덤값을 저장후 보내줌
             SelectedLine = customerDataSo.mainLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 대사 가져오기
-            SelectedHint = customerDataSo.hint[_randomIndex]; // 랜덤값의 인덱스에 해당하는 힌트 가져오기
-            SelectedHint2 = customerDataSo.hint2[_randomIndex]; // 랜덤값의 인덱스에 해당하는 힌트 가져오기
-            SelectedExitLine = customerDataSo.exitLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 강제퇴장대사 가져오기
-            SelectedForcedExitLine = customerDataSo.forcedExitLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 강제퇴장대사 가져오기
-        }
-    
-        public string GetPotion() // 현재 손님이 주문하는 포션을 가져오는 메서드
-        {
-            string currentPotion = customerDataSo.requiredPotions; //현재 손님에게 저장된 SO를 받아와 currentPotion 변수에 저장
-        
-            return currentPotion; // 포션 데이터 리턴
+            SelectedHint = customerDataSo.hint[0]; // 힌트 가져오기
+            SelectedHint2 = customerDataSo.hint2[0]; // 두번째 힌트 가져오기
+            SelectedExitLine = customerDataSo.exitLines[0]; // 강제퇴장대사 가져오기
+            SelectedForcedExitLine = customerDataSo.forcedExitLines[0]; // 강제퇴장대사 가져오기
         }
         
         public void PlayEnterAnimation()
