@@ -41,7 +41,7 @@ public class PotButton : MonoBehaviour
 
     private void OnDestroy()
     {
-        // 메모리 누수 방지를 위한 리스너 제거
+        //리스너 제거
         if (deleteButton != null)
         {
             deleteButton.onClick.RemoveListener(DeleteTaggedObjects);

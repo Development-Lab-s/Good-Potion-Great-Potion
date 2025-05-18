@@ -32,10 +32,6 @@ public class HerbButton : MonoBehaviour
                 _numberText.text = _number;
                 _numberText.text = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
             }
-            else
-            {
-                _numberText.text = "0";
-            }
         }
     }
 }
