@@ -2919,6 +2919,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
+      propertyPath: currentDay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: customerIndexToDay
       value: 4
       objectReference: {fileID: 0}

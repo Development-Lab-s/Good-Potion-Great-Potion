@@ -29,14 +29,14 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.TestCreate
                 SceneManagerScript.Instance.isSuccessCrafting = false;
             }
             
-            SceneManagerScript.Instance.LoadToScene(0);
+            SceneManagerScript.Instance.LoadToScene(1);
         }
         
         public void InToMainSecneFail()
         {
             SceneManagerScript.Instance.isFinishedCrafting = true;
             SceneManagerScript.Instance.isSuccessCrafting = false;
-            SceneManagerScript.Instance.LoadToScene(0);
+            SceneManagerScript.Instance.LoadToScene(1);
         }
     }
 }

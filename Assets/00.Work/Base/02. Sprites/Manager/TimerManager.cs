@@ -53,6 +53,13 @@ namespace _00.Work.Base._02._Sprites.Manager
             _countDownCoroutine = StartCoroutine(TimerCorutine()); //코루틴 시작해서 1초씩 감소
             _isRunning = true; //타이머 작동 중이라고 표시
         }
+
+        public void RestartTimer()
+        {
+            if (_isRunning) return;
+            
+            StartTimer(_remainingSeconds);
+        }
         
         //타이머 멈춤 (어디서든 TimerManager.Instance.StopTimer()로 호출 가능)
         public void StopTimer()

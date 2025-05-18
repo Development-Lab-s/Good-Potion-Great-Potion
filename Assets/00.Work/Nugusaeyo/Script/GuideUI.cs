@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using _00.Work.CheolYee._03._Scripts.Customer.Manager;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,15 +29,10 @@ public class GuideUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI slotName1;
     [SerializeField] private TextMeshProUGUI slotName2;
     [SerializeField] private TextMeshProUGUI slotName3;
-
-    private void Awake()
-    {
-        
-    }
     private void Start()
     {
         unlockWeek = _guideSO.unlockWeek;
-        day = 12;
+        day = SceneManagerScript.Instance.currentDay;
 
         if (day / 4 >= unlockWeek)
         {

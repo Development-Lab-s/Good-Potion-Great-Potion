@@ -62,14 +62,14 @@ public class ClockHand : MonoBehaviour
                 _camShake.CameraShakeStop(false);
                 SceneManagerScript.Instance.isFinishedCrafting = true;
                 SceneManagerScript.Instance.isSuccessCrafting = false;
-                SceneManagerScript.Instance.LoadToScene(0);
+                SceneManagerScript.Instance.LoadToScene(1);
             }
         }
         if (_finishCount == 3)
         {
             _timerLogic.ClockHandStop();
             _camShake.CameraShakeStop(false);
-            SceneManagerScript.Instance.LoadToScene(3);
+            SceneManagerScript.Instance.LoadToScene(4);
         }
     }
     private void SquareScale()

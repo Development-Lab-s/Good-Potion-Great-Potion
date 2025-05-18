@@ -56,7 +56,7 @@ public class HerbRecipeManager : MonoBehaviour
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
         Debug.Log(selectedHerbs.Count);
         
-        SceneManagerScript.Instance.LoadToScene(2);
+        SceneManagerScript.Instance.LoadToScene(3);
     }
 
 

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 125531956319139040}
+  - component: {fileID: 3720740486316433437}
   m_Layer: 0
   m_Name: CategoryButton
   m_TagString: Untagged
@@ -34,6 +35,23 @@ Transform:
   - {fileID: 6844314157705854445}
   m_Father: {fileID: 1801955398391194618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3720740486316433437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254818548806287039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411fbf0f76c6b7b45ac4a0e443110752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopLockBtn:
+  - {fileID: 8754126078463593567}
+  - {fileID: 6674988552468585856}
+  - {fileID: 2382432099960291756}
+  week: 0
 --- !u!1 &802952420706895911
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,9 +261,9 @@ Transform:
   m_GameObject: {fileID: 2058099003493903445}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1310.28, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.71321607, y: 0.6267682, z: 0.40603}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -766, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -500,8 +518,8 @@ Transform:
   m_GameObject: {fileID: 2757114478020029734}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1299.81, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.65774214, y: 0.5780181, z: 0.37444898}
+  m_LocalPosition: {x: 363, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -587,8 +605,8 @@ Transform:
   m_GameObject: {fileID: 3139955615507453376}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1303.1, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.62626636, y: 0.5503575, z: 0.35653}
+  m_LocalPosition: {x: -4, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296907558793353277}
@@ -674,8 +692,8 @@ Transform:
   m_GameObject: {fileID: 3624616562950236854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1306.8, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.6511041, y: 0.5721847, z: 0.37067}
+  m_LocalPosition: {x: -371, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296907558793353277}
@@ -761,8 +779,8 @@ Transform:
   m_GameObject: {fileID: 3661670233584871615}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1306.8, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.63868517, y: 0.5612711, z: 0.3636}
+  m_LocalPosition: {x: -396, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
@@ -848,8 +866,8 @@ Transform:
   m_GameObject: {fileID: 3822497307998467688}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1303.29, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.71321607, y: 0.6267682, z: 0.40603}
+  m_LocalPosition: {x: -0, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -935,8 +953,8 @@ Transform:
   m_GameObject: {fileID: 3860541948248438037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1303.29, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.72563493, y: 0.6376818, z: 0.4131}
+  m_LocalPosition: {x: -28, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
@@ -1022,8 +1040,8 @@ Transform:
   m_GameObject: {fileID: 3953426196862683728}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1306.7, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.60142857, y: 0.5285303, z: 0.34239}
+  m_LocalPosition: {x: -378, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -1148,8 +1166,8 @@ Transform:
   m_GameObject: {fileID: 4266421753104532516}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1310.31, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.5765908, y: 0.5067031, z: 0.32825}
+  m_LocalPosition: {x: -781, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
@@ -1235,8 +1253,8 @@ Transform:
   m_GameObject: {fileID: 5111442246728347700}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1299.81, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.63868517, y: 0.5612711, z: 0.3636}
+  m_LocalPosition: {x: 374, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296907558793353277}
@@ -1639,8 +1657,8 @@ Transform:
   m_GameObject: {fileID: 6112978422229105842}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1306.8, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.70079714, y: 0.61585456, z: 0.39896}
+  m_LocalPosition: {x: -396, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -1831,8 +1849,8 @@ Transform:
   m_GameObject: {fileID: 6351325026730885147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1303.29, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.61384743, y: 0.5394439, z: 0.34946}
+  m_LocalPosition: {x: -14, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -2051,8 +2069,8 @@ Transform:
   m_GameObject: {fileID: 7002994649450502645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1310.28, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.62626636, y: 0.5503575, z: 0.35653}
+  m_LocalPosition: {x: -774, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -2138,8 +2156,8 @@ Transform:
   m_GameObject: {fileID: 7010447001646294572}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1310.28, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.71321607, y: 0.6267682, z: 0.40603}
+  m_LocalPosition: {x: -781, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296907558793353277}
@@ -2225,8 +2243,8 @@ Transform:
   m_GameObject: {fileID: 7404769594887501607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1299.81, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 0.62626636, y: 0.5503575, z: 0.35653}
+  m_LocalPosition: {x: 369, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
@@ -2362,8 +2380,8 @@ Transform:
   m_GameObject: {fileID: 7688563584999779389}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1310.31, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.583884, y: 0.5131123, z: 0.332402}
+  m_LocalPosition: {x: -798, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -2449,8 +2467,8 @@ Transform:
   m_GameObject: {fileID: 7778602511190836737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1306.7, y: -552.44, z: 1.4399992}
-  m_LocalScale: {x: 0.63868517, y: 0.5612711, z: 0.3636}
+  m_LocalPosition: {x: -382, y: -150, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3955295831077127729}
@@ -2672,8 +2690,8 @@ Transform:
   m_GameObject: {fileID: 8155107366251953527}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1299.81, y: -548.59, z: 1.4399992}
-  m_LocalScale: {x: 1.4460353, y: 1.2707635, z: 0.82322}
+  m_LocalPosition: {x: 370, y: 278, z: 1.4399992}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6130931564284125435}
@@ -2722,7 +2740,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2728107689243837946, guid: 78ac0a9ab6bb457419f2811ff9660022, type: 3}
+  m_Sprite: {fileID: -7779443466022996127, guid: 72dc0a2817939f9429560f93c1481cd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2854,9 +2872,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HerbButton, Assembly-CSharp
-        m_MethodName: AddButton
+      - m_Target: {fileID: 356716030952871410}
+        m_TargetAssemblyTypeName: PotionPanelManager, Assembly-CSharp
+        m_MethodName: showLow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2913,6 +2931,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3056,6 +3086,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 4
@@ -3197,6 +3239,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3340,6 +3394,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 6
@@ -3482,6 +3548,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 3
@@ -3623,6 +3701,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3773,6 +3863,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -3929,8 +4031,16 @@ PrefabInstance:
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: BuyButton, Assembly-CSharp
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -4081,6 +4191,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -4235,6 +4357,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-5
@@ -4377,6 +4511,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-4
@@ -4518,6 +4664,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -4670,8 +4828,20 @@ PrefabInstance:
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: BuyButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -4823,6 +4993,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 3-4
@@ -4964,6 +5146,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
@@ -5226,6 +5420,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 3-1
@@ -5368,6 +5574,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
       objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name
       value: Button 2-7
@@ -5509,6 +5727,18 @@ PrefabInstance:
     - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBuyButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HerbButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969699874566498164, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7259387726898038579, guid: eb343e2db25c46346b3f0a22c8397b91, type: 3}
       propertyPath: m_Name

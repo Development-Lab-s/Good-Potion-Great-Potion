@@ -40,7 +40,7 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
             
             SceneManagerScript.Instance.ResetValues(); // 값들 초기화하기
             
-            SceneManagerScript.Instance.LoadToScene(0); // 씬을 메인으로 옮겨버리기
+            SceneManagerScript.Instance.LoadToScene(1); // 씬을 메인으로 옮겨버리기
             TimerManager.Instance.StartTimer(300); //타이머 설정하기
             Debug.Log("다음날 전환완료");
             
