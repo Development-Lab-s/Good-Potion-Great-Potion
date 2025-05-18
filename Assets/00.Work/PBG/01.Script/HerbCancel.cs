@@ -15,7 +15,10 @@ public class HerbCancel : MonoBehaviour
         {
             foreach (Herb obj in taggedObjects)
             {
+                InventoryManager.Instance.AddHerb(obj.data.herbName, 0);
+                herb._inHand = false;
                 Destroy(obj.gameObject);
+                taggedObjects[0] = null;
             }
         }
     }

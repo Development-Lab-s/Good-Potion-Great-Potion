@@ -33,5 +33,19 @@ public class HerbButton : MonoBehaviour
                 _numberText.text = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
             }
         }
+        else if (herb._inHand)
+        {
+            InventoryManager.Instance.AddHerb(data.herbName, 0);
+            _numberText.text = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
+
+            // Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None); 
+
+            // foreach (Herb obj in taggedObjects)
+            //     {
+            //         herb._inHand = false;
+            //         Destroy(obj.gameObject);
+            //         taggedObjects[0] = null;
+            //     }
+        }
     }
 }
