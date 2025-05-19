@@ -1,5 +1,6 @@
 using System.Collections;
 using _00.Work.Base._02._Sprites.Manager;
+using _00.Work.Base._02._Sprites.Manager.FadeManager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 using TMPro;
@@ -27,6 +28,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
         private void Start()
         {
             TimerManager.Instance.OnTimerFinished += ResetButtons; // 타이머 종료 이벤트에 대화창 끄는거 넣기
+            
             
             CustomerAnimAndRendererSetting();
             StartCoroutine(SceneManagerScript.Instance.isFinishedCrafting //만약 제작이 끝났다면?
@@ -106,6 +108,11 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             StartCoroutine(CustomerExitRoutine());
         }
 
+        private void StartCustomerEnterRoutine()
+        {
+            StartCoroutine(CustomerEnterRoutine());
+        }
+
         private IEnumerator CustomerEnterRoutine() //손님 등장 루틴
         {
             Debug.Log("손놈이 등장했다");
@@ -126,6 +133,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
 
         private void ResetButtons() // 모든 버튼 UI를 끄는 메서드
         {
+            CustomerChatManager.Instance.PlayExitAnimation();
             customerChatUI.SetActive(false);
         }
 

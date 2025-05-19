@@ -47,7 +47,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.Manager
 
         public void ResetValues() // 다음날 갈 때 초기화될 값들을 한번에 초기화 및 설정
         {
-            if (currentDay % 4 == 0) currentWeek++;
+            if (currentDay % 5 == 0) currentWeek++;
             customerIndexToDay = 0;
             isSuccessCrafting = false;
             isFinishedCrafting = false;

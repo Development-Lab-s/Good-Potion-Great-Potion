@@ -21,6 +21,8 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         [SerializeField] public CanvasGroup canvasGroup;
         [SerializeField] public CanvasGroup dayCountCanvasGroup;
         [SerializeField] public float fadeDuration = 1f;
+        
+        
 
         private void Awake()
         {
@@ -34,8 +36,6 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
                 Destroy(this.gameObject);
             }
         }
-
-        
         
         public void ReassignCanvasGroup(CanvasGroup newCanvasGroup)
         {
@@ -65,13 +65,13 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
             statisticText.gameObject.SetActive(true);
             StartCoroutine(TypingChat(statisticText,$"구매한 허브의 개수: {InventoryManager.Instance.totalHerbCount}개\n" +
                                       $"알맞게 제조한 물약 수: {SceneManagerScript.Instance.isSuccessCraftingCount}개\n" +
-                                      $"오늘 번 골드량: +{SceneManagerScript.Instance.toDayTotalMoney}G\n" +
-                                      $"오늘 사용한 골드량: -{InventoryManager.Instance.totalSpentMoney}G", 0.05f));
+                                      $"오늘 번 골드량: <color=#5dff4b>+{SceneManagerScript.Instance.toDayTotalMoney}</color>G\n" +
+                                      $"오늘 사용한 골드량: <color=#FF0000>-{InventoryManager.Instance.totalSpentMoney}</color>G", 0.05f));
             yield return new WaitForSeconds(5f);
             
             revenueText.gameObject.SetActive(true);
             StartCoroutine(TypingChat(revenueText, 
-                $"순수익: {SceneManagerScript.Instance.toDayTotalMoney - InventoryManager.Instance.totalSpentMoney}원",
+                $"순수익: <color=#ffc000>{SceneManagerScript.Instance.toDayTotalMoney - InventoryManager.Instance.totalSpentMoney}</color>G",
                 0.2f));
             
             yield return new WaitForSeconds(3f);
@@ -101,11 +101,28 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         
         private IEnumerator TypingChat(TextMeshProUGUI tmp, string line, float time) // 타이핑 모션(대사와, 타이핑 대기시간 받아옴)
         {
-            tmp.text = null;
+            tmp.text = "";
+            int i = 0;
 
-            foreach (var text in line)
+            while (i < line.Length)
             {
-                tmp.text += text;
+                // 태그 시작
+                if (line[i] == '<')
+                {
+                    // 태그 전체 읽기
+                    int tagEnd = line.IndexOf('>', i);
+                    if (tagEnd != -1)
+                    {
+                        string colorTag = line.Substring(i, tagEnd - i + 1);
+                        tmp.text += colorTag;
+                        i = tagEnd + 1;
+                        continue;
+                    }
+                }
+
+                // 일반 문자 출력
+                tmp.text += line[i];
+                i++;
                 yield return new WaitForSeconds(time);
             }
         }

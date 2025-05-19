@@ -1,7 +1,8 @@
+using System;
+using _00.Work.Base._02._Sprites.Manager.FadeManager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using _00.Work.CheolYee._05._SO.CustomerChatSO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 namespace _00.Work.CheolYee._03._Scripts.Customer
@@ -48,8 +49,10 @@ public class CustomerChatManager : MonoBehaviour
             if(SceneManagerScript.Instance.isFinishedCrafting) //포션 제작 완료라면 이거 실행안함
                 return;
             
+            
             GetRandomCustomerData();
         }
+        
 
         public void GetRandomCustomerData()
         {
