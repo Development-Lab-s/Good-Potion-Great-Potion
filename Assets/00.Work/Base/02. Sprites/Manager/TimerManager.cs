@@ -38,6 +38,11 @@ namespace _00.Work.Base._02._Sprites.Manager
             //씬이 바뀌어도 사라지지 않게하기
             DontDestroyOnLoad(this.gameObject);
         }
+
+        private void Start()
+        {
+            StartTimer(startSeconds); //시작 시 시작 초로 타이머 시작
+        }
         
         //타이머 시작 (어디서든 TimerManager.Instance.StartTimer()로 호출 가능)
         public void StartTimer(float setTime)
@@ -48,6 +53,13 @@ namespace _00.Work.Base._02._Sprites.Manager
             _countDownCoroutine = StartCoroutine(TimerCorutine()); //코루틴 시작해서 1초씩 감소
             _isRunning = true; //타이머 작동 중이라고 표시
         }
+
+        public void RestartTimer()
+        {
+            if (_isRunning) return;
+            
+            StartTimer(_remainingSeconds);
+        }
         
         //타이머 멈춤 (어디서든 TimerManager.Instance.StopTimer()로 호출 가능)
         public void StopTimer()
@@ -56,6 +68,18 @@ namespace _00.Work.Base._02._Sprites.Manager
             
             StopCoroutine(_countDownCoroutine); //타이머 코루틴 멈춤
             _isRunning = false; //타이머 작동 안하고 있다고 표시
+        }
+
+        public void LessTimer(float setTime) // 타이머의 시간을 뺄 수 있는 기능
+        {
+            _remainingSeconds -= setTime;
+            UpdateTimerUI();
+        }
+        
+        public void SetTimer(float setTime) // 타이머의 시간을 설정할 수 있는 기능
+        {
+            _remainingSeconds = setTime;
+            UpdateTimerUI();
         }
         
         //타이머 동작
@@ -77,8 +101,8 @@ namespace _00.Work.Base._02._Sprites.Manager
             while (_remainingSeconds > 0) //시간이 0보다 클 시 무한 반복
             {
                 UpdateTimerUI(); //화면에 시간 보여주기
-                yield return new WaitForSeconds(1f); //1초 기다리기
-                _remainingSeconds--; //현재 타이머 시간 1초 감소
+                yield return null; //1초 기다리기
+                _remainingSeconds -= Time.deltaTime; //현재 타이머 시간 1초 감소
             }
 
             

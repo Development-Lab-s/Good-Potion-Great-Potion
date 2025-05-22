@@ -1,4 +1,5 @@
-﻿using Unity.VisualScripting;
+﻿using _00.Work.Base._02._Sprites.Manager;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
@@ -31,7 +32,6 @@ public class FinishRotation : MonoBehaviour
     {
         Vector3 angle = new Vector3(0, 0, Random.Range(30, 310));
         transform.Rotate(angle);
-        Debug.Log(angle);
         _currentRotation = false;
     }
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: 01.HealingPotion
+  m_EditorClassIdentifier: 
+  unlockWeek: 0
+  potionImage: {fileID: 6938507106872539919, guid: 4e8ea0ab1c7766b418696cd930d8d34a, type: 3}
+  potionName: "\uD68C\uBCF5\uC758 \uD3EC\uC158"
+  potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  potionLockName: "\uC7A0\uAE40"
+  slotImage1: {fileID: -2689141045834474053, guid: 62a3e1f74c8422d4b8cc64e8d1728e1f, type: 3}
+  slotName1: "\uB808\uD544\uB77C\uD504"
+  slotImage2: {fileID: 4171932925159491428, guid: 2a39bb5c20e4ce242b478a351042f22a, type: 3}
+  slotName2: "\uAC94\uBC14\uB780"
+  slotImage3: {fileID: 0}
+  slotName3: 
+  slotLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  slotLockName: "\uC7A0\uAE40"

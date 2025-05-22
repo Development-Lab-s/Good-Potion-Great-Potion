@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: 16.ManaStormPotion
+  m_EditorClassIdentifier: 
+  unlockWeek: 2
+  potionImage: {fileID: 8974925780899035532, guid: eea85f28fdfea5f4bb74b435733221b9, type: 3}
+  potionName: "\uB9C8\uB098 \uD3ED\uD48D\uC758 \uD3EC\uC158"
+  potionLockImg: {fileID: 0}
+  potionLockName: 
+  slotImage1: {fileID: -8873956947887137603, guid: 13a0c0c2c3fe8d742a9f661179107f0d, type: 3}
+  slotName1: "\uB8E8\uBBF8\uB124\uC26C\uB8F8"
+  slotImage2: {fileID: -5867455345278188843, guid: f42b09422123b7a40859ef0d683d3298, type: 3}
+  slotName2: "\uD50C\uB808\uC5B4\uC2A4\uD2F4"
+  slotImage3: {fileID: 600708726713020152, guid: 885eaa4bba6fd9d49ae5f02d753656b0, type: 3}
+  slotName3: "\uC0E4\uB974\uB098\uB378"
+  slotLockImg: {fileID: 0}
+  slotLockName: 

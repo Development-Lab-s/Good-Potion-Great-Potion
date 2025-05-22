@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class PotionPanelManager : MonoBehaviour
 {
-    public GameObject lowPanel;
-    public GameObject midPanel;
-    public GameObject highPanel;
+    [SerializeField] GameObject lowPanel;
+    [SerializeField] GameObject midPanel;
+    [SerializeField] GameObject highPanel;
+
 
 
     private void Start()

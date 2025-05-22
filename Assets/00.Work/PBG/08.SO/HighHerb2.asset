@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a1ca10025db964ab2bbe597df8ee77, type: 3}
+  m_Name: HighHerb2
+  m_EditorClassIdentifier: 
+  herbName: PST
+  herbIcon: {fileID: -5867455345278188843, guid: c10809c2aaa973e44ad196a04f3f9cfb, type: 3}

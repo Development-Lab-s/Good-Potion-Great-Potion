@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61744102921628245}
   - component: {fileID: 5263831109385147483}
-  - component: {fileID: 1320533833175885403}
+  - component: {fileID: 6813188358090583604}
   m_Layer: 0
   m_Name: TimerManager
   m_TagString: Untagged
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
   startSeconds: 120
---- !u!114 &1320533833175885403
+--- !u!114 &6813188358090583604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

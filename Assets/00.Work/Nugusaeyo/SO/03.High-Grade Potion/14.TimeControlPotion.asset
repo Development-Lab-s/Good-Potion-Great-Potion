@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
+  m_Name: 14.TimeControlPotion
+  m_EditorClassIdentifier: 
+  unlockWeek: 2
+  potionImage: {fileID: 6220589446371522360, guid: 4939c6b5c1cac3c41b607ea816e310d6, type: 3}
+  potionName: "\uBCC0\uC2E0\uC758 \uBB18\uC57D"
+  potionLockImg: {fileID: 0}
+  potionLockName: 
+  slotImage1: {fileID: 1914954295500506536, guid: e3e2194d2381e3f41a4f88206f3ac5d8, type: 3}
+  slotName1: "\uC138\uD53C\uB974\uB514\uC544"
+  slotImage2: {fileID: -8873956947887137603, guid: 13a0c0c2c3fe8d742a9f661179107f0d, type: 3}
+  slotName2: "\uB8E8\uBBF8\uB124\uC26C\uB8F8"
+  slotImage3: {fileID: 2688907727962396138, guid: 67fee9eab25881e43a8bff00f228fbb6, type: 3}
+  slotName3: "\uBCA8\uB8E8\uD398\uB974"
+  slotLockImg: {fileID: 0}
+  slotLockName: 

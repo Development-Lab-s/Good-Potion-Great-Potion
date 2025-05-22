@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f5564ed69e198fa419d20ab3fe794580
+guid: 978748dc497777b48b95175ccc4ad082
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -9116823752206262624
-    second: "\uD558\uAE092_0"
+    second: "\u88B4\r\u0480\0\0L"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uD558\uAE092_0"
+      name: "\x0E\0\0\0\0\0\0_0"
       rect:
         serializedVersion: 2
         x: 39
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uD558\uAE092_0": -9116823752206262624
+      "\uD558\uAE09\x01\0\0": -9116823752206262624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

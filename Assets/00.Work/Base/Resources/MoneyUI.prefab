@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5914043888062640539}
   - component: {fileID: 7954348889280089043}
   m_Layer: 5
-  m_Name: MoneyTextUI
+  m_Name: MoneyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000G
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c4c1d88886ac05941bb4748c7af76a44, type: 2}
-  m_sharedMaterial: {fileID: -8856327996163529554, guid: c4c1d88886ac05941bb4748c7af76a44, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
+  m_sharedMaterial: {fileID: -6632194752431957586, guid: 41dd687a783bc564b8ee98b0676eaef3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -177,8 +177,8 @@ RectTransform:
   m_GameObject: {fileID: 9123446551204321984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1.5479, y: 1.5479, z: 1.5479}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3505685343704396245}
   m_Father: {fileID: 0}

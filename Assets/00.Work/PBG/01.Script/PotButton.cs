@@ -1,12 +1,13 @@
+﻿using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PotButton : MonoBehaviour
 {
     [SerializeField] private ChangeImageUi changeImageUi;
-    private string targetTag = "Herb";
+    [SerializeField] private Herb herb;
     public Button deleteButton;
-
+    public string herbName { get; set;}
     private void Start()
     {
         // 버튼에 리스너 추가
@@ -21,22 +22,26 @@ public class PotButton : MonoBehaviour
     {
         // 해당 태그를 가진 모든 오브젝트 찾기
         Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None);
-        
+
         if (taggedObjects.Length > 0)
         {
-            // 모든 태그된 오브젝트 삭제
-            foreach (Herb obj in taggedObjects)
+            if (changeImageUi._isHerb != 3)
             {
-                changeImageUi.ShowResult(obj.data);
-                Destroy(obj.gameObject);
+                // 모든 태그된 오브젝트 삭제
+                foreach (Herb obj in taggedObjects)
+                {
+                    herb._inHand = false;
+
+                    changeImageUi.ShowResult(obj.data);
+                    Destroy(obj.gameObject);
+                }
             }
         }
-        
     }
 
     private void OnDestroy()
     {
-        // 메모리 누수 방지를 위한 리스너 제거
+        //리스너 제거
         if (deleteButton != null)
         {
             deleteButton.onClick.RemoveListener(DeleteTaggedObjects);
