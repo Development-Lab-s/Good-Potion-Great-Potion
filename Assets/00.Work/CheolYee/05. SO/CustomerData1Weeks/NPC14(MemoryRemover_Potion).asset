@@ -14,19 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
   mainLines:
-  - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 1"
-  - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 2"
+  - "\uC65C \uB610 \uC544\uD508 \uC0C1\uCC98\uC5D0 \uC18C\uAE08\uC744 \uBFCC\uB9AC\uC2ED\uB2C8\uAE4C"
+  - "\uC544\uC544 \uB2D8\uC740 \uAC14\uC2B5\uB2C8\uB2E4"
   hint:
-  - "\uD788\uC774\uC778\uD2B81"
-  - "\uD788\uC774\uC778\uD2B82"
+  - "\uD55C \uC794\uC740 \uB5A0\uB098\uAC04 \uB108\uB97C \uC704\uD558\uC5EC,"
   hint2:
-  - "\uD788\uC774\uC778\uD2B82-1"
-  - "\uD788\uC774\uC778\uD2B82-2"
+  - "\uD55C \uC794\uC740 \uB108\uC640 \uB098\uC758 \uC601\uC6D0\uD588\uB358 \uC0AC\uB791\uC744
+    \uC704\uD558\uC5EC,"
   exitLines:
-  - "\uAC10\uC0AC\uD574\uC694!!!!"
-  - "\uAC10\uC0AC\uD574\uC694!!!!2"
+  - "\uD55C \uC794\uC740 \uBC88\uCC3D \uD560 \uADF8\uB300\uB97C \uC704\uD558\uC5EC."
   forcedExitLines:
-  - "\uC774\uAC78 \uBABB\uD558\uB0D0"
-  - "\uC774\uAC78 \uBABB\uD558\uB0D02"
-  requiredPotions: RRPGBR
+  - "\uB09C... \u3131\u314F\uB054...\_\uB208\uBB3C\uC744\_\uD758\uB9B0 \u3137 \u314F
+    ...."
+  requiredPotions: DSRDTA
   waitingChatTime: 0.05
+  price: 340

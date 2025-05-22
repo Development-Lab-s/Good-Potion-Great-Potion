@@ -23,8 +23,6 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         [SerializeField] public CanvasGroup dayCountCanvasGroup;
         [SerializeField] public float fadeDuration = 1f;
         
-        
-
         private void Awake()
         {
             if (Instance == null)

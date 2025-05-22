@@ -34,7 +34,7 @@ public class GuideUI : MonoBehaviour
         unlockWeek = _guideSO.unlockWeek;
         day = SceneManagerScript.Instance.currentDay;
 
-        if (day / 4 >= unlockWeek)
+        if (day / 5 >= unlockWeek)
         {
             potionImg.sprite = _guideSO.potionImage;
             potionImg.SetNativeSize();

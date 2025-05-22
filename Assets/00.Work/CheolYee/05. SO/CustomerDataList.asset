@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: CustomerDataList
   m_EditorClassIdentifier: 
   customerLists1Week:
-  - {fileID: 11400000, guid: 015091ad5aff1df48a4b6a58a0fe2ddb, type: 2}
-  - {fileID: 11400000, guid: ea366849eea27d04f94ad0fc725e74db, type: 2}
+  - {fileID: 11400000, guid: e31fe27ac59d9dc498bdeea1071b2cdb, type: 2}
+  - {fileID: 11400000, guid: ded93262e3daf444394acc2212e3165d, type: 2}
   - {fileID: 11400000, guid: 241db8a62ef73d048a941e598ea919ba, type: 2}
   - {fileID: 11400000, guid: baec657bfc5e1d144b27c4bef9b4ce18, type: 2}
+  - {fileID: 11400000, guid: 5bdc53ad5d73db24b8059c65b0abb116, type: 2}
+  - {fileID: 11400000, guid: 4b4b85c8daa620541ba585bc934ee654, type: 2}
+  - {fileID: 11400000, guid: e9213dcee36976041b44c74b7bd33306, type: 2}
+  - {fileID: 11400000, guid: 94b1c02a690447b46820bdf1e5095a67, type: 2}
+  - {fileID: 11400000, guid: f60e33fa278b16a4f81e2952e059c031, type: 2}
+  - {fileID: 11400000, guid: 458435879a07f9741b5d263491870d2b, type: 2}
+  - {fileID: 11400000, guid: 32ab0bf33c534484e83f3c452274b827, type: 2}
+  - {fileID: 11400000, guid: 6eeace94a3cbf1449998865169d990c7, type: 2}
   customerLists2Week: []
   customerLists3Week: []

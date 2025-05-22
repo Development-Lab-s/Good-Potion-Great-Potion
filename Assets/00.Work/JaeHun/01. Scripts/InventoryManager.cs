@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _00.Work.Base._02._Sprites.Manager;
 using UnityEngine;
 
 namespace _00.Work.JaeHun._01._Scripts
@@ -38,8 +39,15 @@ namespace _00.Work.JaeHun._01._Scripts
         //재료추가
         public void AddHerb(string herbName, int price)     //재료추가.
         {
+                
             if (herbInventory.ContainsKey(herbName))
             {
+                if (herbInventory[herbName] >= 9)
+                {
+                    Debug.Log($"인벤토리가 최대입니다. : {herbName}");
+                    return;
+                }
+                
                 herbInventory[herbName]++;
             }
             else
@@ -47,6 +55,7 @@ namespace _00.Work.JaeHun._01._Scripts
                 herbInventory[herbName] = 1;
             }
 
+            MoneyManager.Instance.SpendMoney(price);
             totalHerbCount++;
             totalSpentMoney += price;
             OnHerbChanged?.Invoke(herbName, herbInventory[herbName]);
