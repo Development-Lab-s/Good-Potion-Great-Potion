@@ -33,7 +33,7 @@ public class StickAnimation : MonoBehaviour
 
     private void Move()
     {
-        if (Keyboard.current.dKey.wasPressedThisFrame)
+        if (Keyboard.current.dKey.wasPressedThisFrame && !SceneManagerScript.Instance.isTimerFinished)
         {
             if(_isRotating == false)
             {
@@ -43,7 +43,7 @@ public class StickAnimation : MonoBehaviour
             }
         }
 
-        else if (Keyboard.current.aKey.wasPressedThisFrame)
+        else if (Keyboard.current.aKey.wasPressedThisFrame && !SceneManagerScript.Instance.isTimerFinished)
         {
             if (_isRotating == false)
             {

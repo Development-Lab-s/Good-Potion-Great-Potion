@@ -39,7 +39,7 @@ public class ClockHand : MonoBehaviour
     [SerializeField] Transform particleTrm;
     private void Update()
     {
-        if (_finishCheck)
+        if (_finishCheck && !SceneManagerScript.Instance.isTimerFinished)
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
@@ -56,7 +56,7 @@ public class ClockHand : MonoBehaviour
         }
         else
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            if (Keyboard.current.spaceKey.wasPressedThisFrame && !SceneManagerScript.Instance.isTimerFinished)
             {
                 _timerLogic.ClockHandStop();
                 _camShake.CameraShakeStop(false);

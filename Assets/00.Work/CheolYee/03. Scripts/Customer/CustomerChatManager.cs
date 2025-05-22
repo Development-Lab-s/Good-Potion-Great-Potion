@@ -1,5 +1,3 @@
-using System;
-using _00.Work.Base._02._Sprites.Manager.FadeManager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using _00.Work.CheolYee._05._SO.CustomerChatSO;
 using UnityEngine;
@@ -56,8 +54,10 @@ public class CustomerChatManager : MonoBehaviour
 
         public void GetRandomCustomerData()
         {
+            Debug.LogWarning($"{SceneManagerScript.Instance.currentWeek}주차 입니다");
             switch (SceneManagerScript.Instance.currentWeek) // 몇주차인지 switch 문으로 확인하기
             {
+                
                 case 1:
                 {
                     customerDataSo = customerDataList.customerLists1Week // 손님의 데이터(1주차)중 한명을

@@ -1,5 +1,6 @@
 using System;
 using _00.Work.Base._02._Sprites.Manager;
+using _00.Work.Base._02._Sprites.Manager.SoundManager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +20,9 @@ namespace _00.Work.CheolYee._03._Scripts.ButtonScripts
         public void MainMenu()
         {
             menu.SetActive(true);
+            SoundManager.Instance.ReassignUI();
             mainButton.gameObject.SetActive(false);
-            TimerManager.Instance.StopTimer();
+            TimerManager.Instance?.StopTimer();
             Time.timeScale = 0;
         }
         
@@ -29,7 +31,7 @@ namespace _00.Work.CheolYee._03._Scripts.ButtonScripts
             Time.timeScale = 1;
             mainButton.gameObject.SetActive(true);
             menu.SetActive(false);
-            TimerManager.Instance.RestartTimer();
+            TimerManager.Instance?.RestartTimer();
         }
 
         public void ExitButton()

@@ -14,7 +14,7 @@ public class HerbRecipeManager : MonoBehaviour
     public string _potionName{get; set;}
 
 
-    private List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
+    public List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
 
     void Awake()
     {

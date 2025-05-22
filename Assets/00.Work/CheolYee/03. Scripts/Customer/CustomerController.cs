@@ -1,6 +1,5 @@
 using System.Collections;
 using _00.Work.Base._02._Sprites.Manager;
-using _00.Work.Base._02._Sprites.Manager.FadeManager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 using TMPro;
@@ -106,11 +105,6 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
         {
             customerChatUI.SetActive(false);
             StartCoroutine(CustomerExitRoutine());
-        }
-
-        private void StartCustomerEnterRoutine()
-        {
-            StartCoroutine(CustomerEnterRoutine());
         }
 
         private IEnumerator CustomerEnterRoutine() //손님 등장 루틴
