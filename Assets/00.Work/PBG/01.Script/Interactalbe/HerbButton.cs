@@ -27,7 +27,7 @@ public class HerbButton : MonoBehaviour
 
     private void HandleHurbChanged(string str, int count)
     {
-        if (data.herbName != str) return;   
+        if (data.herbName != str) return;
         _numberText.text = $"{count}";
     }
 

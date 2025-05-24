@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC28(TimeControl_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 836959743633371804, guid: d71d9883c153b0847a7a23615997700e, type: 3}
+  mainLines:
+  - "\uC5B4\uC81C\uB85C \uB3CC\uC544\uAC00\uACE0 \uC2F6\uC5B4.."
+  - "\uB0B4\uAC00 \uC65C \uADF8\uB7AC\uC744\uAE4C.."
+  hint:
+  - "\uC5B4\uC81C\uC758 \uC77C\uC744 \uC5C6\uC5C8\uB358 \uAC83\uC73C\uB85C \uD574\uC57C\uB9CC
+    \uD574.."
+  hint2:
+  - "\uC5B4\uC81C\uB85C \uB3CC\uC544\uAC08 \uC218 \uC788\uB294 \uBC29\uBC95\uC774
+    \uC5C6\uB294 \uAC83\uAE4C?"
+  exitLines:
+  - "\uC88B\uC544.. \uC774\uAC70\uB77C\uBA74.."
+  forcedExitLines:
+  - "\uC5ED\uC2DC.. \uB9D0\uB3C4 \uC548\uB418\uB294\uAC70\uACA0\uC9C0.."
+  requiredPotions: SPDRSRBPR
+  waitingChatTime: 0.05
+  price: 840

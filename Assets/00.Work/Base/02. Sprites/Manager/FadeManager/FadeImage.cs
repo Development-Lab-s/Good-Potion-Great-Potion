@@ -1,4 +1,5 @@
 using System.Collections;
+using _00.Work.CheolYee._03._Scripts.Customer;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 
@@ -22,6 +23,8 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         
         private IEnumerator NextDayCycle()
         {
+            if (SceneManagerScript.Instance.currentDay == 12) SceneManagerScript.Instance.LoadToScene(5);
+            
             //보이는 텍스트 다 끄기
             FadeManager.Instance.backGroundImg.gameObject.SetActive(false);
             FadeManager.Instance.revenueText.gameObject.SetActive(false);
@@ -39,12 +42,12 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
             FadeManager.Instance.dayCountText.gameObject.SetActive(false);
 
             
-            SceneManagerScript.Instance.LoadToScene(1); // 씬을 메인으로 옮겨버리기
             
             TimerManager.Instance.StartTimer(300); //타이머 설정하기
             SceneManagerScript.Instance.isTimerFinished = false;
             Debug.Log("다음날 전환완료");
             FadeManager.Instance.backGroundImg.gameObject.SetActive(false);
+            SceneManagerScript.Instance.LoadToScene(1); // 씬을 메인으로 옮겨버리기
         }
     }
 }

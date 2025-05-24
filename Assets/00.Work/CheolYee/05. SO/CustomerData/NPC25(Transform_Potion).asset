@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC25(Transform_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 6845427836877925947, guid: 759be402ee7306e4a8a14d1111706336, type: 3}
+  mainLines:
+  - "(\uB2EC\uADF8\uB77D)"
+  - "(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)"
+  hint:
+  - "(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)"
+  hint2:
+  - "(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)"
+  exitLines:
+  - "(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)"
+  forcedExitLines:
+  - "(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)(\uB2EC\uADF8\uB77D)"
+  requiredPotions: SPDDTATBR
+  waitingChatTime: 0.05
+  price: 850

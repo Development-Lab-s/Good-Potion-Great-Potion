@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _00.Work.Base._02._Sprites.Manager;
 using UnityEngine;
 
 namespace _00.Work.JaeHun._01._Scripts
@@ -18,7 +19,6 @@ namespace _00.Work.JaeHun._01._Scripts
         public int totalHerbCount = 0;
 
         //Inventory가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
-        public event Action<int> OnHerbInventoryChanged;
         public event Action<string, int> OnHerbChanged;
 
         private void Awake()
@@ -38,8 +38,15 @@ namespace _00.Work.JaeHun._01._Scripts
         //재료추가
         public void AddHerb(string herbName, int price)     //재료추가.
         {
+                
             if (herbInventory.ContainsKey(herbName))
             {
+                if (herbInventory[herbName] >= 9)
+                {
+                    Debug.Log($"인벤토리가 최대입니다. : {herbName}");
+                    return;
+                }
+                
                 herbInventory[herbName]++;
             }
             else
@@ -47,10 +54,10 @@ namespace _00.Work.JaeHun._01._Scripts
                 herbInventory[herbName] = 1;
             }
 
+            MoneyManager.Instance.SpendMoney(price);
             totalHerbCount++;
             totalSpentMoney += price;
             OnHerbChanged?.Invoke(herbName, herbInventory[herbName]);
-            OnHerbInventoryChanged?.Invoke(totalHerbCount);
         }
         //재료제거
         public bool RevokeHerb(string herbName)
@@ -59,7 +66,6 @@ namespace _00.Work.JaeHun._01._Scripts
             {
                 herbInventory[herbName]--;
 
-                OnHerbInventoryChanged?.Invoke(totalHerbCount);
                 return true;
             }
 
@@ -77,11 +83,6 @@ namespace _00.Work.JaeHun._01._Scripts
                 return count;
             }
             return 0;
-        }
-
-        public int GetTotalHerbCount()
-        {
-            return totalHerbCount;
         }
 
         public int GetTotalSpentAll()      //합산

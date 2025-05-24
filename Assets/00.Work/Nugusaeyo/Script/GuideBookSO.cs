@@ -6,6 +6,7 @@ public class GuideBookSO : ScriptableObject
     public int unlockWeek;
 
     public Sprite potionImage;
+    public Sprite potionBGImage;
     public string potionName;
 
     public Sprite potionLockImg;

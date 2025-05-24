@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 
 public class CamShake : MonoBehaviour
@@ -18,7 +19,7 @@ public class CamShake : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _canSpaceKey == true)
+        if (Input.GetKeyDown(KeyCode.Space) && _canSpaceKey == true && !SceneManagerScript.Instance.isTimerFinished)
         {
             StartCoroutine(Shake(1f));
             Camera.main.orthographicSize = Camera.main.orthographicSize - 0.5f;

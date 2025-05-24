@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BuyButton : MonoBehaviour
 {
-    //BuyMoney SO 불러오기.
-    [SerializeField] private BuyMoneySO buyMoneySO;
 
     [SerializeField] private string herbName;
     [SerializeField] private int price;
@@ -19,9 +17,11 @@ public class BuyButton : MonoBehaviour
         }
 
         // 2. 돈 차감
-        MoneyManager.Instance.SpendMoney(price);
+       
 
         // 3. 인벤토리에 허브 추가 (이름과 가격 모두 전달)
+        
+        
         InventoryManager.Instance.AddHerb(herbName, price);
         
         

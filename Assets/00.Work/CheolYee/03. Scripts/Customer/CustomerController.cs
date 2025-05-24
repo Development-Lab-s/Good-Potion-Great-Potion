@@ -17,6 +17,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
         [SerializeField] private Button whatButton;
         [SerializeField] private Button whatButton2;
         [SerializeField] private Button noButton;
+        
+        private Coroutine _typingCoroutine;
+        
 
         private void Awake()
         {
@@ -83,7 +86,8 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             realYesButton.gameObject.SetActive(true); //네(마지막) 버튼과
             whatButton2.gameObject.SetActive(true); //네?(2번째) 활성화
             
-            StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedHint,
+            StopTypingCorutine();
+            _typingCoroutine = StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedHint,
                 CustomerChatManager.Instance.customerDataSo.waitingChatTime)); // 힌트 대사 TMP출력
             
             TimerManager.Instance.LessTimer(3); // 디메리트 타이머 3초 감소
@@ -95,7 +99,8 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             
             noButton.gameObject.SetActive(true); //아니요 버튼을 활성화
             
-            StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedHint2,
+            StopTypingCorutine();
+            _typingCoroutine = StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedHint2,
                 CustomerChatManager.Instance.customerDataSo.waitingChatTime)); // 힌트 대사 TMP출력
             
             TimerManager.Instance.LessTimer(3); // 디메리트 타이머 3초 감소
@@ -104,11 +109,14 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
         public void OnClickNo() // no 버튼을 눌렀을 때 실행
         {
             customerChatUI.SetActive(false);
+            
             StartCoroutine(CustomerExitRoutine());
         }
 
         private IEnumerator CustomerEnterRoutine() //손님 등장 루틴
         {
+            CustomerChatManager.Instance.GetRandomCustomerData(); //손님의 데이터를 돌려
+            
             Debug.Log("손놈이 등장했다");
             CustomerChatManager.Instance.PlayEnterAnimation();// 등장 애니메이션 실행
             CustomerChatManager.Instance.PlayIdleAnimation();// 등장 애니메이션 실행
@@ -120,8 +128,9 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             yesButton.gameObject.SetActive(true);
             realYesButton.gameObject.SetActive(false);
             noButton.gameObject.SetActive(false);
-            
-            StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedLine, //메인 대사 출력
+
+            StopTypingCorutine();
+            _typingCoroutine = StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedLine, //메인 대사 출력
                 CustomerChatManager.Instance.customerDataSo.waitingChatTime));
         }
 
@@ -145,7 +154,8 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             
             if (SceneManagerScript.Instance.isSuccessCrafting) //만약 포션 만드는데에 성공했다면
             {
-                StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedExitLine, //퇴장 대사(긍정) 출력
+                StopTypingCorutine();
+                yield return _typingCoroutine = StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedExitLine, //퇴장 대사(긍정) 출력
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
                 MoneyManager.Instance.AddMoney(SceneManagerScript.Instance.currentCustomerData.price); //돈UI에 추가
                 SceneManagerScript.Instance.toDayTotalMoney += //오늘 번 돈 +포션 가격해준다
@@ -153,11 +163,12 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             }
             else if (!SceneManagerScript.Instance.isSuccessCrafting)
             {
-                StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedForcedExitLine, //퇴장 대사(부정) 출력
+                StopTypingCorutine();
+                yield return _typingCoroutine = StartCoroutine(TypingChat(CustomerChatManager.Instance.SelectedForcedExitLine, //퇴장 대사(부정) 출력
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
             }
             
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             
             customerChatUI.SetActive(false);
             CustomerChatManager.Instance.PlayExitAnimation();// 퇴장 애니메이션 실행
@@ -168,14 +179,14 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
             if (EndCustomerCycle()) // 손님 사이클이 끝났는가?
                 TimerManager.Instance.SetTimer(1); // 끝났다면 타이머 종료(하루 종료)
             else
-                ResetCustomer(); // 끝나지 않았다면 다시 실행
+                StartCoroutine(CustomerEnterRoutine()); // 끝나지 않았다면 다시 실행
             //만약 오늘 손님이 다 왔다면 하루 종료하면 됨
         }
 
-        private void ResetCustomer() //손님 재등장 메서드
+        private void StopTypingCorutine()
         {
-            CustomerChatManager.Instance.GetRandomCustomerData(); // 손님 데이터 랜덤 돌리고
-            StartCoroutine(CustomerEnterRoutine()); //손님 등장 시키기
+            if (_typingCoroutine != null)
+                StopCoroutine(_typingCoroutine);
         }
 
         private bool EndCustomerCycle() //손님 오늘 몇명왔나 확인하는 메서드

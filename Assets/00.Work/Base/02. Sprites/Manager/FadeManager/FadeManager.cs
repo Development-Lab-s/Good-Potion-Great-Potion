@@ -23,8 +23,6 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         [SerializeField] public CanvasGroup dayCountCanvasGroup;
         [SerializeField] public float fadeDuration = 1f;
         
-        
-
         private void Awake()
         {
             if (Instance == null)
@@ -65,6 +63,7 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
             
             statisticText.gameObject.SetActive(true);
             StartCoroutine(TypingChat(statisticText,$"구매한 허브의 개수: {InventoryManager.Instance.totalHerbCount}개\n" +
+                                      $"오늘 온 손님의 수: {SceneManagerScript.Instance.customerIndexToDay}명\n" +
                                       $"알맞게 제조한 물약 수: {SceneManagerScript.Instance.isSuccessCraftingCount}개\n" +
                                       $"오늘 번 골드량: <color=#5dff4b>+{SceneManagerScript.Instance.toDayTotalMoney}</color>G\n" +
                                       $"오늘 사용한 골드량: <color=#FF0000>-{InventoryManager.Instance.totalSpentMoney}</color>G", 0.05f));

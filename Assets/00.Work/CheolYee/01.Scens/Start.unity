@@ -703,7 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleTransform: {fileID: 2090015537}
   dropDuration: 1.2
-  startYOffset: 300
+  startYOffset: 700
   onStartMotion:
     m_PersistentCalls:
       m_Calls:

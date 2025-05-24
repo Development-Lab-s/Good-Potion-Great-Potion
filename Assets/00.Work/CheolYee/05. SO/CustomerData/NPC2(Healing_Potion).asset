@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC2(Healing_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: -5053287436955222781, guid: 4e36c10d50a5b6045b7fdc487de7f2d3, type: 3}
+  mainLines:
+  - "(\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D\uCF5C\uB85D)"
+  - "(\uCF5C\uB85D\uD478\uD589\uCDE8\uCF5C\uB85D\uD478\uD589\uCDE8\uCF5C\uB85D\uD478\uD589\uCDE8\uCF5C\uB85D\uD478\uD589\uCDE8)"
+  hint:
+  - "(\uCF5C\uB85D\uCF5C\uB85D) \uC57C \uADF8\uAC70 \uC918\uBD10 \uC544\uD50C \uB54C
+    \uBA39\uB294 \uCCB4\uB9AC \uBB3C\uC57D"
+  hint2:
+  - "(\uCF5C\uB85D) \uC544\uB2C8 (\uCF5C\uB85D) \uBE68\uAC04 (\uCF5C\uB85D) \uC57D
+    (\uCF5C\uB85D) \uC788\uC796\uC544!"
+  exitLines:
+  - "\uC774\uC57C \uC774 \uC9D1 \uC951\uC774\uB124"
+  forcedExitLines:
+  - "\uB2C8 \uC7A5\uB09C\uD558\uB098 \uC9C0\uAE08? (\uCF5C\uB85D) \uC544\uD508\uAC70
+    \uC548\uBCF4\uC774\uB098? (\uCF5C\uB85D)"
+  requiredPotions: RRPGBR
+  waitingChatTime: 0.05
+  price: 200

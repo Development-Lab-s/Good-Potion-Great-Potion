@@ -13,7 +13,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.TestCreate
 
             if (SceneManagerScript.Instance != null && HerbRecipeManager.Instance != null)
             {
-                if (HerbRecipeManager.Instance._potionName ==
+                if (HerbRecipeManager.Instance._potionName == 
                     SceneManagerScript.Instance.currentCustomerData.requiredPotions) //만약 만든 포션이 손님의 주문과 같다면
                 {
                     SceneManagerScript.Instance.isSuccessCrafting = true; //제작 성공으로 만들고
