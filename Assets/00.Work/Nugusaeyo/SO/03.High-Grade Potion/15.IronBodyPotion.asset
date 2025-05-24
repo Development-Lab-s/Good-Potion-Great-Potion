@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: 15.IronBodyPotion
   m_EditorClassIdentifier: 
-  unlockWeek: 2
+  unlockWeek: 3
   potionImage: {fileID: -8694482708274429852, guid: ee578a7512da8d846a0d34dc5f6a1e9c, type: 3}
+  potionBGImage: {fileID: -6348121936240050436, guid: ce0ca6652495b234bb4fd905beaea22b, type: 3}
   potionName: "\uAE08\uAC15\uBD88\uAD34\uC758 \uD3EC\uC158"
-  potionLockImg: {fileID: 0}
-  potionLockName: 
+  potionLockImg: {fileID: 8832864009636354072, guid: 8dfd3166cf4c9e0448968ddaa6d25af9, type: 3}
+  potionLockName: "3\uC8FC\uCC28\uC5D0 \uD574\uAE08"
   slotImage1: {fileID: 600708726713020152, guid: 885eaa4bba6fd9d49ae5f02d753656b0, type: 3}
   slotName1: "\uC0E4\uB974\uB098\uB378"
   slotImage2: {fileID: -8873956947887137603, guid: 13a0c0c2c3fe8d742a9f661179107f0d, type: 3}
   slotName2: "\uB8E8\uBBF8\uB124\uC26C\uB8F8"
-  slotImage3: {fileID: 0}
-  slotName3: 
-  slotLockImg: {fileID: 0}
-  slotLockName: 
+  slotImage3: {fileID: -1877547964610721639, guid: 3adf195e4c9080a458ccbad8d1d0b871, type: 3}
+  slotName3: "\uC5C6\uC74C"
+  slotLockImg: {fileID: 8832864009636354072, guid: 8dfd3166cf4c9e0448968ddaa6d25af9, type: 3}
+  slotLockName: "\uC7A0\uAE40"

@@ -7,10 +7,11 @@ public class GuideUI : MonoBehaviour
 {
     [SerializeField] private  GuideBookSO _guideSO;
 
-    [SerializeField] private int day;
+    [SerializeField] private int week;
     [SerializeField] private int unlockWeek;
 
     [SerializeField] private Image potionImg;
+    [SerializeField] private Image potionBGImg;
     [SerializeField] private Image slotImg1;
     [SerializeField] private Image slotImg2;
     [SerializeField] private Image slotImg3;
@@ -32,9 +33,9 @@ public class GuideUI : MonoBehaviour
     private void Start()
     {
         unlockWeek = _guideSO.unlockWeek;
-        day = SceneManagerScript.Instance.currentDay;
+        week = SceneManagerScript.Instance.currentWeek;
 
-        if (day / 5 >= unlockWeek)
+        if (week >= unlockWeek)
         {
             potionImg.sprite = _guideSO.potionImage;
             potionImg.SetNativeSize();
@@ -46,9 +47,6 @@ public class GuideUI : MonoBehaviour
             slotName1.text = _guideSO.slotName1;
             slotName2.text = _guideSO.slotName2;
             slotName3.text = _guideSO.slotName3;
-            slotBGImg1.sprite = slot1Frame;
-            slotBGImg2.sprite = slot2Frame;
-            slotBGImg3.sprite = slot3Frame;
         }
         else
         {
@@ -61,6 +59,10 @@ public class GuideUI : MonoBehaviour
             slotImg3.sprite = _guideSO.slotLockImg;
             slotName3.text = _guideSO.slotLockName;
         }
+        slotBGImg1.sprite = slot1Frame;
+        slotBGImg2.sprite = slot2Frame;
+        slotBGImg3.sprite = slot3Frame;
+        potionBGImg.sprite = _guideSO.potionBGImage;
     }
 
 }

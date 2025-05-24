@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC24(Sleeping_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: -9185292952197899971, guid: d538b1df3dda8484b8e2d064cb6662f7, type: 3}
+  mainLines:
+  - "\uB208\uC774 \uCDA9\uD608\uB410\uC5B4\uC694\u2026"
+  - "\uB208 \uBC11\uC5D0 \uB2E4\uD06C\uC11C\uD074\uC774 \uC2EC\uD574\uC694.."
+  hint:
+  - "\uC7A0\uC774 \uD544\uC694\uD574\uC694, \uC9C0\uAE08 \uB2F9\uC7A5."
+  hint2:
+  - "\uC81C\uAC8C \uBD88\uBA74\uC99D\uC744 \uD68C\uBCF5\uD560 \uC218 \uC788\uB294
+    \uD3EC\uC158\uC744 \uC8FC\uC138\uC694.."
+  exitLines:
+  - "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uC88B\uC740 \uBC24 \uB418\uC138\uC694!"
+  forcedExitLines:
+  - "\uC601\uC6D0\uD788 \uC790\uB3C4 \uC7A0\uC740 \uC7A0\uC774\uACA0\uC9C0.."
+  requiredPotions: ATAGBRRRP
+  waitingChatTime: 0.05
+  price: 400

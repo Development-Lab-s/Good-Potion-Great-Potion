@@ -41,15 +41,6 @@ public class CustomerChatManager : MonoBehaviour
                     Destroy(this.gameObject);
             }
         }
-
-        private void Start()
-        {
-            if(SceneManagerScript.Instance.isFinishedCrafting) //포션 제작 완료라면 이거 실행안함
-                return;
-            
-            
-            GetRandomCustomerData();
-        }
         
 
         public void GetRandomCustomerData()
@@ -69,7 +60,7 @@ public class CustomerChatManager : MonoBehaviour
                 case 2:
                 {
                     customerDataSo = customerDataList.customerLists2Week
-                        [Random.Range(0, customerDataList.customerLists1Week.Count)];
+                        [Random.Range(0, customerDataList.customerLists2Week.Count)];
                     PickRandomLine(); // 대사랑 힌트도 뽑아서 변수저장
                     GetCustomerSprite(); // 스프라이트도 미리 바꿈
                     break;
@@ -77,7 +68,7 @@ public class CustomerChatManager : MonoBehaviour
                 case 3:
                 {
                     customerDataSo = customerDataList.customerLists3Week
-                        [Random.Range(0, customerDataList.customerLists1Week.Count)];
+                        [Random.Range(0, customerDataList.customerLists3Week.Count)];
                     PickRandomLine(); // 대사랑 힌트도 뽑아서 변수저장
                     GetCustomerSprite(); // 스프라이트도 미리 바꿈
                     break;

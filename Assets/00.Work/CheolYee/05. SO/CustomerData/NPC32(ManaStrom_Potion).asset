@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC32(ManaStrom_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 3528193206674900163, guid: 04b085d9103852740bc65c747558891e, type: 3}
+  mainLines:
+  - "(\uB2E4\uC2A4\uB9AC\uB294 \uD798\uC774 \uC810\uC810 \uBD80\uC871\uD574\uC9C0\uACE0
+    \uC788\uC5B4..)"
+  - "(\uC774\uB300\uB85C\uBA74 \uB0B4 \uBD80\uC871\uC740..)"
+  hint:
+  - "(\uC774\uB300\uB85C\uBA74 \uC6B0\uB9AC \uC601\uD1A0\uB294..)"
+  hint2:
+  - "(\uB354 \uB9CE\uC740 \uB9C8\uB825\uC774 \uD544\uC694\uD574..!)"
+  exitLines:
+  - "(\uC774\uAC70\uB77C\uBA74.. 10\uB144\uC740 \uAC70\uB72C\uD558\uACA0\uC5B4)"
+  forcedExitLines:
+  - "(\uC548\uB3FC..! \uC5B4\uB514 \uBC29\uBC95\uC774 \uC5C6\uB294\uAC78\uAE4C..?)"
+  requiredPotions: RSRPSTSND
+  waitingChatTime: 0.05
+  price: 980

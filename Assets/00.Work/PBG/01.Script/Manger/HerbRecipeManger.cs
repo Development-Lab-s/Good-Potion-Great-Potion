@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class HerbRecipeManager : MonoBehaviour
@@ -109,37 +108,37 @@ public class HerbRecipeManager : MonoBehaviour
             _potionName = "SMDRSR";
         }
 
-        else if (selectedHerbs[0].herbName == "RGA" && selectedHerbs[1].herbName == "BTA" && selectedHerbs[2].herbName == "CSM")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "RGA" && selectedHerbs[1].herbName == "BTA" && selectedHerbs[2].herbName == "CSM")
         {
             _potionName = "RGABTACSM";
         }
 
-        else if (selectedHerbs[0].herbName == "PMR" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "RMB")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "PMR" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "RMB")
         {
             _potionName = "PMRSDRRMB";
         }
 
-        else if (selectedHerbs[0].herbName == "BTA" && selectedHerbs[1].herbName == "BPR" && selectedHerbs[2].herbName == "CSM")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "BTA" && selectedHerbs[1].herbName == "BPR" && selectedHerbs[2].herbName == "CSM")
         {
             _potionName = "BTABPRCSM";
         }
 
-        else if (selectedHerbs[0].herbName == "ATA" && selectedHerbs[1].herbName == "GBR" && selectedHerbs[2].herbName == "RRP")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "ATA" && selectedHerbs[1].herbName == "GBR" && selectedHerbs[2].herbName == "RRP")
         {
             _potionName = "ATAGBRRRP";
         }
 
-        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "DTA" && selectedHerbs[2].herbName == "TBR")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "DTA" && selectedHerbs[2].herbName == "TBR")
         {
             _potionName = "SPDDTATBR";
         }
 
-        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "RSR" && selectedHerbs[2].herbName == "BPR")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "RSR" && selectedHerbs[2].herbName == "BPR")
         {
             _potionName = "SPDRSRBPR";
         }
 
-        else if (selectedHerbs[0].herbName == "RSR" && selectedHerbs[1].herbName == "PST" && selectedHerbs[2].herbName == "SND")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "RSR" && selectedHerbs[1].herbName == "PST" && selectedHerbs[2].herbName == "SND")
         {
             _potionName = "RSRPSTSND";
         }

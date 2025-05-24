@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ce5e8a62fc1a41a53e16712b5433f, type: 3}
   m_Name: 01.HealingPotion
   m_EditorClassIdentifier: 
-  unlockWeek: 0
+  unlockWeek: 1
   potionImage: {fileID: 6938507106872539919, guid: 4e8ea0ab1c7766b418696cd930d8d34a, type: 3}
+  potionBGImage: {fileID: -6348121936240050436, guid: ce0ca6652495b234bb4fd905beaea22b, type: 3}
   potionName: "\uD68C\uBCF5\uC758 \uD3EC\uC158"
-  potionLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
-  potionLockName: "\uC7A0\uAE40"
-  slotImage1: {fileID: -2689141045834474053, guid: 62a3e1f74c8422d4b8cc64e8d1728e1f, type: 3}
+  potionLockImg: {fileID: 8832864009636354072, guid: 8dfd3166cf4c9e0448968ddaa6d25af9, type: 3}
+  potionLockName: "\uD3EC\uC158 \uC7A0\uAE40"
+  slotImage1: {fileID: -2689141045834474053, guid: 0564ba7674f1cbd4fb87c1b904c83506, type: 3}
   slotName1: "\uB808\uD544\uB77C\uD504"
-  slotImage2: {fileID: 4171932925159491428, guid: 2a39bb5c20e4ce242b478a351042f22a, type: 3}
+  slotImage2: {fileID: 4171932925159491428, guid: b1a15a583c977b34ebb32119e3f0872d, type: 3}
   slotName2: "\uAC94\uBC14\uB780"
-  slotImage3: {fileID: 0}
+  slotImage3: {fileID: -1877547964610721639, guid: 3adf195e4c9080a458ccbad8d1d0b871, type: 3}
   slotName3: 
-  slotLockImg: {fileID: 5863505280419309686, guid: 042acd7d1c086854db0e51ddc3b9d7cc, type: 3}
+  slotLockImg: {fileID: 8832864009636354072, guid: 8dfd3166cf4c9e0448968ddaa6d25af9, type: 3}
   slotLockName: "\uC7A0\uAE40"

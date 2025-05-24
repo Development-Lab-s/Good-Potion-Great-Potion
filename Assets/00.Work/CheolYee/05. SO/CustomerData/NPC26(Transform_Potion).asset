@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC26(Transform_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 9104509335607311019, guid: b321201795ca76141a6ffa41935e3016, type: 3}
+  mainLines:
+  - "\uADF8\uC5B4\uC5B4\u3153.."
+  - "\uADF8\u3161\uC544\u314F?..\uADF8\uC5B4\u3153\u3153"
+  hint:
+  - "\uADF8\uC5B4\uC5B4\u3153\u3153\u3147\uAC70\u3153\uAC70\uC5B4!!!!"
+  hint2:
+  - "\uADF8\uC5B4\u3153\u3153\u3131.."
+  exitLines:
+  - "\uADF8\uC5B4\uC5B4\u3153\u3153\u3131.. (\uACE0\uB9D9\uB2E4\uB294 \uAC83 \uAC19\uB2E4)"
+  forcedExitLines:
+  - "\uADF8\uC5B4\uC5B4\uC5B4\u3153\uC5B4\uC5B4\u3153\u3153\u3153\u3153!!!! (\uD654\uAC00
+    \uB09C \uAC83 \uAC19\uB2E4..)"
+  requiredPotions: SPDDTATBR
+  waitingChatTime: 0.05
+  price: 850

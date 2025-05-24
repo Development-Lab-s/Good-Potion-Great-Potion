@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BuyButton : MonoBehaviour
 {
-    //BuyMoney SO 불러오기.
-    [SerializeField] private BuyMoneySO buyMoneySO;
 
     [SerializeField] private string herbName;
     [SerializeField] private int price;

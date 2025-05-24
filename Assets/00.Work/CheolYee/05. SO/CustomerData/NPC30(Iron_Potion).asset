@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC30(Iron_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 1803593701655936441, guid: 3b5ed8eb0b8286e4eadf123f9263b15a, type: 3}
+  mainLines:
+  - "\uD2BC\uD2BC\uD55C \uC721\uCCB4\uC57C \uB9D0\uB85C \uCD5C\uACE0\uC758 \uD798!"
+  - "\uC6A9\uAE30\uB294 \uB2E8\uB2E8\uD55C \uBAB8\uC5D0\uC11C \uB098\uC624\uB294
+    \uBC95\uC774\uC9C0."
+  hint:
+  - "\uBC14\uC704\uCC98\uB7FC \uB2E8\uB2E8\uD558\uAC8C! \uAC15\uCCA0\uCC98\uB7FC
+    \uD2BC\uD2BC\uD558\uAC8C!"
+  hint2:
+  - "\uAE08! \uAC15! \uBD88! \uAD34!"
+  exitLines:
+  - "\uD558\uD558\uD558! \uB098\uB294 \uCD5C\uAC15\uC774\uB2E4!!!!"
+  forcedExitLines:
+  - "\uB354\uC6B1 \uB354 \uD2BC\uD2BC\uD574\uC838\uC57C\uD568 \uD574.."
+  requiredPotions: SNDRSR
+  waitingChatTime: 0.05
+  price: 740

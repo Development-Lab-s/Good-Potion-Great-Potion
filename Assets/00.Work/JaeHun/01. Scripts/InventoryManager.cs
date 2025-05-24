@@ -19,7 +19,6 @@ namespace _00.Work.JaeHun._01._Scripts
         public int totalHerbCount = 0;
 
         //Inventory가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
-        public event Action<int> OnHerbInventoryChanged;
         public event Action<string, int> OnHerbChanged;
 
         private void Awake()
@@ -59,7 +58,6 @@ namespace _00.Work.JaeHun._01._Scripts
             totalHerbCount++;
             totalSpentMoney += price;
             OnHerbChanged?.Invoke(herbName, herbInventory[herbName]);
-            OnHerbInventoryChanged?.Invoke(totalHerbCount);
         }
         //재료제거
         public bool RevokeHerb(string herbName)
@@ -68,7 +66,6 @@ namespace _00.Work.JaeHun._01._Scripts
             {
                 herbInventory[herbName]--;
 
-                OnHerbInventoryChanged?.Invoke(totalHerbCount);
                 return true;
             }
 
@@ -86,11 +83,6 @@ namespace _00.Work.JaeHun._01._Scripts
                 return count;
             }
             return 0;
-        }
-
-        public int GetTotalHerbCount()
-        {
-            return totalHerbCount;
         }
 
         public int GetTotalSpentAll()      //합산
