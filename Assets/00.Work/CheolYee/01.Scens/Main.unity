@@ -2907,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462400751209697464, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
       propertyPath: money
-      value: 1000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6415313191941962742, guid: 55a93c790ca556b45903ffdd445c1048, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3088,15 +3088,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: currentDay
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: currentWeek
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: customerIndexToDay
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2881407221510600209, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: m_LocalPosition.x
