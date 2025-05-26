@@ -1515,6 +1515,7 @@ GameObject:
   - component: {fileID: 8052602146109383330}
   - component: {fileID: 1238479180965889140}
   - component: {fileID: 3471253421262621389}
+  - component: {fileID: 986188659031524688}
   m_Layer: 5
   m_Name: MenuBtn
   m_TagString: Untagged
@@ -1636,3 +1637,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!225 &986188659031524688
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8152721688118755281}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

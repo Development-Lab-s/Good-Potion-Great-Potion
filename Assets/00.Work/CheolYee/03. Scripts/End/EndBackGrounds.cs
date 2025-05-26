@@ -20,7 +20,7 @@ namespace _00.Work.CheolYee._03._Scripts.End
 
         private void Update()
         {
-            if(backGround.transform.position.y < -7100) return;
+            if(backGround.transform.position.y < -6500) return;
             
             backGround.transform.position += Vector3.down * (_downSpeed * Time.deltaTime);
         }
