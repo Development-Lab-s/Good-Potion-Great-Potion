@@ -18,6 +18,8 @@ namespace _00.Work.CheolYee._05._SO.CustomerChatSO
         public string requiredPotions;
         [Header("Waiting Chat Time")]
         public float waitingChatTime;
+        [Header("Price")]
+        public int price;
 
         [ContextMenu("Create Line")]
         public void CreateLine()

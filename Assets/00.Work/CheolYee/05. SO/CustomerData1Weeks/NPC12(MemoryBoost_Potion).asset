@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC12(MemoryBoost_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
+  mainLines:
+  - "\uC81C \uC5EC\uC790\uCE5C\uAD6C\uAC00 \uC5B4\uB514\uC5D0 \uC788\uB294\uC9C0
+    \uBAA8\uB974\uACA0\uC5B4\uC694."
+  - "\uC81C \uC544\uAC00 \uC5B4\uB514\uC5D0 \uC788\uB294\uC9C0 \uBAA8\uB974\uACA0\uC5B4\uC694."
+  hint:
+  - "\uC788\uB294 \uAC83 \uAC19\uAE30\uB3C4 \uD558\uACE0,,, \uADF8 \uC798 \uC0DD\uAC01\uD558\uBA74
+    \uB5A0\uC624\uB97C \uAC83 \uAC19\uC740\uB370\u2026"
+  hint2:
+  - "\uC544 \uAE30\uC5B5\uB825 \uD5A5\uC0C1 \uD3EC\uC158 \uD558\uB098 \uB2EC\uB77C\uAD6C\uC694
+    \uC5C6\uB294 \uAC70 \uB098\uB3C4 \uC544\uB2C8\uAE4C"
+  exitLines:
+  - "\uC544. \uC9C4\uC9DC \uC5C6\uAD6C\uB098."
+  forcedExitLines:
+  - "\uB098\uB3C4 \uAFC8\uC740 \uAFD4\uBCFC \uC218 \uC788\uC796\uC544\uC694."
+  requiredPotions: DSRATA
+  waitingChatTime: 0.05
+  price: 340

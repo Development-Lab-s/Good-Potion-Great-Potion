@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC6(Clarity_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
+  mainLines:
+  - "\uC804\uC7C1, \uACB0\uCF54 \uB2E4\uC2DC \uC804\uC7C1!"
+  - "\uC624\uB298 \uC785\uC601\uD1B5\uC9C0\uC11C\uB97C \uBC1B\uC558\uC5B4."
+  hint:
+  - "\uC804\uC7C1\uC740 \uC88B\uC740 \uAC70\uC57C. \uB108\uB3C4 \uD568\uAED8 \uCC38\uC5EC\uD558\uC9C0
+    \uC54A\uACA0\uB098?"
+  hint2:
+  - "\uC77C\uCC0D\uC9D1\uC5D0\uAC00\uACE0\uC2ED\uB2E4."
+  exitLines:
+  - "War never again! \uC804\uC7C1\uC744 \uC77C\uC73C\uCF1C\uC120 \uC548\uB418\uB124!"
+  forcedExitLines:
+  - "\uC65C \uB098\uB97C \uADF8\uB0E5 \uBCF4\uB0B4\uC694? \uB2F9\uC2E0 \uB098 \uC54C\uC544\uC694?
+    \uB098 \uC774 \uB3D9\uB124 \uB3D9\uB300\uD45C\uC778\uB370\uC694?"
+  requiredPotions: 'BPRSDR '
+  waitingChatTime: 0.05
+  price: 170

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC14(MemoryRemover_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
+  mainLines:
+  - "\uC65C \uB610 \uC544\uD508 \uC0C1\uCC98\uC5D0 \uC18C\uAE08\uC744 \uBFCC\uB9AC\uC2ED\uB2C8\uAE4C"
+  - "\uD14C\uC5D0\uC5E5\uC2A4\uD2B8 \uBA54\uC2DC\uC9C0 2"
+  hint:
+  - "\uD55C \uC794\uC740 \uB5A0\uB098\uAC04 \uB108\uB97C \uC704\uD558\uC5EC, \uD55C
+    \uC794\uC740 \uB108\uC640 \uB098\uC758 \uC601\uC6D0\uD588\uB358 \uC0AC\uB791\uC744
+    \uC704\uD558\uC5EC"
+  hint2:
+  - "\uC544\uD508 \uCD94\uC5B5\uC744 \uC78A\uAE30 \uC704\uD55C \uD55C \uC794\uC774
+    \uD544\uC694\uD558\uC624."
+  exitLines:
+  - "\uD55C \uC794\uC740 \uBC88\uCC3D \uD560 \uADF8\uB300\uB97C \uC704\uD558\uC5EC."
+  forcedExitLines:
+  - "\uB09C... \u3131\u314F\uB054...\_\uB208\uBB3C\uC744\_\uD758\uB9B0 \u3137 \u314F
+    .... \u3131 \u314F\uB054\uC740\_\uB208\uBB3C\uC744 \uCC38\uC744 \uC218 \uC5C6\uB294
+    \uB0B4\uAC00 \uBCC4\uB8E8\u3137 \u314F\u2026"
+  requiredPotions: DSRDTA
+  waitingChatTime: 0.05
+  price: 340

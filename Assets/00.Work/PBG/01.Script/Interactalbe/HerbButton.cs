@@ -11,9 +11,19 @@ public class HerbButton : MonoBehaviour
 
     void Start()
     {
+        InventoryManager.Instance.OnHerbChanged += HandleHurbChanged;
         _number = InventoryManager.Instance.GetHerbCount(data.herbName).ToString();
         _numberText.text = _number;
     }
+    private void HandleHurbChanged(string str, int count)
+    {
+        InventoryManager.Instance.OnHerbChanged += HandleHurbChanged;
+        if (data.herbName != str) return;   
+        _numberText.text = $"{count}";
+        InventoryManager.Instance.OnHerbChanged -= HandleHurbChanged;
+    }
+
+
 
     public void SetHerb()
     {
@@ -36,21 +46,21 @@ public class HerbButton : MonoBehaviour
         else if (herb._inHand)
         {
 
-            Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None); 
+            Herb[] taggedObjects = GameObject.FindObjectsByType<Herb>(FindObjectsSortMode.None);
 
             foreach (Herb obj in taggedObjects)
-                 {
-                    if (data.herbName == obj.data.herbName)
-                    {
-                        InventoryManager.Instance.AddHerb(obj.data.herbName, 0);
-                        _numberText.text = InventoryManager.Instance.GetHerbCount(obj.data.herbName).ToString();
-                        
-                        herb._inHand = false;
-                        Destroy(obj.gameObject);
-                        taggedObjects[0] = null;
-                        
-                    }
-                 }
+            {
+                if (data.herbName == obj.data.herbName)
+                {
+                    InventoryManager.Instance.AddHerb(obj.data.herbName, 0);
+                    _numberText.text = InventoryManager.Instance.GetHerbCount(obj.data.herbName).ToString();
+
+                    herb._inHand = false;
+                    Destroy(obj.gameObject);
+                    taggedObjects[0] = null;
+
+                }
+            }
         }
     }
 }

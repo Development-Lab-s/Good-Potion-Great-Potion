@@ -17,6 +17,7 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
 
     //Inventory가 바뀌었을 때 모든 구독자들에게 방송하는 시스템
     public event Action<int> OnHerbInventoryChanged;
+    public event Action<string, int> OnHerbChanged;
 
     private void Awake()
     {
@@ -46,14 +47,12 @@ public class InventoryManager : MonoBehaviour     //재료를 그냥 허브라�
 
         totalHerbCount++;
         totalSpentMoney += price;
-
+        OnHerbChanged?.Invoke(herbName, herbInventory[herbName]);
         OnHerbInventoryChanged?.Invoke(totalHerbCount);
     }
     //재료제거
     public bool RevokeHerb(string herbName)
     {
-        Debug.Log("허브 이름 있음? " + herbInventory.ContainsKey(herbName));
-
         if (herbInventory.ContainsKey(herbName) && herbInventory[herbName] > 0)
         {
             herbInventory[herbName]--;

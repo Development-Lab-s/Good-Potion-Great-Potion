@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC19(JumpBoost_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 21300000, guid: bb89933deea0a3945ba6e59e49c42823, type: 3}
+  mainLines:
+  - "\uB098\uB294 \uD30C\uCFE0\uB974 \uACE0\uC218\uAC00 \uB420\uAC70\uC57C!"
+  - "\uB098\uB294 \uBA40\uB9AC\uB6F0\uAE30 \uACE0\uC218\uAC00 \uB420\uAC70\uC57C!"
+  hint:
+  - "\uD074\uB77C\uC774\uBC0D \uC120\uC218\uB3C4 \uAD1C\uCC2E\uACE0.."
+  hint2:
+  - "\uC5D0\uC787 \uC77C\uB2E8 \uC810\uD504 \uD3EC\uC158 \uB0B4\uB194!"
+  exitLines:
+  - "\uC640 \uB3C4\uD551 \uD14C\uC2A4\uD2B8 \uAC78\uB9AC\uB294 \uAC70 \uC544\uB2CC\uAC00
+    \uBAB0\uB77C"
+  forcedExitLines:
+  - "\uAFC8\uC740 \u2606 \uBBF8\uB8E8\uC5B4\uC9C4\uB2E4."
+  requiredPotions: PMRSDRRMB
+  waitingChatTime: 0.05
+  price: 355

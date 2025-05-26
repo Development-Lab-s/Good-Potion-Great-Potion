@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ChangeImageUi : MonoBehaviour
 {
     [SerializeField] private Image[] resultImages;
+    [field : SerializeField] public string[] herbKeycode{ get; set; }
     [SerializeField] private Sprite sprite;
     public int _isHerb = 0;
 
@@ -31,6 +32,7 @@ public class ChangeImageUi : MonoBehaviour
         if (_isHerb < 3)
         {
             resultImages[_isHerb].sprite = dataSO.herbIcon;
+            herbKeycode[_isHerb] = dataSO.herbName;
             _isHerb++;
         }
     } 
