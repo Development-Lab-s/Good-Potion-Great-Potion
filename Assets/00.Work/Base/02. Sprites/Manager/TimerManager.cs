@@ -38,6 +38,11 @@ namespace _00.Work.Base._02._Sprites.Manager
             //씬이 바뀌어도 사라지지 않게하기
             DontDestroyOnLoad(this.gameObject);
         }
+
+        private void Start()
+        {
+            StartTimer(startSeconds); //시작 시 시작 초로 타이머 시작
+        }
         
         //타이머 시작 (어디서든 TimerManager.Instance.StartTimer()로 호출 가능)
         public void StartTimer(float setTime)
@@ -47,6 +52,13 @@ namespace _00.Work.Base._02._Sprites.Manager
             _remainingSeconds = setTime; //시작 시간을 입력값으로 설정
             _countDownCoroutine = StartCoroutine(TimerCorutine()); //코루틴 시작해서 1초씩 감소
             _isRunning = true; //타이머 작동 중이라고 표시
+        }
+
+        public void RestartTimer()
+        {
+            if (_isRunning) return;
+            
+            StartTimer(_remainingSeconds);
         }
         
         //타이머 멈춤 (어디서든 TimerManager.Instance.StopTimer()로 호출 가능)
@@ -58,9 +70,15 @@ namespace _00.Work.Base._02._Sprites.Manager
             _isRunning = false; //타이머 작동 안하고 있다고 표시
         }
 
-        public void LessTimer(float setTime) // 타이머의 시간을 감소시킬 수 있는 기능
+        public void LessTimer(float setTime) // 타이머의 시간을 뺄 수 있는 기능
         {
             _remainingSeconds -= setTime;
+            UpdateTimerUI();
+        }
+        
+        public void SetTimer(float setTime) // 타이머의 시간을 설정할 수 있는 기능
+        {
+            _remainingSeconds = setTime;
             UpdateTimerUI();
         }
         

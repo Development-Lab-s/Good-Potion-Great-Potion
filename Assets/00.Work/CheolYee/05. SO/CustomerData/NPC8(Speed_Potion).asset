@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC8(Speed_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: 3058686582840955661, guid: 4e44df88ebcc91e4c8d5adbf96651304, type: 3}
+  mainLines:
+  - " \uC18D\uB3C4\uC758 \uD55C\uACC4\uB97C \uBCF4\uC5EC\uC904\uAC8C"
+  - "\uADF8 \uB204\uAD6C\uBCF4\uB2E4 \uBE60\uB974\uAC8C \uB09C \uB0A8\uB4E4\uACFC\uB294
+    \uB2E4\uB974\uAC8C"
+  hint:
+  - "\uB354 \uBE60\uB978 \uC18D\uB3C4\uAC00 \uD544\uC694\uD574"
+  hint2:
+  - "\uC18D\uB3C4 \uC99D\uAC00 \uD3EC\uC158 \uD558\uB098 \uC8FC\uC138\uC694."
+  exitLines:
+  - "\uC2DC\uAE30 \uB2E4\uB978 rapper\uB4E4\uC758 \uBC18\uB300\uD3B8\uC744 \uBC14\uB77C\uBCF4\uB358
+    Rapper\uB4E4\uC758 \uBC30\uD3EC."
+  forcedExitLines:
+  - "\uD1F4\uC7A5\uC758 \uD55C\uACC4\uB97C \uBCF4\uC5EC\uC904\uAC8C."
+  requiredPotions: RMBSDR
+  waitingChatTime: 0.05
+  price: 305

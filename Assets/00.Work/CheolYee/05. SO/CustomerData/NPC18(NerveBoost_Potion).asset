@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1b523e470ca942927e7f909e864d8, type: 3}
+  m_Name: NPC18(NerveBoost_Potion)
+  m_EditorClassIdentifier: 
+  customerSprite: {fileID: -506037507056553197, guid: 509d495f700312746993f612f32e0e7f, type: 3}
+  mainLines:
+  - "\uC190\uB05D\uC758 \uBBF8\uC138\uD55C \uB5A8\uB9BC\uAE4C\uC9C0 \uD1B5\uC81C\uD558\uACE0
+    \uC2F6\uC5B4."
+  - "\uB204\uAD6C\uBCF4\uB2E4 \uBA3C\uC800 \uC6C0\uC9C1\uC774\uACE0 \uC2F6\uC5B4."
+  hint:
+  - "\uC624\uCC28 0.001\uCD08\uB3C4 \uC6A9\uB0A9 \uC548 \uB3FC. \uB108\uB77C\uBA74
+    \uC54C\uACA0\uC9C0?"
+  hint2:
+  - "\uC544\uC9C1\uB3C4 \uBAA8\uB974\uACA0\uC5B4? \uC2E0\uACBD\uC774 \uBE68\uB77C\uC9C0\uACE0
+    \uC2F6\uB2E4\uACE0!"
+  exitLines:
+  - "\uC774\uC81C\uC57C \uC138\uC0C1\uC774 \uB290\uB824\uC84C\uAD70. \uC644\uBCBD\uD574."
+  forcedExitLines:
+  - "\uB290\uB9B0 \uC790\uC640\uB294 \uB300\uD654\uB3C4 \uC2DC\uAC04 \uB0AD\uBE44\uC57C."
+  requiredPotions: RGABTACSM
+  waitingChatTime: 0.05
+  price: 420

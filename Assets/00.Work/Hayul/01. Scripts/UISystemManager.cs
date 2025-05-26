@@ -3,6 +3,8 @@
 public class UISystemManager : MonoBehaviour
 {
     [SerializeField] private GameObject LeftUI, RightUI;
+
+    public int rotateDirection = -1;
     private void Start()
     {
         RandomRotation();
@@ -25,6 +27,7 @@ public class UISystemManager : MonoBehaviour
         RightUI.SetActive(false);
         LeftUI.SetActive(false);
         Debug.Log("반시계!");
+        rotateDirection = 1; //반시계는 1
         RightUI.SetActive(true);
     }
 
@@ -33,6 +36,7 @@ public class UISystemManager : MonoBehaviour
         RightUI.SetActive(false);
         LeftUI.SetActive(false);
         Debug.Log("시계!");
+        rotateDirection = 0; //시계는 0
         LeftUI.SetActive(true);
     }
 }

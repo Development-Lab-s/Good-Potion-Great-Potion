@@ -1,5 +1,8 @@
+using System;
+using _00.Work.Base._02._Sprites.Manager;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public abstract class Herb : MonoBehaviour
@@ -13,8 +16,6 @@ public abstract class Herb : MonoBehaviour
     protected bool _isSet = false;
     [field : SerializeField] public bool _inHand {get; set;}
 
-
-    
     public void Initialized(HerbDataSO data)
     {
         cam = Camera.main;

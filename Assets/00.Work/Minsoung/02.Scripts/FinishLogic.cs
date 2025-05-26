@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _00.Work.CheolYee._03._Scripts.Customer.Manager;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
@@ -38,7 +39,7 @@ public class ClockHand : MonoBehaviour
     [SerializeField] Transform particleTrm;
     private void Update()
     {
-        if (_finishCheck)
+        if (_finishCheck && !SceneManagerScript.Instance.isTimerFinished)
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
@@ -55,21 +56,25 @@ public class ClockHand : MonoBehaviour
         }
         else
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            if (Keyboard.current.spaceKey.wasPressedThisFrame && !SceneManagerScript.Instance.isTimerFinished)
             {
                 _timerLogic.ClockHandStop();
                 _camShake.CameraShakeStop(false);
+                SceneManagerScript.Instance.isFinishedCrafting = true;
+                SceneManagerScript.Instance.isSuccessCrafting = false;
+                SceneManagerScript.Instance.LoadToScene(1);
             }
         }
         if (_finishCount == 3)
         {
             _timerLogic.ClockHandStop();
             _camShake.CameraShakeStop(false);
+            SceneManagerScript.Instance.LoadToScene(4);
         }
     }
     private void SquareScale()
     {
-        transform.localScale -= new Vector3(0.09f,0f,0f);
+        transform.localScale -= new Vector3(0.01f,0f,0f);
     }
     
 }

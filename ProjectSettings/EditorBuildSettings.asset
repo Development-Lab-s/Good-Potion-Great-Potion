@@ -6,23 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/00.Work/JaeHun/00. Scenes/Shop.unity
-    guid: 1b7180cc9a829ed4bb7c00aace3229e0
-  - enabled: 1
-    path: Assets/00.Work/JaeHun/00. Scenes/Main.unity
-    guid: 5cfc7776f3fbf5d459e8909b621dc159
+    path: Assets/00.Work/CheolYee/01.Scens/Start.unity
+    guid: 667ebe5ee6cae9f41b3f0b70799e1c49
   - enabled: 1
     path: Assets/00.Work/CheolYee/01.Scens/Main.unity
     guid: 0207538e3f88b414eb2a88238935e89c
   - enabled: 1
-    path: Assets/00.Work/CheolYee/01.Scens/TestCreate.unity
-    guid: 385d3fde998227d40963609632395edb
-  - enabled: 1
     path: Assets/00.Work/PBG/02.Scenes/Create.unity
-    guid: 0ff7f4286d232294d84f3d1ec1ea2ce8
+    guid: 250ef45a327782a408d0e15d33d025a4
+  - enabled: 1
+    path: Assets/00.Work/Minsoung/01.Scenes/MiniGame1.unity
+    guid: 7a6a694fb1383e94c906efe64282a6a3
+  - enabled: 1
+    path: Assets/00.Work/Hayul/00. Scene/MiniGame2.unity
+    guid: a4bfd4f7e460d0149bbdc9bd5bd21d95
+  - enabled: 1
+    path: Assets/00.Work/CheolYee/01.Scens/EndScene.unity
+    guid: 837a10e16330a64488684356313c6659
+  - enabled: 1
+    path: Assets/00.Work/CheolYee/01.Scens/Tutorial.unity
+    guid: e641abf4cc702e74888f8ae9a96fdf10
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

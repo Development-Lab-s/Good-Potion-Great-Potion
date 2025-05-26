@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
-using Microsoft.Unity.VisualStudio.Editor;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 
 public class HerbRecipeManager : MonoBehaviour
@@ -13,13 +13,17 @@ public class HerbRecipeManager : MonoBehaviour
     public string _potionName{get; set;}
 
 
-    private List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
+    public List<HerbDataSO> selectedHerbs = new List<HerbDataSO>();
 
     void Awake()
     {
         if(Instance == null)
         {
             Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
 
         DontDestroyOnLoad(this);
@@ -31,14 +35,15 @@ public class HerbRecipeManager : MonoBehaviour
         if (selectedHerbs.Count > 2) 
             {
                 Debug.Log("초과");
-                return;  //넣은 허브 갯수가 3이상이면 반환
+                return;  //넣은 허브 갯수가 3이상이면 반환하고 3이라면 레시피 식별 후 다음으로 넘어감
             }
-        else if (selectedHerbs.Count >= 1)
+
+        if (selectedHerbs.Count >= 1)
         {
             _canProduce = true; // 제작 버튼을 누를 수 있는 조건
         }
         selectedHerbs.Add(herbName);
-        Debug.Log("선택된 허브: " + herbName);
+        Debug.Log("선택된 허브: " + herbName.herbName);
     }
 
     public void CheckCombination()
@@ -48,6 +53,9 @@ public class HerbRecipeManager : MonoBehaviour
 
         _canProduce = false;
         selectedHerbs.Clear(); // 다음 시도를 위해 초기화
+        Debug.Log(selectedHerbs.Count);
+        
+        SceneManagerScript.Instance.LoadToScene(3);
     }
 
 
@@ -100,37 +108,37 @@ public class HerbRecipeManager : MonoBehaviour
             _potionName = "SMDRSR";
         }
 
-        else if (selectedHerbs[0].herbName == "RGA" && selectedHerbs[1].herbName == "BTA" && selectedHerbs[2].herbName == "CSM")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "RGA" && selectedHerbs[1].herbName == "BTA" && selectedHerbs[2].herbName == "CSM")
         {
             _potionName = "RGABTACSM";
         }
 
-        else if (selectedHerbs[0].herbName == "PMR" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "RMB")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "PMR" && selectedHerbs[1].herbName == "SDR" && selectedHerbs[2].herbName == "RMB")
         {
             _potionName = "PMRSDRRMB";
         }
 
-        else if (selectedHerbs[0].herbName == "BTA" && selectedHerbs[1].herbName == "BPR" && selectedHerbs[2].herbName == "CSM")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "BTA" && selectedHerbs[1].herbName == "BPR" && selectedHerbs[2].herbName == "CSM")
         {
             _potionName = "BTABPRCSM";
         }
 
-        else if (selectedHerbs[0].herbName == "ATA" && selectedHerbs[1].herbName == "GBR" && selectedHerbs[2].herbName == "RRP")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "ATA" && selectedHerbs[1].herbName == "GBR" && selectedHerbs[2].herbName == "RRP")
         {
             _potionName = "ATAGBRRRP";
         }
 
-        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "DTA" && selectedHerbs[2].herbName == "TBR")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "DTA" && selectedHerbs[2].herbName == "TBR")
         {
             _potionName = "SPDDTATBR";
         }
 
-        else if (selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "RSR" && selectedHerbs[2].herbName == "BPR")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "SPD" && selectedHerbs[1].herbName == "RSR" && selectedHerbs[2].herbName == "BPR")
         {
             _potionName = "SPDRSRBPR";
         }
 
-        else if (selectedHerbs[0].herbName == "RSR" && selectedHerbs[1].herbName == "PST" && selectedHerbs[2].herbName == "SND")
+        else if (selectedHerbs.Count == 3 && selectedHerbs[0].herbName == "RSR" && selectedHerbs[1].herbName == "PST" && selectedHerbs[2].herbName == "SND")
         {
             _potionName = "RSRPSTSND";
         }
@@ -138,6 +146,7 @@ public class HerbRecipeManager : MonoBehaviour
         else
         {
             _potionName = "FAILPOTION";
+            Debug.Log(_potionName);
         }
         
     }
