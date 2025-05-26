@@ -1,5 +1,4 @@
 using System.Collections;
-using _00.Work.CheolYee._03._Scripts.Customer;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 
@@ -23,7 +22,7 @@ namespace _00.Work.Base._02._Sprites.Manager.FadeManager
         
         private IEnumerator NextDayCycle()
         {
-            if (SceneManagerScript.Instance.currentDay == 12) SceneManagerScript.Instance.LoadToScene(5);
+            if (SceneManagerScript.Instance.currentDay == 12) SceneManagerScript.Instance.LoadToScene(5);// 만약 끝났는데 12일이면 엔딩씬 가기
             
             //보이는 텍스트 다 끄기
             FadeManager.Instance.backGroundImg.gameObject.SetActive(false);

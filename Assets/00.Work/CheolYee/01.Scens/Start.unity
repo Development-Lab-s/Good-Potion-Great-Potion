@@ -808,6 +808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 986188659031524688, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5573387315957081490, guid: 28bf26928843981418dc881d0d016636, type: 3}
       propertyPath: m_Name
       value: MenuUI
@@ -835,10 +839,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8152721688118755281, guid: 28bf26928843981418dc881d0d016636, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1929499316}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28bf26928843981418dc881d0d016636, type: 3}
 --- !u!1 &462005005
 GameObject:
@@ -1847,23 +1848,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7d621ede026594aac92503d1e46b36, type: 3}
---- !u!1 &1929499306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8152721688118755281, guid: 28bf26928843981418dc881d0d016636, type: 3}
-  m_PrefabInstance: {fileID: 381439177}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &1929499316
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929499306}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &2037535389
 GameObject:
   m_ObjectHideFlags: 0

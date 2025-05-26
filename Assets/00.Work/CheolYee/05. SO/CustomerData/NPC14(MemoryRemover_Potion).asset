@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerSprite: {fileID: 4760137523107819462, guid: 38b73ce26eef13d4cbaa09e427a820a9, type: 3}
   mainLines:
-  - "\uC65C \uB610 \uC544\uD508 \uC0C1\uCC98\uC5D0 \uC18C\uAE08\uC744 \uBFCC\uB9AC\uC2ED\uB2C8\uAE4C"
+  - "\uD55C \uC794\uC740 \uB5A0\uB098\uAC04 \uB108\uB97C \uC704\uD558\uC5EC,"
   - "\uC544\uC544 \uB2D8\uC740 \uAC14\uC2B5\uB2C8\uB2E4"
   hint:
-  - "\uD55C \uC794\uC740 \uB5A0\uB098\uAC04 \uB108\uB97C \uC704\uD558\uC5EC,"
-  hint2:
   - "\uD55C \uC794\uC740 \uB108\uC640 \uB098\uC758 \uC601\uC6D0\uD588\uB358 \uC0AC\uB791\uC744
     \uC704\uD558\uC5EC.."
+  hint2:
+  - "\uC774 \uC544\uD508 \uAE30\uC5B5\uC744 \uC78A\uC744 \uC218 \uC788\uC73C\uBA74
+    \uC88B\uC73C\uB828\uB9CC.."
   exitLines:
   - "\uD55C \uC794\uC740 \uBC88\uCC3D \uD560 \uADF8\uB300\uB97C \uC704\uD558\uC5EC."
   forcedExitLines:
@@ -28,4 +29,4 @@ MonoBehaviour:
     ...."
   requiredPotions: DSRDTA
   waitingChatTime: 0.05
-  price: 340
+  price: 440

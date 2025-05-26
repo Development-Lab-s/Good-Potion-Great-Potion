@@ -1,6 +1,7 @@
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using _00.Work.CheolYee._05._SO.CustomerChatSO;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace _00.Work.CheolYee._03._Scripts.Customer
@@ -16,7 +17,7 @@ public class CustomerChatManager : MonoBehaviour
         public SpriteRenderer spriteRenderer; // 스프라이트 렌더러 (손님 스프라이트)
         public Animator animator; // 손님 애니메이션 실행을 위한 애니메이터
 
-        private int _randomIndex = -1; //대사 불러올 때 랜덤 값을 저장할 변수
+        public int randomIndex = -1; //대사 불러올 때 랜덤 값을 저장할 변수
         public string SelectedLine { get; private set; } // 랜덤값의 인덱스로 가져온 대사가 저장될 변수
         public string SelectedHint {get; private set;}// 랜덤값의 인덱스로 가져온 힌트가 저장될 변수
         public string SelectedHint2 {get; private set;}// 랜덤값의 인덱스로 가져온 힌트(2번째)가 저장될 변수
@@ -83,9 +84,9 @@ public class CustomerChatManager : MonoBehaviour
 
         public void PickRandomLine()
         {
-            _randomIndex = Random.Range(0, customerDataSo.mainLines.Length); // 랜덤으로 값 가져오기
-            SceneManagerScript.Instance.currentRandomIndex = _randomIndex; //랜덤값을 저장후 보내줌
-            SelectedLine = customerDataSo.mainLines[_randomIndex]; // 랜덤값의 인덱스에 해당하는 대사 가져오기
+            randomIndex = Random.Range(0, customerDataSo.mainLines.Length); // 랜덤으로 값 가져오기
+            SceneManagerScript.Instance.currentRandomIndex = randomIndex; //랜덤값을 저장후 보내줌
+            SelectedLine = customerDataSo.mainLines[randomIndex]; // 랜덤값의 인덱스에 해당하는 대사 가져오기
             SelectedHint = customerDataSo.hint[0]; // 힌트 가져오기
             SelectedHint2 = customerDataSo.hint2[0]; // 두번째 힌트 가져오기
             SelectedExitLine = customerDataSo.exitLines[0]; // 강제퇴장대사 가져오기

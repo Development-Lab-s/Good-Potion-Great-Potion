@@ -2047,12 +2047,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2892,7 +2892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A Key : \uC2DC\uACC4 \uBC29\uD5A5\nD Key : \uBC18\uC2DC\uACC4 \uBC29\uD5A5"
+  m_text: "A Key : \uBC18\uC2DC\uACC4 \uBC29\uD5A5\nD Key : \uC2DC\uACC4 \uBC29\uD5A5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc2934535c730974d8cf89ffda72417f, type: 2}
   m_sharedMaterial: {fileID: -8856327996163529554, guid: fc2934535c730974d8cf89ffda72417f, type: 2}
@@ -3061,7 +3061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3407077335904886038, guid: af8f1836e8fa43541bab6a187a639ce8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000038146973
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3407077335904886038, guid: af8f1836e8fa43541bab6a187a639ce8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3181,11 +3181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672676007758699964, guid: 49fec8cd54e910041ab8018db0fcc87f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000038146973
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3672676007758699964, guid: 49fec8cd54e910041ab8018db0fcc87f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000038146973
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3672676007758699964, guid: 49fec8cd54e910041ab8018db0fcc87f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

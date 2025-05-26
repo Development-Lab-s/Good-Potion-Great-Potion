@@ -1,4 +1,3 @@
-using System;
 using _00.Work.Base._02._Sprites.Manager;
 using _00.Work.Base._02._Sprites.Manager.FadeManager;
 using _00.Work.CheolYee._05._SO.CustomerChatSO;
@@ -13,6 +12,8 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.Manager
     {
         public static SceneManagerScript Instance {get; private set;}
 
+        public int btnClickCount = 0; // 네? 버튼을 몇 번 클릭하였는가
+        
         public int currentDay = 1; // 지금이 몇 일차인가?
         public int currentWeek = 1; // 지금이 몇 주차인가?
         public int customerIndexToDay = 1; // 이 손님은 오늘의 몇 번째 손님인가?
@@ -57,6 +58,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.Manager
             isFinishedCrafting = false;
             toDayTotalMoney = 0;
             isSuccessCraftingCount = 0;
+            btnClickCount = 0;
             InventoryManager.Instance.totalSpentMoney = 0;
             InventoryManager.Instance.totalHerbCount = 0;
         }
