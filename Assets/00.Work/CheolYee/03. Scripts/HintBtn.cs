@@ -1,28 +1,45 @@
+using System;
 using _00.Work.CheolYee._03._Scripts.Customer;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using TMPro;
 using UnityEngine;
 
-public class HintBtn : MonoBehaviour
+namespace _00.Work.CheolYee._03._Scripts
 {
-    [SerializeField] private GameObject hintPanel;
-    [SerializeField] private TextMeshProUGUI hintText;
-    
-    private bool isBtnClicked = false;
-
-    public void HintBtnClicked()
+    public class HintBtn : MonoBehaviour
     {
-        isBtnClicked = !isBtnClicked;
-        
-        hintPanel.SetActive(isBtnClicked);
+        [SerializeField] private GameObject hintPanel;
+        [SerializeField] private TextMeshProUGUI hintText;
+    
+        private bool _isBtnClicked;
 
-
-        if (SceneManagerScript.Instance.btnClickCount == 2)
+        public void HintBtnClicked()
         {
-            hintText.text = null;
-            hintText.text = $"{SceneManagerScript.Instance.currentCustomerData.mainLines[CustomerChatManager.Instance.randomIndex]}";
-            
-            
+            _isBtnClicked = !_isBtnClicked;
+        
+            hintPanel.SetActive(_isBtnClicked);
+
+
+            if (SceneManagerScript.Instance.btnClickCount == 2)
+            {
+                hintText.text = null;
+                hintText.text = $"대사 : {SceneManagerScript.Instance.currentCustomerData.mainLines[CustomerChatManager.Instance.randomIndex]}\n"+ 
+                                $"힌트 : {SceneManagerScript.Instance.currentCustomerData.hint[0]}\n" + 
+                                $"힌트 2: {SceneManagerScript.Instance.currentCustomerData.hint2[0]}";
+            }
+            else if (SceneManagerScript.Instance.btnClickCount == 1)
+            {
+                hintText.text = null;
+                hintText.text =
+                    $"대사 : {SceneManagerScript.Instance.currentCustomerData.mainLines[CustomerChatManager.Instance.randomIndex]}\n" +
+                    $"힌트 : {SceneManagerScript.Instance.currentCustomerData.hint[0]}";
+            }
+            else
+            {
+                hintText.text = null;
+                hintText.text =
+                    $"대사 : {SceneManagerScript.Instance.currentCustomerData.mainLines[CustomerChatManager.Instance.randomIndex]}";
+            }
         }
     }
 }

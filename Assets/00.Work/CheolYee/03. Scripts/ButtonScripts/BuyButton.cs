@@ -1,4 +1,5 @@
 using _00.Work.Base._02._Sprites.Manager;
+using _00.Work.Base._02._Sprites.Manager.SFXManager;
 using _00.Work.JaeHun._01._Scripts;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ public class BuyButton : MonoBehaviour
         
         
         InventoryManager.Instance.AddHerb(herbName, price);
-        
+        SFXManager.Instance.Play(0); //돈 차감 사운드 실행
         
 
         // 4. 디버그 출력

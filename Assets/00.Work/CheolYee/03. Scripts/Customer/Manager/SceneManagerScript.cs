@@ -69,13 +69,5 @@ namespace _00.Work.CheolYee._03._Scripts.Customer.Manager
             Debug.Log("타이머가 종료되었습니다. 하루 영업 종료");
             StartCoroutine(FadeManager.Instance.EndDayCycle());
         }
-
-        private void Update()
-        {
-            if (Keyboard.current.oKey.wasPressedThisFrame)
-            {
-                TimerManager.Instance.SetTimer(1);
-            }
-        }
     }
 }
