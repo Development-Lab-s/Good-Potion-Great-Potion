@@ -1,5 +1,6 @@
 using System.Collections;
 using _00.Work.Base._02._Sprites.Manager;
+using _00.Work.Base._02._Sprites.Manager.SFXManager;
 using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 using TMPro;
@@ -164,6 +165,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                 MoneyManager.Instance.AddMoney(SceneManagerScript.Instance.currentCustomerData.price); //돈UI에 추가
                 SceneManagerScript.Instance.toDayTotalMoney += //오늘 번 돈 +포션 가격해준다
                     SceneManagerScript.Instance.currentCustomerData.price;
+                SFXManager.Instance.Play(1); //돈 얻는 사운드 실행
             }
             else if (!SceneManagerScript.Instance.isSuccessCrafting)
             {
@@ -172,6 +174,7 @@ namespace _00.Work.CheolYee._03._Scripts.Customer
                     CustomerChatManager.Instance.customerDataSo.waitingChatTime));
             }
             
+            SceneManagerScript.Instance.btnClickCount = 0;
             yield return new WaitForSeconds(1f);
             
             customerChatUI.SetActive(false);

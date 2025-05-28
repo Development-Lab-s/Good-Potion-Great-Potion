@@ -1,4 +1,6 @@
-﻿using _00.Work.CheolYee._03._Scripts.Customer.Manager;
+﻿using _00.Work.Base._02._Sprites.Manager.SFXManager;
+using _00.Work.Base._02._Sprites.Manager.SoundManager;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -43,6 +45,8 @@ public class ClockHand : MonoBehaviour
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
+                SFXManager.Instance.Play(2);
+                
                 _timerLogic.ClockHandDir();
                 _timerLogic.ClockHandSpeed();
 

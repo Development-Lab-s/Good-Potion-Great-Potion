@@ -6,6 +6,7 @@ namespace _00.Work.CheolYee._03._Scripts.End
     public class EndBackGrounds : MonoBehaviour
     {
         [SerializeField] private GameObject backGround;
+        [SerializeField] private GameObject quitButton;
         
         [SerializeField] private float successDownSpeed = 3;
         [SerializeField] private float failDownSpeed = 3;
@@ -20,7 +21,11 @@ namespace _00.Work.CheolYee._03._Scripts.End
 
         private void Update()
         {
-            if(backGround.transform.position.y < -6500) return;
+            if (backGround.transform.position.y < -5400)
+            {
+                quitButton.SetActive(true);
+                return;
+            }
             
             backGround.transform.position += Vector3.down * (_downSpeed * Time.deltaTime);
         }

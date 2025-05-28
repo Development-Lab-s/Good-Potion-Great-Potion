@@ -12,6 +12,7 @@ public class ClearUIButton : MonoBehaviour
             HerbRecipeManager.Instance.selectedHerbs.Clear();
             InventoryManager.Instance.AddHerb(changeImageUi.herbKeycode[i], 0);
         }
+        HerbRecipeManager.Instance._canProduce = false;
 
         changeImageUi._isHerb = 4;
     }

@@ -48,7 +48,7 @@ MonoBehaviour:
   mainBGM: {fileID: 8300000, guid: 78db3522afd0f184a87d4ac790a8a4c7, type: 3}
   bgmSlider: {fileID: 0}
   volumeIcon: {fileID: 0}
-  volumeMute: {fileID: 4130640169021434097, guid: 2843bf5f081e78242983fa6c5349531b, type: 3}
+  volumeMute: {fileID: -7371509505491802261, guid: 5d15b1ff787a07f4c94bb2fbdc5ce44a, type: 3}
   volumeLow: {fileID: -1314887257233001794, guid: f19c9cb6e0c290b41bb28445da2d0804, type: 3}
   volumeMid: {fileID: 607803868380480862, guid: 46604052089e3084991d5ad974a95a2d, type: 3}
   volumeHigh: {fileID: -6470460504253458178, guid: 8d91d128415864440b76a1d792d8aaaf, type: 3}

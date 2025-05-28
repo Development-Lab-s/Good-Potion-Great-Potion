@@ -1,8 +1,7 @@
-using System;
 using _00.Work.Base._02._Sprites.Manager;
 using _00.Work.Base._02._Sprites.Manager.SoundManager;
 using _00.Work.Base._05._SO;
-using NUnit.Framework.Constraints;
+using _00.Work.CheolYee._03._Scripts.Customer.Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ namespace _00.Work.CheolYee._03._Scripts.ButtonScripts
         [SerializeField] private Button mainButton;
         [SerializeField] private PlayerInputSO playerInput;
         
-        private bool isPressedEsc = false;
+        private bool _isPressedEsc = false;
 
         private void OnEnable()
         {
@@ -34,15 +33,17 @@ namespace _00.Work.CheolYee._03._Scripts.ButtonScripts
 
         private void ToggleMenuUI()
         {
-            isPressedEsc = !isPressedEsc;
+            if (SceneManagerScript.Instance?.isTimerFinished == true) return;
             
-            menu.SetActive(isPressedEsc);
+            _isPressedEsc = !_isPressedEsc;
             
-            Time.timeScale = isPressedEsc ? 0 : 1;
+            menu.SetActive(_isPressedEsc);
             
-            mainButton.gameObject.SetActive(!isPressedEsc);
+            Time.timeScale = _isPressedEsc ? 0 : 1;
             
-            if(isPressedEsc) TimerManager.Instance?.StopTimer();
+            mainButton.gameObject.SetActive(!_isPressedEsc);
+            
+            if(_isPressedEsc) TimerManager.Instance?.StopTimer();
             else TimerManager.Instance?.RestartTimer();
         }
 
@@ -57,7 +58,7 @@ namespace _00.Work.CheolYee._03._Scripts.ButtonScripts
         
         public void ContinueButton()
         {
-            isPressedEsc = !isPressedEsc;
+            _isPressedEsc = !_isPressedEsc;
             
             Time.timeScale = 1;
             mainButton.gameObject.SetActive(true);

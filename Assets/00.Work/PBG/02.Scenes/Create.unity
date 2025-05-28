@@ -581,7 +581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178819876
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4294,8 +4294,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2734094731516929881, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734094731516929881, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734094731516929881, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4773926942441837399, guid: 28bf26928843981418dc881d0d016636, type: 3}
       propertyPath: m_IgnoreParentGroups
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874548203247695780, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874548203247695780, guid: 28bf26928843981418dc881d0d016636, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5573387315957081490, guid: 28bf26928843981418dc881d0d016636, type: 3}
@@ -6368,6 +6388,7 @@ GameObject:
   - component: {fileID: 1572242445}
   - component: {fileID: 1572242444}
   - component: {fileID: 1572242443}
+  - component: {fileID: 1572242447}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6408,7 +6429,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -6464,9 +6485,9 @@ RectTransform:
   - {fileID: 328457427}
   - {fileID: 716489938138239610}
   - {fileID: 527023820}
+  - {fileID: 2043506520}
   - {fileID: 1160794930}
   - {fileID: 82008478}
-  - {fileID: 2043506520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6474,6 +6495,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1572242447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572242442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df06ee37d71517449ea64392aeb3946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595726033
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,6 +7505,10 @@ PrefabInstance:
       propertyPath: changeImageUi
       value: 
       objectReference: {fileID: 1287314373}
+    - target: {fileID: 6602530260251295985, guid: ca5c57feeb4fe724c888fe021951d99f, type: 3}
+      propertyPath: herbRecipeManager
+      value: 
+      objectReference: {fileID: 1554763134}
     - target: {fileID: 7024957648432050070, guid: ca5c57feeb4fe724c888fe021951d99f, type: 3}
       propertyPath: m_Name
       value: ClearButton
@@ -7939,6 +7976,7 @@ GameObject:
   - component: {fileID: 2019644278}
   - component: {fileID: 2019644277}
   - component: {fileID: 2019644280}
+  - component: {fileID: 2019644281}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8064,6 +8102,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &2019644281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019644276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cd705c2d6c3204a9ee4cf9f5b2dee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2025100609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8316,7 +8366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hintPanel: {fileID: 178819875}
-  hintText: {fileID: 0}
+  hintText: {fileID: 1595726035}
 --- !u!224 &2048644564 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 292343811920676364, guid: 4deafbe9def683a448df2acd10aef37a, type: 3}
@@ -8814,7 +8864,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2140525409}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2043506521}
+        m_TargetAssemblyTypeName: HintBtn, Assembly-CSharp
+        m_MethodName: HintBtnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2140525409
 MonoBehaviour:
   m_ObjectHideFlags: 0
