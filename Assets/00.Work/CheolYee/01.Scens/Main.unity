@@ -3130,15 +3130,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: currentDay
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: currentWeek
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 898343928235901318, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: customerIndexToDay
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2881407221510600209, guid: ccba361f892b3a94eb9fa383ff17203d, type: 3}
       propertyPath: m_LocalPosition.x
